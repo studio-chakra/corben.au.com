@@ -20,7 +20,7 @@ return array(
         'devMode' => true,
         'environmentVariables' => array(
             'siteUrl'        => 'http://corben.dev/',
-            'fileSystemPath' => '../public/images/',
+            'fileSystemPath' => '../corben/images/',
         ),
     ),
 
@@ -30,7 +30,7 @@ return array(
 
         'environmentVariables' => array(
             'siteUrl'        => 'http://staging.studiochakra.com/corben/',
-            'fileSystemPath' => '/home/ryanbeli/public_html/studiochakra-staging/corben/public/images/',
+            'fileSystemPath' => '/home/ryanbeli/public_html/studiochakra-staging/corben/corben/images/',
         ),
     ),
 
