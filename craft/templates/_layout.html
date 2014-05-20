@@ -1,73 +1,167 @@
-{#
- # Layout template
- # ---------------
- #
- # This template defines your site’s global layout. It can be
- # “extended” by other templates to fill in the gaps.
- #
- # See Twig’s Template Inheritance documentation for more details:
- # http://twig.sensiolabs.org/doc/templates.html#template-inheritance
- #}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<head>
-	<meta charset="utf-8" />
-	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
-	<link rel="home" href="{{ siteUrl }}" />
+    <title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
+    <link rel="home" href="{{ siteUrl }}" />
+		
+		<!-- HEAD: Meta -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<meta name="google-site-verification" content="" />
+		<meta property="og:site_name" content="Corben Architects">
+		{% block meta %}{% endblock %}
 
-	<style type="text/css">
-		body { margin: 50px; font-family: sans-serif; background: #fff; }
-		#container { margin: 0 auto; width: 700px;
-			-webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-			        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-		}
+		<!-- HEAD: Favicons -->
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+		<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
 
-		#header, #footer { display: block; color: #fff; background: #da5a47; }
-		#header a, #footer a { color: #fff; }
-		#header { border-radius: 7px 7px 0 0; padding: 25px; }
-		#header:after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
-		#header a { text-decoration: none; }
-		#header h1 { float: left; margin: 0; font-weight: normal; font-size: 30px; line-height: 1; }
-		#header nav { display: block; float: right; }
-		#header nav ul { margin: 0; list-style-type: none; }
-		#header nav ul li { float: left; margin-left: 20px; }
-		#header nav ul li a { display: block; margin-top: 4px; line-height: 22px; }
-		#header nav ul li a:hover,
-		#header nav ul li a.active { border-bottom: 2px solid #fff; }
-		#header nav ul li a.active { cursor: default; }
+		<!-- HEAD: Stylesheets -->
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
-		#content { display: block; padding: 25px; background: #fff; }
-		#content h1 { margin-top: 0; font-size: 35px; font-weight: bold; }
-		#content a { color: #da5a47; text-decoration: none; }
-		#content a:hover { text-decoration: underline; }
+    <!-- HEAD: Scripts -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  
+  <body>
+	
+		<!-- /* Off Canvas Container -->
+		<div class="off-canvas-wrap" data-offcanvas>
+  		<div class="inner-wrap">
+				<div class="inner-wrap-forarrows">
+					<div class="row">
+						<div class="xlarge-12 columns">		  		  
+			  		  <!-- /* Nav(s) -->	
+			    		<nav class="tab-bar show-for-small">
+								<h1 class="logo-mobile"><a href="/"><span class="hidden">Corben Architects</span></a></h1>
+								<a class="right-off-canvas-toggle" href="#"><i class="fa fa-bars"></i> Menu</a>
+			    		</nav>
+			    		<nav class="top-bar hide-for-small" data-topbar>
+							  <h1 class="logo"><a href="/"><span class="hidden">Corben Architects</span></a></h1>
 
-		#footer { border-radius: 0 0 7px 7px; padding: 15px; font-size: 12px; text-align: center; }
-	</style>
-</head>
+							  <section class="top-bar-section">
+							    <ul class="right">
+							      <li class="has-dropdown">
+							      	<a href="#">Projects</a>
+							      	<!-- <ul class="dropdown">
+							          <li><a href="#">In Progress</a></li>
+							          <li><a href="#">Apartments</a></li>
+							          <li><a href="#">Commercial</a></li>
+							          <li><a href="#">Alterations &amp; Additions</a></li>
+							          <li><a href="#">New Houses</a></li>
+							        </ul> -->
+							      </li>
+							      <li class="has-dropdown">
+							        <a href="#">Practice</a>
+							        <!-- <ul class="dropdown">
+							          <li><a href="#">Awards</a></li>
+							          <li><a href="#">Fees</a></li>
+							          <li><a href="#">Service</a></li>
+							          <li><a href="#">Architecture</a></li>
+							          <li><a href="#">About</a></li>
+							        </ul> -->
+							      </li>
+										<li><a href="#">People</a></li>
+							      <li><a href="#">Place</a></li>
+							    </ul>
+							  </section>
+							</nav><!-- Nav(s) */ -->	
+						</div>
+					</div><!-- Row */ -->	
 
-<body>
-	<div id="container">
-		<header id="header">
-			<h1><a href="{{ siteUrl }}">{{ siteName }}</a></h1>
+	    		<!-- /* Off Canvas Menu -->
+	    		<aside class="right-off-canvas-menu">
+	        	<ul class="off-canvas-menu">
+	          	<li class="has-dropdown">
+	          		<a href="#" class="is-active">Projects</a>
+								<ul>
+									<li><a href="#">In Progress</a></li>
+							    <li><a href="#">Apartments</a></li>
+							    <li><a href="#">Commercial</a></li>
+							    <li><a href="#" class="is-active">Alterations &amp; Additions</a></li>
+							    <li><a href="#">New Houses</a></li>
+								</ul>
+	          	</li>
+	          	<li>
+	          		<a href="#">Practice</a>
+	          		<ul class="dropdown">
+							    <li><a href="#">Awards</a></li>
+							    <li><a href="#">Fees</a></li>
+							    <li><a href="#">Service</a></li>
+							    <li><a href="#">Architecture</a></li>
+							    <li><a href="#">About</a></li>
+							  </ul>	
+	          	</li>
+	          	<li><a href="#">People</a></li>
+	          	<li><a href="#">Place</a></li>
+	        	</ul>
+	    		</aside><!-- Off Canvas Menu */ -->
 
-			<nav>
-				<ul>
-					<li><a href="{{ url('news') }}" {% if craft.request.firstSegment == 'news' %}class="active"{% endif %}>News</a></li>
-				</ul>
-			</nav>
-		</header>
+					<!-- /* Main Content Block -->
+			    <section class="main-section" role="main">{% block content %}{% endblock %}</section>
+					<!-- Main Block */ -->		
+								
+				</div><!-- Inner Wrap for Arrows */ -->	
 
-		<main id="content" role="main">
-			{% block content %}
-				<p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
-				<p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
-			{% endblock %}
-		</main>
 
-		<footer id="footer">
-			Copyright {{ now.year }} {{ craft.request.serverName | ucfirst }}. All rights reserved  •  Built with <a href="http://buildwithcraft.com">Craft</a>
-		</footer>
-	</div>
-</body>
+				<!-- /* Footer -->  
+			  <footer class="footer">
+			  	<div class="footer-wrap-forarrows">
+				  	<div class="row">
+				  		<div class="large-12 columns">
+					      <ul class="footer-nav-list">
+					        <li class="footer-nav-social nospace">
+					        	<a href="#" class="icon-link">
+											<span class="fa-stack fa-lg">
+											  <i class="fa fa-circle fa-stack-2x"></i>
+											  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+											</span>
+					        	</a>
+					        </li>
+					        <li class="footer-nav-social nospace">
+					        	<a href="#" class="icon-link">
+											<span class="fa-stack fa-lg">
+											  <i class="fa fa-circle fa-stack-2x"></i>
+											  <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+											</span>
+					        	</a>
+					        </li>
+					        <li classs="footer-nav-item"><a href="#">News</a></li>
+					      </ul>
+					      <ul class="footer-info-list">
+					        <li class="footer-info-item"><a href="#">Disclaimer</a></li>
+					        <li class="footer-info-item nowrap"><a href="#">Privacy Policy</a></li>
+					        <li class="footer-info-copyright nowrap">&copy; <a href="#">{{ now.year }} Corben Architects</a></li>
+					        <li class="footer-info-hash nospace">/</li>
+					        <li class="footer-info-sitedesign nowrap">Site Design <a href="#">All Things Visual</a></li>
+					      </ul>
+					    </div>
+				  	</div>
+				  </div> 
+			  </footer>
+
+  		<!-- close the off-canvas menu -->
+  		<a class="exit-off-canvas"></a>
+
+			</div><!-- Inner Wrap */ -->
+		</div><!-- Off Canvas Container */ -->
+
+    
+
+		<!-- /BODY: Scripts -->
+  	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/foundation/js/foundation.min.js"></script>
+		<script src="js/app.js"></script>
+
+
+  </body>
 </html>

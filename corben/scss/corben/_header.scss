@@ -1,0 +1,94 @@
+//
+// Header
+// --------------------------------------------------
+
+
+// Main Nav
+.top-bar {
+	height: 142px;
+	position: relative;
+}
+
+.top-bar-section {
+	margin-top: 130px;
+}
+
+.top-bar-section ul li > a,
+.top-bar-section .has-dropdown > a {
+	padding: 0 0 0 48px !important;
+}
+
+.top-bar-section ul li > a {
+	line-height: 1;
+}
+
+
+// Mobile Nav
+.tab-bar {
+	margin-bottom: $topbar-margin-bottom;
+}
+
+.right-off-canvas-toggle {
+	color: #666;
+	font-family: 'Source Sans Pro', sans-serif;	
+	font-size: rem-calc(16);
+	line-height: 1.2;
+	text-align: center;
+	text-transform: uppercase;
+
+	border: 1px solid #ccc;
+	padding: 6px 6px 4px 6px;
+
+	position: absolute;
+	top: 14px;
+	right: 0;
+
+	&:hover {
+		color: #000;
+		border-color: #666;
+	}
+
+	.fa {
+		display: block;
+	}
+}
+
+
+// Logo
+h1.logo,
+h1.logo-mobile {
+	margin: 0;
+	padding: 0;
+	float: left;
+
+	a {
+		display: block;
+		width: 200px;
+		height: $tabbar-height;
+		background-image: url("../images/logo.png");
+		background-size: 200px 112px;
+		background-position: 0 -36px;
+		
+		@media #{$medium-up} {
+			width: 253px;
+			height: 142px;
+			background-size: 253px 142px;
+			background-position: 0 0;
+		}
+	}
+
+	.hidden {
+		display: none;
+	}
+}
+
+/*
+h1.logo-mobile {
+	a {
+		height: $tabbar-height;
+		background-position: 0 -60px;
+	}
+}
+*/
+
+

@@ -1,0 +1,20 @@
+h3.sg {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 1;
+	margin-top: rem-calc(80);
+}
+
+.sg-label {
+	display: block;
+	margin-bottom: rem-calc(14);
+	margin-top: rem-calc(30);
+	
+	text-transform: uppercase;
+	color: #999;
+	font-size: 12px;
+}
+
+hr.sg {
+	margin: rem-calc(40 0 20 0);
+}

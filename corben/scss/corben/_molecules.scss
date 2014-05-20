@@ -1,0 +1,111 @@
+//
+// Molecules
+// --------------------------------------------------
+
+
+
+// Awards List
+.award-block {
+	display: block;
+	margin-bottom: rem-calc(24);
+	color: #666;
+	
+	&:hover,
+	&.is-active,
+	{
+		color: #000;
+		
+		.award-title,
+		.award-subtitle {
+			color: #000;
+		}
+	}
+}
+
+.award-title,
+.award-subtitle {
+	margin: 0;
+	color: #666;
+}
+
+.award-notions-list {
+	margin: rem-calc(2) 0 0 0;
+}
+
+.award-notion {
+	line-height: 1.4;
+}
+
+
+
+// Contact Details
+.contact-details p {
+	margin-bottom: 0;
+	
+	strong {
+		text-transform: uppercase;
+	}
+}
+
+.contact-hd {
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.contact-phone {
+	margin-top: rem-calc(24);
+}
+
+
+
+// Contact Form
+button,
+.button {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: rem-calc(14);
+	padding: rem-calc(10 20);
+	
+	text-transform: uppercase;
+	
+	&:hover {
+		background: #333;
+	}
+}
+
+
+
+// Project
+.project-title {
+	text-transform: uppercase;
+	margin: rem-calc(0 0 24 0);
+	
+	.divider {
+		padding: rem-calc(0 4);
+	}
+}
+
+.project-client {
+	color: #000;
+	font-weight: 400;
+	font-size: rem-calc(18);
+}
+
+.project-detail-item {
+	line-height: 1.4;
+}
+
+ul.project-pagination,
+.project-navbar .btn {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.project-navbar .btn {	
+	line-height: rem-calc(20);
+	padding: rem-calc(2 0);
+}
+
+.btn-proj-gallery {
+	font-size: rem-calc(20);
+	margin-right: rem-calc(8);
+}

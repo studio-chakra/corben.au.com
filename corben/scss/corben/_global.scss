@@ -1,0 +1,38 @@
+//
+// Global
+// --------------------------------------------------
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+.main-section {
+
+}
+
+
+// Layout
+.off-canvas-wrap {
+	background: #fff;
+}
+
+
+.inner-wrap-forarrows {
+	padding-bottom: 100px;
+}
+
+@media #{$large-up} {
+	.inner-wrap-forarrows,
+	.footer-wrap-forarrows {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+}
+
+
+
+// Misc
+.nowrap {
+	white-space: nowrap;
+}

@@ -1,0 +1,73 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+h1	{ font-size: rem-calc(18); }
+h2	{ font-size: rem-calc(18); }
+h3	{ font-size: rem-calc(17); }
+h4	{ font-size: rem-calc(15); }
+h5	{ font-size: rem-calc(14); }
+h6	{ font-size: rem-calc(14); }
+
+
+li {
+	margin-bottom: rem-calc(8);
+}
+
+
+a {
+	color: #666;
+	
+	&:hover {
+		color: #000;
+	}
+}
+
+
+.btn {
+	text-transform: uppercase;
+	color: #666;
+	
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: rem-calc(14);
+	line-height: 1;
+	
+	&:hover {
+		color: #000;
+	}
+}
+
+.btn-link {
+	text-decoration: underline;	
+}
+
+
+
+ul.pagination {
+	margin: 0;
+	
+	li {
+		color: #424242;
+		margin-left: 0;	
+		margin-bottom: 0;
+		
+		&.current a,
+		&.current a:hover {
+			background: #fff;
+			color: #000;
+			font-weight: 700;
+		}
+			
+	}
+	
+	li a {
+		color: #424242;
+		
+		&:hover {
+			color: #000;
+			background: #fff;
+		}
+	}
+	
+}
