@@ -67,25 +67,25 @@ class __TwigTemplate_c21583ae4e49fbec61021ef4e1909fab6400d0b2066d5061a8eda31059b
 \t\t\t\t<div class=\"large-12 columns\">
 \t\t\t\t\t<h4 class=\"sg-label\">Icons</h4>
 \t\t\t\t\t<div class=\"row\">
-\t\t\t\t\t\t<div class=\"small-1 columns\">
+\t\t\t\t\t\t<div class=\"small-2 columns\">
 \t\t\t\t\t\t\t<i class=\"fa fa-angle-double-down fa-3x\"></i>
 \t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"small-1 columns\">
+\t\t\t\t\t\t<div class=\"small-2 columns\">
 \t\t\t\t\t\t\t<i class=\"fa fa-angle-right fa-3x\"></i>
 \t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"small-1 columns\">
+\t\t\t\t\t\t<div class=\"small-2 columns\">
 \t\t\t\t\t\t\t<i class=\"fa fa-angle-left fa-3x\"></i>
 \t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"small-1 columns\">
+\t\t\t\t\t\t<div class=\"small-2 columns\">
 \t\t\t\t\t\t\t<i class=\"fa fa-th fa-3x\"></i>
 \t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"small-1 columns\">
+\t\t\t\t\t\t<div class=\"small-2 columns\">
 \t\t\t\t\t\t\t<span class=\"fa-stack fa-lg\">
 \t\t\t\t\t\t\t\t<i class=\"fa fa-circle fa-stack-2x\"></i>
 \t\t\t\t\t\t\t\t<i class=\"fa fa-facebook fa-stack-1x fa-inverse\"></i>
 \t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t</div>
-\t\t\t\t\t\t<div class=\"small-1 columns end\">
+\t\t\t\t\t\t<div class=\"small-2 columns\">
 \t\t\t\t\t\t\t<span class=\"fa-stack fa-lg\">
 \t\t\t\t\t\t\t\t<i class=\"fa fa-circle fa-stack-2x\"></i>
 \t\t\t\t\t\t\t\t<i class=\"fa fa-pinterest fa-stack-1x fa-inverse\"></i>
@@ -183,6 +183,88 @@ class __TwigTemplate_c21583ae4e49fbec61021ef4e1909fab6400d0b2066d5061a8eda31059b
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t
+\t\t\t<div class=\"row\">
+\t\t\t\t<div class=\"large-12 columns\">
+\t\t\t\t\t<h4 class=\"sg-label\">Team Grid</h4>
+\t\t\t\t\t<ul class=\"team-grid\">
+\t\t\t\t\t  <li class=\"team-item\">
+\t\t\t\t\t  \t<div class=\"employee\">
+\t\t\t\t\t\t  \t<img class=\"emp-photo\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t<h2 class=\"emp-name\">First Last <small class=\"emp-position\">Postition</small></h2>
+\t\t\t\t\t\t\t\t<p class=\"emp-job\">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+\t\t\t\t\t\t\t\t<p class=\"emp-bio\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
+\t\t\t\t\t  \t</div>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"team-item\">
+\t\t\t\t\t\t\t<div class=\"employee\">
+\t\t\t\t\t\t \t\t<img class=\"emp-photo\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t \t\t<h2 class=\"emp-name\">First Last <small class=\"emp-position\">Postition</small></h2>
+\t\t\t\t\t\t \t\t<p class=\"emp-job\">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+\t\t\t\t\t\t \t\t<p class=\"emp-bio\">Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
+\t\t\t\t\t\t \t</div>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"team-item\">
+\t\t\t\t\t\t\t<div class=\"employee\">
+\t\t\t\t\t\t  \t<img class=\"emp-photo\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t<h2 class=\"emp-name\">First Last <small class=\"emp-position\">Postition</small></h2>
+\t\t\t\t\t\t\t\t<p class=\"emp-job\">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+\t\t\t\t\t\t\t\t<p class=\"emp-bio\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
+\t\t\t\t\t  \t</div>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"team-item\">
+\t\t\t\t\t\t\t<div class=\"employee\">
+\t\t\t\t\t\t  \t<img class=\"emp-photo\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t<h2 class=\"emp-name\">First Last <small class=\"emp-position\">Postition</small></h2>
+\t\t\t\t\t\t\t\t<p class=\"emp-job\">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+\t\t\t\t\t\t\t\t<p class=\"emp-bio\">Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
+\t\t\t\t\t  \t</div>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"team-item\">
+\t\t\t\t\t\t\t<div class=\"employee\">
+\t\t\t\t\t\t  \t<img class=\"emp-photo\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t<h2 class=\"emp-name\">First Last <small class=\"emp-position\">Postition</small></h2>
+\t\t\t\t\t\t\t\t<p class=\"emp-job\">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+\t\t\t\t\t\t\t\t<p class=\"emp-bio\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
+\t\t\t\t\t  \t</div>
+\t\t\t\t\t  </li>
+\t\t\t\t\t</ul>
+\t\t\t\t\t<!-- ISOTOPE
+\t\t\t\t\t<div id=\"team-grid\" class=\"js-isotope\" data-isotope-options='{ \"itemSelector\": \".employee\" }'>
+\t\t\t\t\t  <div class=\"employee\">
+\t\t\t\t\t\t  <img class=\"emp-photo\" src=\"http://placehold.it/292x195\" />
+\t\t\t\t\t\t  <h2 class=\"emp-name\">First Last <small class=\"emp-position\">Postition</small></h2>
+\t\t\t\t\t\t  <p class=\"emp-job\">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+\t\t\t\t\t\t  <p class=\"emp-bio\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
+\t\t\t\t\t  </div>
+\t\t\t\t\t\t<div class=\"employee\">
+\t\t\t\t\t\t  <img class=\"emp-photo\" src=\"http://placehold.it/292x195\" />
+\t\t\t\t\t\t  <h2 class=\"emp-name\">First Last <small class=\"emp-position\">Postition</small></h2>
+\t\t\t\t\t\t  <p class=\"emp-job\">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+\t\t\t\t\t\t  <p class=\"emp-bio\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
+\t\t\t\t\t  </div>
+\t\t\t\t\t\t<div class=\"employee\">
+\t\t\t\t\t\t  <img class=\"emp-photo\" src=\"http://placehold.it/292x195\" />
+\t\t\t\t\t\t  <h2 class=\"emp-name\">First Last <small class=\"emp-position\">Postition</small></h2>
+\t\t\t\t\t\t  <p class=\"emp-job\">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+\t\t\t\t\t\t  <p class=\"emp-bio\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
+\t\t\t\t\t  </div>
+\t\t\t\t\t\t<div class=\"employee\">
+\t\t\t\t\t\t  <img class=\"emp-photo\" src=\"http://placehold.it/292x195\" />
+\t\t\t\t\t\t  <h2 class=\"emp-name\">First Last <small class=\"emp-position\">Postition</small></h2>
+\t\t\t\t\t\t  <p class=\"emp-job\">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+\t\t\t\t\t\t  <p class=\"emp-bio\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
+\t\t\t\t\t  </div>
+\t\t\t\t\t\t<div class=\"employee\">
+\t\t\t\t\t\t  <img class=\"emp-photo\" src=\"http://placehold.it/292x195\" />
+\t\t\t\t\t\t  <h2 class=\"emp-name\">First Last <small class=\"emp-position\">Postition</small></h2>
+\t\t\t\t\t\t  <p class=\"emp-job\">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+\t\t\t\t\t\t  <p class=\"emp-bio\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
+\t\t\t\t\t  </div>
+\t\t\t\t\t</div>
+\t\t\t\t\t-->
+\t\t\t\t\t</div>
+\t\t\t</div>
+\t\t\t
 \t\t\t<hr class=\"sg\">
 \t\t\t
 \t\t\t<div class=\"row\">
@@ -254,8 +336,12 @@ class __TwigTemplate_c21583ae4e49fbec61021ef4e1909fab6400d0b2066d5061a8eda31059b
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"large-12 columns\">
 \t\t\t\t\t<h4 class=\"sg-label\">Slider</h4>
-\t\t\t\t\t<section class=\"slider\"> 
-\t\t\t\t\t\t<img src=\"http://placehold.it/1470x830\" />
+\t\t\t\t\t<section class=\"carousel\">
+\t\t\t\t\t\t<div id=\"home-carousel\" class=\"owl-carousel corben-carousel\"> 
+\t\t\t\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"http://placehold.it/1470x830\" alt=\"Slide One\" /></div>
+\t\t\t\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"http://placehold.it/1470x830\" alt=\"Slide Two\" /></div>
+\t\t\t\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"http://placehold.it/1470x830\" alt=\"Slide Three\" /></div> 
+\t\t\t\t\t\t</div>\t\t\t\t\t\t
 \t\t\t\t\t</section>
 \t\t\t\t</div>
 \t\t\t</div>
@@ -272,6 +358,118 @@ class __TwigTemplate_c21583ae4e49fbec61021ef4e1909fab6400d0b2066d5061a8eda31059b
 \t\t\t\t\t<img src=\"http://placehold.it/1050x700\" />
 \t\t\t\t</div>
 \t\t\t</div>
+\t\t\t
+\t\t\t<hr class=\"sg\">
+\t\t\t
+\t\t\t<div class=\"row\">
+\t\t\t\t<div class=\"large-12 columns\">
+\t\t\t\t\t<h4 class=\"sg-label\">Project Grid</h4>
+\t\t\t\t\t<ul class=\"project-grid project-grid-hover\">
+\t\t\t\t\t  <li class=\"project-grid-item\">
+\t\t\t\t\t  \t<a href=\"#\" class=\"project-thumb\">
+\t\t\t\t\t\t\t\t<figure>
+\t\t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t\t<figcaption>
+\t\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
+\t\t\t\t\t\t\t\t\t</figcaption>
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t  \t</a>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"project-grid-item\">
+\t\t\t\t\t  \t<a href=\"#\" class=\"project-thumb\">
+\t\t\t\t\t\t\t\t<figure>
+\t\t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t\t<figcaption>
+\t\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
+\t\t\t\t\t\t\t\t\t</figcaption>
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t  \t</a>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"project-grid-item\">
+\t\t\t\t\t  \t<a href=\"#\" class=\"project-thumb\">
+\t\t\t\t\t\t\t\t<figure>
+\t\t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t\t<figcaption>
+\t\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
+\t\t\t\t\t\t\t\t\t</figcaption>
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t  \t</a>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"project-grid-item\">
+\t\t\t\t\t  \t<a href=\"#\" class=\"project-thumb\">
+\t\t\t\t\t\t\t\t<figure>
+\t\t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t\t<figcaption>
+\t\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
+\t\t\t\t\t\t\t\t\t</figcaption>
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t  \t</a>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"project-grid-item\">
+\t\t\t\t\t  \t<a href=\"#\" class=\"project-thumb\">
+\t\t\t\t\t\t\t\t<figure>
+\t\t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t\t<figcaption>
+\t\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
+\t\t\t\t\t\t\t\t\t</figcaption>
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t  \t</a>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"project-grid-item\">
+\t\t\t\t\t  \t<a href=\"#\" class=\"project-thumb\">
+\t\t\t\t\t\t\t\t<figure>
+\t\t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t\t<figcaption>
+\t\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
+\t\t\t\t\t\t\t\t\t</figcaption>
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t  \t</a>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"project-grid-item\">
+\t\t\t\t\t  \t<a href=\"#\" class=\"project-thumb\">
+\t\t\t\t\t\t\t\t<figure>
+\t\t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t\t<figcaption>
+\t\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
+\t\t\t\t\t\t\t\t\t</figcaption>
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t  \t</a>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"project-grid-item\">
+\t\t\t\t\t  \t<a href=\"#\" class=\"project-thumb\">
+\t\t\t\t\t\t\t\t<figure>
+\t\t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t\t<figcaption>
+\t\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
+\t\t\t\t\t\t\t\t\t</figcaption>
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t  \t</a>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"project-grid-item\">
+\t\t\t\t\t  \t<a href=\"#\" class=\"project-thumb\">
+\t\t\t\t\t\t\t\t<figure>
+\t\t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t\t<figcaption>
+\t\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
+\t\t\t\t\t\t\t\t\t</figcaption>
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t  \t</a>
+\t\t\t\t\t  </li>
+\t\t\t\t\t  <li class=\"project-grid-item\">
+\t\t\t\t\t  \t<a href=\"#\" class=\"project-thumb\">
+\t\t\t\t\t\t\t\t<figure>
+\t\t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t\t<figcaption>
+\t\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
+\t\t\t\t\t\t\t\t\t</figcaption>
+\t\t\t\t\t\t\t\t</figure>
+\t\t\t\t\t  \t</a>
+\t\t\t\t\t  </li>
+\t\t\t\t\t</ul>
+\t\t\t\t</div>
+\t\t\t</div>
+\t\t\t
+\t\t\t
 
 
 

@@ -50,15 +50,19 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
         // line 18
         echo "
 \t\t<!-- HEAD: Favicons -->
-\t\t<link rel=\"icon\" type=\"image/x-icon\" href=\"/images/favicon.ico\">
-\t\t<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/images/favicon.ico\">
-\t\t<link rel=\"apple-touch-icon\" href=\"/images/apple-touch-icon.png\">
-\t\t<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"/images/apple-touch-icon-72x72.png\">
-\t\t<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"/images/apple-touch-icon-114x114.png\">
+\t\t<link rel=\"icon\" type=\"image/x-icon\" href=\"images/favicon.ico\">
+\t\t<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"images/favicon.ico\">
+\t\t<!-- 
+\t\t<link rel=\"apple-touch-icon\" href=\"images/apple-touch-icon.png\">
+\t\t<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"images/apple-touch-icon-72x72.png\">
+\t\t<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"images/apple-touch-icon-114x114.png\"> 
+\t\t-->
 
 \t\t<!-- HEAD: Stylesheets -->
     <link rel=\"stylesheet\" href=\"stylesheets/app.css\" />
     <link rel=\"stylesheet\" href=\"bower_components/fontawesome/css/font-awesome.min.css\" />
+\t\t<link rel=\"stylesheet\" href=\"bower_components/owlcarousel/owl-carousel/owl.carousel.css\">
+    
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
     <!-- HEAD: Scripts -->
@@ -140,10 +144,10 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 \t    \t\t</aside><!-- Off Canvas Menu */ -->
 
 \t\t\t\t\t<!-- /* Main Content Block -->
-\t\t\t    <section class=\"main-section\" role=\"main\">";
-        // line 110
+\t\t\t    <main class=\"main\" role=\"main\">";
+        // line 114
         $this->displayBlock('content', $context, $blocks);
-        echo "</section>
+        echo "</main>
 \t\t\t\t\t<!-- Main Block */ -->\t\t
 \t\t\t\t\t\t\t\t
 \t\t\t\t</div><!-- Inner Wrap for Arrows */ -->\t
@@ -177,7 +181,7 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 \t\t\t\t\t        <li class=\"footer-info-item\"><a href=\"#\">Disclaimer</a></li>
 \t\t\t\t\t        <li class=\"footer-info-item nowrap\"><a href=\"#\">Privacy Policy</a></li>
 \t\t\t\t\t        <li class=\"footer-info-copyright nowrap\">&copy; <a href=\"#\">";
-        // line 143
+        // line 147
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["now"]) ? $context["now"] : $this->getContext($context, "now")), "year"), "html", null, true);
         echo " Corben Architects</a></li>
 \t\t\t\t\t        <li class=\"footer-info-hash nospace\">/</li>
@@ -197,8 +201,10 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
     
 
 \t\t<!-- /BODY: Scripts -->
-  \t<script src=\"bower_components/jquery/dist/jquery.min.js\"></script>
+\t\t<script src=\"bower_components/jquery/dist/jquery.min.js\"></script>
 \t\t<script src=\"bower_components/foundation/js/foundation.min.js\"></script>
+\t\t<script src=\"bower_components/owlcarousel/owl-carousel/owl.carousel.min.js\"></script>
+\t\t<!-- <script src=\"bower_components/isotope/dist/isotope.pkgd.min.js\"></script> -->
 \t\t<script src=\"js/app.js\"></script>
 
 
@@ -212,7 +218,7 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
     {
     }
 
-    // line 110
+    // line 114
     public function block_content($context, array $blocks = array())
     {
     }
@@ -229,6 +235,6 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 
     public function getDebugInfo()
     {
-        return array (  216 => 110,  211 => 17,  181 => 143,  145 => 110,  51 => 18,  49 => 17,  38 => 9,  30 => 8,  21 => 1,  31 => 4,  28 => 3,);
+        return array (  222 => 114,  217 => 17,  185 => 147,  149 => 114,  51 => 18,  49 => 17,  38 => 9,  30 => 8,  21 => 1,);
     }
 }

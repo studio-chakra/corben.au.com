@@ -8818,61 +8818,61 @@ h1.logo-mobile {
   }
 }
 
-/* line 8, ../scss/corben/_molecules.scss */
+/* line 10, ../scss/corben/_molecules.scss */
 .award-block {
   display: block;
   margin-bottom: 1.5rem;
   color: #666;
 }
-/* line 13, ../scss/corben/_molecules.scss */
+/* line 15, ../scss/corben/_molecules.scss */
 .award-block:hover, .award-block.is-active {
   color: #000;
 }
-/* line 18, ../scss/corben/_molecules.scss */
+/* line 20, ../scss/corben/_molecules.scss */
 .award-block:hover .award-title,
 .award-block:hover .award-subtitle, .award-block.is-active .award-title,
 .award-block.is-active .award-subtitle {
   color: #000;
 }
 
-/* line 25, ../scss/corben/_molecules.scss */
+/* line 27, ../scss/corben/_molecules.scss */
 .award-title,
 .award-subtitle {
   margin: 0;
   color: #666;
 }
 
-/* line 31, ../scss/corben/_molecules.scss */
+/* line 33, ../scss/corben/_molecules.scss */
 .award-notions-list {
   margin: 0.125rem 0 0 0;
 }
 
-/* line 35, ../scss/corben/_molecules.scss */
+/* line 37, ../scss/corben/_molecules.scss */
 .award-notion {
   line-height: 1.4;
 }
 
-/* line 42, ../scss/corben/_molecules.scss */
+/* line 46, ../scss/corben/_molecules.scss */
 .contact-details p {
   margin-bottom: 0;
 }
-/* line 45, ../scss/corben/_molecules.scss */
+/* line 49, ../scss/corben/_molecules.scss */
 .contact-details p strong {
   text-transform: uppercase;
 }
 
-/* line 50, ../scss/corben/_molecules.scss */
+/* line 54, ../scss/corben/_molecules.scss */
 .contact-hd {
   text-transform: uppercase;
   margin: 0;
 }
 
-/* line 55, ../scss/corben/_molecules.scss */
+/* line 59, ../scss/corben/_molecules.scss */
 .contact-phone {
   margin-top: 1.5rem;
 }
 
-/* line 62, ../scss/corben/_molecules.scss */
+/* line 68, ../scss/corben/_molecules.scss */
 button,
 .button {
   font-family: 'Source Sans Pro', sans-serif;
@@ -8880,51 +8880,703 @@ button,
   padding: 0.625rem 1.25rem;
   text-transform: uppercase;
 }
-/* line 70, ../scss/corben/_molecules.scss */
+/* line 76, ../scss/corben/_molecules.scss */
 button:hover,
 .button:hover {
   background: #333;
 }
 
-/* line 78, ../scss/corben/_molecules.scss */
+/* line 86, ../scss/corben/_molecules.scss */
 .project-title {
   text-transform: uppercase;
   margin: 0 0 1.5rem 0;
+  line-height: 1.2;
 }
-/* line 82, ../scss/corben/_molecules.scss */
+/* line 91, ../scss/corben/_molecules.scss */
 .project-title .divider {
   padding: 0 0.25rem;
 }
 
-/* line 87, ../scss/corben/_molecules.scss */
+/* line 96, ../scss/corben/_molecules.scss */
 .project-client {
   color: #000;
   font-weight: 400;
   font-size: 1.125rem;
 }
 
-/* line 93, ../scss/corben/_molecules.scss */
+/* line 102, ../scss/corben/_molecules.scss */
 .project-detail-item {
   line-height: 1.4;
 }
 
-/* line 97, ../scss/corben/_molecules.scss */
+/* line 106, ../scss/corben/_molecules.scss */
 ul.project-pagination,
 .project-navbar .btn {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 103, ../scss/corben/_molecules.scss */
+/* line 112, ../scss/corben/_molecules.scss */
 .project-navbar .btn {
   line-height: 1.25rem;
   padding: 0.125rem 0;
 }
 
-/* line 108, ../scss/corben/_molecules.scss */
+/* line 117, ../scss/corben/_molecules.scss */
 .btn-proj-gallery {
   font-size: 1.25rem;
   margin-right: 0.5rem;
+}
+
+/* line 127, ../scss/corben/_molecules.scss */
+.project-grid {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem;
+  *zoom: 1;
+}
+/* line 116, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.project-grid:before, .project-grid:after {
+  content: " ";
+  display: table;
+}
+/* line 117, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.project-grid:after {
+  clear: both;
+}
+/* line 50, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.project-grid > li {
+  display: block;
+  height: auto;
+  float: left;
+  padding: 0 0.625rem 1.25rem;
+}
+/* line 61, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.project-grid > li {
+  width: 100%;
+  padding: 0 0.625rem 1.25rem;
+  list-style: none;
+}
+/* line 68, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.project-grid > li:nth-of-type(n) {
+  clear: none;
+}
+/* line 69, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.project-grid > li:nth-of-type(1n+1) {
+  clear: both;
+}
+@media only screen and (min-width: 480px) {
+  /* line 127, ../scss/corben/_molecules.scss */
+  .project-grid {
+    display: block;
+    padding: 0;
+    margin: 0 -1px;
+    *zoom: 1;
+  }
+  /* line 116, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .project-grid:before, .project-grid:after {
+    content: " ";
+    display: table;
+  }
+  /* line 117, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .project-grid:after {
+    clear: both;
+  }
+  /* line 50, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 1px 2px;
+  }
+  /* line 61, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li {
+    width: 50%;
+    padding: 0 1px 2px;
+    list-style: none;
+  }
+  /* line 68, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li:nth-of-type(n) {
+    clear: none;
+  }
+  /* line 69, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 900px) {
+  /* line 127, ../scss/corben/_molecules.scss */
+  .project-grid {
+    display: block;
+    padding: 0;
+    margin: 0 -1px;
+    *zoom: 1;
+  }
+  /* line 116, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .project-grid:before, .project-grid:after {
+    content: " ";
+    display: table;
+  }
+  /* line 117, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .project-grid:after {
+    clear: both;
+  }
+  /* line 50, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 1px 2px;
+  }
+  /* line 61, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li {
+    width: 33.33333%;
+    padding: 0 1px 2px;
+    list-style: none;
+  }
+  /* line 68, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li:nth-of-type(n) {
+    clear: none;
+  }
+  /* line 69, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 127, ../scss/corben/_molecules.scss */
+  .project-grid {
+    display: block;
+    padding: 0;
+    margin: 0 -1px;
+    *zoom: 1;
+  }
+  /* line 116, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .project-grid:before, .project-grid:after {
+    content: " ";
+    display: table;
+  }
+  /* line 117, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .project-grid:after {
+    clear: both;
+  }
+  /* line 50, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 1px 2px;
+  }
+  /* line 61, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li {
+    width: 25%;
+    padding: 0 1px 2px;
+    list-style: none;
+  }
+  /* line 68, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li:nth-of-type(n) {
+    clear: none;
+  }
+  /* line 69, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  /* line 127, ../scss/corben/_molecules.scss */
+  .project-grid {
+    display: block;
+    padding: 0;
+    margin: 0 -1px;
+    *zoom: 1;
+  }
+  /* line 116, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .project-grid:before, .project-grid:after {
+    content: " ";
+    display: table;
+  }
+  /* line 117, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .project-grid:after {
+    clear: both;
+  }
+  /* line 50, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 1px 2px;
+  }
+  /* line 61, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li {
+    width: 20%;
+    padding: 0 1px 2px;
+    list-style: none;
+  }
+  /* line 68, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li:nth-of-type(n) {
+    clear: none;
+  }
+  /* line 69, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .project-grid > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+}
+
+/* line 160, ../scss/corben/_molecules.scss */
+.project-grid-item {
+  margin-bottom: 1px !important;
+  padding-bottom: 2px !important;
+}
+
+/* line 165, ../scss/corben/_molecules.scss */
+.project-grid figure {
+  margin: 0;
+  position: relative;
+}
+/* line 169, ../scss/corben/_molecules.scss */
+.project-grid figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+/* line 177, ../scss/corben/_molecules.scss */
+.project-grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 1.25rem;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 188, ../scss/corben/_molecules.scss */
+.project-grid .project-thumb-title {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+}
+
+/* line 196, ../scss/corben/_molecules.scss */
+.project-grid .project-thumb-client {
+  font-weight: 400;
+}
+
+/* line 201, ../scss/corben/_molecules.scss */
+.project-grid-hover figure {
+  overflow: hidden;
+}
+/* line 204, ../scss/corben/_molecules.scss */
+.project-grid-hover figure img {
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+/* line 211, ../scss/corben/_molecules.scss */
+.no-touch .project-grid-hover figure:hover img,
+.project-grid-hover figure.cs-hover img {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 219, ../scss/corben/_molecules.scss */
+.project-grid-hover figcaption {
+  height: auto;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+/* line 234, ../scss/corben/_molecules.scss */
+.no-touch .project-grid-hover figure:hover figcaption,
+.project-grid-hover figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
+}
+
+/* Styling Pagination */
+/* line 254, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+  /* Styling Next and Prev buttons */
+}
+/* line 259, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-controls .owl-pagination {
+  text-align: right;
+  font-size: 0.875rem;
+  padding-right: 2px;
+}
+/* line 265, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+  /* If PaginationNumbers is true */
+}
+/* line 270, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  background: #fff;
+}
+/* line 284, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #424242;
+  padding: 0.125rem 0.625rem;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+/* line 296, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-controls .owl-page.active span, .corben-carousel .owl-controls.clickable .owl-page:hover span {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  color: #000;
+}
+/* line 303, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-controls .owl-page.active span {
+  font-weight: 700;
+}
+/* line 308, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-controls .owl-buttons {
+  /* Clickable class fix problem with hover on touch devices */
+  /* Use it for non-touch hover action */
+}
+/* line 309, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-controls .owl-buttons div {
+  color: #000;
+  display: inline-block;
+  zoom: 1;
+  position: absolute;
+  *display: inline;
+  /*IE7 life-saver */
+  margin: 0;
+  padding: 0;
+  font-size: 140px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #fff;
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+/* line 328, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-controls .owl-buttons div:hover {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+  color: #333;
+}
+/* line 335, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-controls .owl-buttons .owl-prev {
+  left: -70px;
+  top: 50%;
+  margin-top: -80px;
+}
+/* line 341, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-controls .owl-buttons .owl-next {
+  right: -70px;
+  top: 50%;
+  margin-top: -80px;
+}
+
+/* preloading images */
+/* line 355, ../scss/corben/_molecules.scss */
+.corben-carousel .owl-item.loading {
+  min-height: 150px;
+  background: url(../images/AjaxLoader.gif) no-repeat center center;
+}
+
+/* line 360, ../scss/corben/_molecules.scss */
+ul.pagination {
+  margin: 0;
+}
+/* line 363, ../scss/corben/_molecules.scss */
+ul.pagination li {
+  color: #424242;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+/* line 368, ../scss/corben/_molecules.scss */
+ul.pagination li.current a, ul.pagination li.current a:hover {
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+}
+/* line 377, ../scss/corben/_molecules.scss */
+ul.pagination li a {
+  color: #424242;
+}
+/* line 380, ../scss/corben/_molecules.scss */
+ul.pagination li a:hover {
+  color: #000;
+  background: #fff;
+}
+
+/* line 393, ../scss/corben/_molecules.scss */
+.team-grid {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem;
+  *zoom: 1;
+}
+/* line 116, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.team-grid:before, .team-grid:after {
+  content: " ";
+  display: table;
+}
+/* line 117, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.team-grid:after {
+  clear: both;
+}
+/* line 50, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.team-grid > li {
+  display: block;
+  height: auto;
+  float: left;
+  padding: 0 0.625rem 1.25rem;
+}
+/* line 61, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.team-grid > li {
+  width: 100%;
+  padding: 0 0.625rem 1.25rem;
+  list-style: none;
+}
+/* line 68, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.team-grid > li:nth-of-type(n) {
+  clear: none;
+}
+/* line 69, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+.team-grid > li:nth-of-type(1n+1) {
+  clear: both;
+}
+@media only screen and (min-width: 480px) {
+  /* line 393, ../scss/corben/_molecules.scss */
+  .team-grid {
+    display: block;
+    padding: 0;
+    margin: 0 -1px;
+    *zoom: 1;
+  }
+  /* line 116, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .team-grid:before, .team-grid:after {
+    content: " ";
+    display: table;
+  }
+  /* line 117, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .team-grid:after {
+    clear: both;
+  }
+  /* line 50, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 1px 2px;
+  }
+  /* line 61, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li {
+    width: 50%;
+    padding: 0 1px 2px;
+    list-style: none;
+  }
+  /* line 68, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li:nth-of-type(n) {
+    clear: none;
+  }
+  /* line 69, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 900px) {
+  /* line 393, ../scss/corben/_molecules.scss */
+  .team-grid {
+    display: block;
+    padding: 0;
+    margin: 0 -1px;
+    *zoom: 1;
+  }
+  /* line 116, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .team-grid:before, .team-grid:after {
+    content: " ";
+    display: table;
+  }
+  /* line 117, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .team-grid:after {
+    clear: both;
+  }
+  /* line 50, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 1px 2px;
+  }
+  /* line 61, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li {
+    width: 33.33333%;
+    padding: 0 1px 2px;
+    list-style: none;
+  }
+  /* line 68, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li:nth-of-type(n) {
+    clear: none;
+  }
+  /* line 69, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 393, ../scss/corben/_molecules.scss */
+  .team-grid {
+    display: block;
+    padding: 0;
+    margin: 0 -1px;
+    *zoom: 1;
+  }
+  /* line 116, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .team-grid:before, .team-grid:after {
+    content: " ";
+    display: table;
+  }
+  /* line 117, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .team-grid:after {
+    clear: both;
+  }
+  /* line 50, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 1px 2px;
+  }
+  /* line 61, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li {
+    width: 25%;
+    padding: 0 1px 2px;
+    list-style: none;
+  }
+  /* line 68, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li:nth-of-type(n) {
+    clear: none;
+  }
+  /* line 69, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  /* line 393, ../scss/corben/_molecules.scss */
+  .team-grid {
+    display: block;
+    padding: 0;
+    margin: 0 -1px;
+    *zoom: 1;
+  }
+  /* line 116, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .team-grid:before, .team-grid:after {
+    content: " ";
+    display: table;
+  }
+  /* line 117, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  .team-grid:after {
+    clear: both;
+  }
+  /* line 50, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li {
+    display: block;
+    height: auto;
+    float: left;
+    padding: 0 1px 2px;
+  }
+  /* line 61, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li {
+    width: 20%;
+    padding: 0 1px 2px;
+    list-style: none;
+  }
+  /* line 68, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li:nth-of-type(n) {
+    clear: none;
+  }
+  /* line 69, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  .team-grid > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+}
+
+/* line 426, ../scss/corben/_molecules.scss */
+.team-item {
+  margin-bottom: 1.5rem;
+}
+
+/* line 430, ../scss/corben/_molecules.scss */
+.emp-name,
+.emp-job,
+.emp-bio {
+  padding: 0 0.75rem;
+}
+
+/* line 436, ../scss/corben/_molecules.scss */
+.emp-name {
+  text-transform: uppercase;
+  margin: 2.5rem 0 0 0;
+  line-height: 1.2;
+}
+
+/* line 442, ../scss/corben/_molecules.scss */
+.emp-position {
+  color: #000;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* line 448, ../scss/corben/_molecules.scss */
+.emp-job {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* line 454, ../scss/corben/_molecules.scss */
+.emp-bio {
+  margin: 1.5rem 0 0 0;
 }
 
 /* line 1, ../scss/corben/_styleguide.scss */
