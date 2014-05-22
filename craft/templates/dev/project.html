@@ -1,0 +1,42 @@
+{% extends "_layout-dev" %}
+
+{% block content %}
+
+<section class="section-project">
+	<div class="row">
+		<div class="large-12 columns">	
+			<section class="section-carousel">
+				<div id="project-carousel" class="owl-carousel corben-carousel"> 
+					{% for i in 0..5 %}
+					<div class="carousel-item home-carousel-item">
+						<img src="http://placehold.it/1470x830" alt="Slide One" />
+						<div class="project-panel">
+							<h2 class="project-title">Project Title <span class="divider">|</span> <small class="project-client">Client</small></h2>
+							<div class="row">
+								<div class="large-2 small-4 columns project-details">
+									<ul class="no-bullet project-details-list">
+										<li class="project-detail-item"><strong class="project-detail-label">Completed:</strong> YYYY</li>
+										<li class="project-detail-item"><strong class="project-detail-label">Builder:</strong> Builder</li>
+										<li class="project-detail-item"><strong class="project-detail-label">Area:</strong> #sqm</li>
+										<li class="project-detail-item"><strong class="project-detail-label">Photographer:</strong> First Last</li>
+										<li class="project-detail-item"><a href="" class="btn btn-link btn-project-pdf">Download PDF</a></li>
+									</ul>
+								</div>
+								<div class="large-5 small-8 end columns project-description">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>	
+				<div class="project-navbar">
+					<a href="" class="btn btn-proj-gallery"><i class="fa fa-th"></i></a>
+					<a href="" class="btn btn-proj-overview">Project Overview</a>
+				</div>					
+			</section>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

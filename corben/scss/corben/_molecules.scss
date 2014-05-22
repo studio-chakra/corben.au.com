@@ -192,6 +192,22 @@ ul.project-pagination {
 	}
 }
 
+.project-navbar {
+	margin: rem-calc(6 0 0 10);
+	z-index: 200;
+}
+
+.project-panel {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: rem-calc(26 0 0 38);
+
+	background: #fff;
+	border-bottom: 1px solid #e5e5e5;
+
+}
 
 
 //
@@ -326,11 +342,17 @@ ul.project-pagination {
 
 	margin-top: 10px;
 	text-align: center;
+	display: inline-block;
+	float: right;
 	
 	.owl-pagination {
 		text-align: right;
 		font-size: rem-calc(14);
 		padding-right: 2px;
+
+		@media #{$large-up} {
+			font-size: rem-calc(11);
+		}
 	}
 	
 	.owl-page {

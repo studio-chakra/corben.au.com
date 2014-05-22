@@ -1,0 +1,27 @@
+{% extends "_layout-dev" %}
+
+{% block content %}
+
+<section class="section-projects">
+	<div class="row">
+		<div class="large-12 columns">
+			<h4 class="sg-label">Project Grid</h4>
+			<ul class="project-grid project-grid-hover">
+				{% for i in 0..20 %}
+			  <li class="project-grid-item">
+			  	<a href="/dev/project" class="project-thumb">
+						<figure>
+							<img class="project-thumb-img" src="http://placehold.it/480x320" />
+							<figcaption>
+								<h6 class="project-thumb-title">Project Name <span class="project-thumb-client">| Client</span></h6>
+							</figcaption>
+						</figure>
+			  	</a>
+			  </li>
+			  {% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
