@@ -18,15 +18,21 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<!doctype html>
+        echo "<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class=\"no-js ie6\" lang=\"en\"> <![endif]-->
+<!--[if IE 7 ]>    <html class=\"no-js ie7\" lang=\"en\"> <![endif]-->
+<!--[if IE 8 ]>    <html class=\"no-js ie8\" lang=\"en\"> <![endif]-->
+<!--[if IE 9 ]>    <html class=\"no-js lt-ie10\" lang=\"en\"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <html class=\"no-js\" lang=\"en\">
+<!--<![endif]-->
   <head>
     <meta charset=\"utf-8\" />
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
     <!--[if IE]><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><![endif]-->
 
     <title>";
-        // line 8
+        // line 14
         if (array_key_exists("title", $context)) {
             echo twig_escape_filter($this->env, (isset($context["title"]) ? $context["title"] : $this->getContext($context, "title")), "html", null, true);
             echo " - ";
@@ -34,7 +40,7 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
         echo twig_escape_filter($this->env, (isset($context["siteName"]) ? $context["siteName"] : $this->getContext($context, "siteName")), "html", null, true);
         echo "</title>
     <link rel=\"home\" href=\"";
-        // line 9
+        // line 15
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
         echo "\" />
 \t\t
@@ -45,9 +51,9 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 \t\t<meta name=\"google-site-verification\" content=\"\" />
 \t\t<meta property=\"og:site_name\" content=\"Corben Architects\">
 \t\t";
-        // line 17
+        // line 23
         $this->displayBlock('meta', $context, $blocks);
-        // line 18
+        // line 24
         echo "
 \t\t<!-- HEAD: Favicons -->
 \t\t<link rel=\"icon\" type=\"image/x-icon\" href=\"images/favicon.ico\">
@@ -63,10 +69,11 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
     <link rel=\"stylesheet\" href=\"bower_components/fontawesome/css/font-awesome.min.css\" />
 \t\t<link rel=\"stylesheet\" href=\"bower_components/owlcarousel/owl-carousel/owl.carousel.css\">
     
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
 
     <!-- HEAD: Scripts -->
     <script src=\"bower_components/modernizr/modernizr.js\"></script>
+
   </head>
   
   <body>
@@ -145,7 +152,7 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 
 \t\t\t\t\t<!-- /* Main Content Block -->
 \t\t\t    <main class=\"main\" role=\"main\">";
-        // line 114
+        // line 121
         $this->displayBlock('content', $context, $blocks);
         echo "</main>
 \t\t\t\t\t<!-- Main Block */ -->\t\t
@@ -181,7 +188,7 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 \t\t\t\t\t        <li class=\"footer-info-item\"><a href=\"#\">Disclaimer</a></li>
 \t\t\t\t\t        <li class=\"footer-info-item nowrap\"><a href=\"#\">Privacy Policy</a></li>
 \t\t\t\t\t        <li class=\"footer-info-copyright nowrap\">&copy; <a href=\"#\">";
-        // line 147
+        // line 154
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["now"]) ? $context["now"] : $this->getContext($context, "now")), "year"), "html", null, true);
         echo " Corben Architects</a></li>
 \t\t\t\t\t        <li class=\"footer-info-hash nospace\">/</li>
@@ -204,7 +211,6 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 \t\t<script src=\"bower_components/jquery/dist/jquery.min.js\"></script>
 \t\t<script src=\"bower_components/foundation/js/foundation.min.js\"></script>
 \t\t<script src=\"bower_components/owlcarousel/owl-carousel/owl.carousel.min.js\"></script>
-\t\t<!-- <script src=\"bower_components/isotope/dist/isotope.pkgd.min.js\"></script> -->
 \t\t<script src=\"js/app.js\"></script>
 
 
@@ -213,12 +219,12 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 ";
     }
 
-    // line 17
+    // line 23
     public function block_meta($context, array $blocks = array())
     {
     }
 
-    // line 114
+    // line 121
     public function block_content($context, array $blocks = array())
     {
     }
@@ -235,6 +241,6 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 
     public function getDebugInfo()
     {
-        return array (  222 => 114,  217 => 17,  185 => 147,  149 => 114,  51 => 18,  49 => 17,  38 => 9,  30 => 8,  21 => 1,);
+        return array (  228 => 121,  223 => 23,  192 => 154,  156 => 121,  57 => 24,  55 => 23,  44 => 15,  36 => 14,  21 => 1,);
     }
 }

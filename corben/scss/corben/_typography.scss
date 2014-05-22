@@ -2,6 +2,14 @@
 // Typography
 // --------------------------------------------------
 
+a {
+	color: $medgray-color;
+	
+	&:hover {
+		color: $black-color;
+	}
+}
+
 
 h1	{ font-size: rem-calc(18); }
 h2	{ font-size: rem-calc(18); }
@@ -10,31 +18,40 @@ h4	{ font-size: rem-calc(15); }
 h5	{ font-size: rem-calc(14); }
 h6	{ font-size: rem-calc(14); }
 
+@media #{$large-up} {
+	h1	{ font-size: rem-calc(15); }
+	h2	{ font-size: rem-calc(15); }
+	h3	{ font-size: rem-calc(14); }
+	h4	{ font-size: rem-calc(12); }
+	h5	{ font-size: rem-calc(11); }
+	h6	{ font-size: rem-calc(11); }
+
+	p, ul, dl, ol {
+		font-size: $desktop-font-size;
+		line-height: $desktop-line-height;
+	}
+}
+
 
 li {
 	margin-bottom: rem-calc(8);
 }
 
 
-a {
-	color: #666;
-	
-	&:hover {
-		color: #000;
-	}
-}
-
-
 .btn {
 	text-transform: uppercase;
-	color: #666;
+	color: $medgray-color;
 	
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: rem-calc(14);
+	font-family: $alt-font;
+	font-size: $mobile-font-size;
 	line-height: 1;
+
+	@media #{$large-up} {
+		font-size: $desktop-font-size;
+	}
 	
 	&:hover {
-		color: #000;
+		color: $black-color;
 	}
 }
 
@@ -48,26 +65,37 @@ ul.pagination {
 	margin: 0;
 	
 	li {
-		color: #424242;
+		color: $darkgray-color;
 		margin-left: 0;	
 		margin-bottom: 0;
 		
 		&.current a,
 		&.current a:hover {
-			background: #fff;
-			color: #000;
+			background: $white-color;
+			color: $black-color;
 			font-weight: 700;
 		}
 			
 	}
 	
-	li a {
-		color: #424242;
+	li a,
+	li:hover a {
+		color: $darkgray-color;
+		background: $white-color;
 		
 		&:hover {
-			color: #000;
-			background: #fff;
+			color: $black-color;
+			background: $white-color !important;
 		}
 	}
 	
 }
+
+@media #{$large-up} {
+	ul.pagination,
+	ul.pagination li {
+		font-size: $desktop-font-size;
+	}
+}
+
+

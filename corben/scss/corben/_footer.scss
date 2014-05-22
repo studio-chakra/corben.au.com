@@ -15,12 +15,12 @@
 	margin: 12px 0 0 0;
 	color: #9e9e9e;
 	text-transform: uppercase;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: $alt-font;
 	font-size: rem-calc(13);
 
 	@media #{$medium-up} {	
 		margin: 18px 0 0 0;
-		font-size: rem-calc(11);
+		font-size: $desktop-font-size;
 		float: right;
 	}
 
@@ -35,11 +35,11 @@
 	}	
 
   a {
-  	color: #666;
+  	color: $medgray-color;
   	text-decoration: none;
 
   	&:hover {
-  		color: #000;
+  		color: $black-color;
   	}
   }
 
@@ -54,7 +54,7 @@
 	margin: 14px 0 0 0;
 	color: #9e9e9e;
 	text-transform: uppercase;
-	font-family: 'Source Sans Pro', sans-serif;	
+	font-family: $alt-font;	
 	font-size: rem-calc(14);
 
 	@media #{$medium-up} {	
@@ -73,7 +73,7 @@
 	}	
 
   a {
-  	color: #666;
+  	color: $medgray-color;
   	text-decoration: none;
 
   	&.icon-link {
@@ -81,7 +81,7 @@
   	}
 
   	&:hover {
-  		color: #000;
+  		color: $black-color;
   	}
 
   }

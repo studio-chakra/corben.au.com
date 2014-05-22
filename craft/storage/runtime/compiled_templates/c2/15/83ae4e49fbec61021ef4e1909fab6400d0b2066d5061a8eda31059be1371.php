@@ -326,7 +326,9 @@ class __TwigTemplate_c21583ae4e49fbec61021ef4e1909fab6400d0b2066d5061a8eda31059b
 \t\t\t\t<div class=\"large-12 columns\">
 \t\t\t\t\t<h4 class=\"sg-label\">Contact Google Map</h4>
 \t\t\t\t\t<section class=\"contact-map\">
-\t\t\t\t\t\t<img src=\"http://placehold.it/1470x500\" />
+\t\t\t\t\t\t<div class=\"google-map\">
+\t\t\t\t\t\t\t<iframe width=\"1440\" height=\"500\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/place?q=Suite%2014%2C%2040%20Yeo%20St%20Neutral%20Bay%2C%20NSW%202089&key=AIzaSyBiAD2tlzv1CXVhOPFqf-bLDk_nM4k1EC8\"></iframe>
+\t\t\t\t\t\t</div>
 \t\t\t\t\t</section>
 \t\t\t\t</div>
 \t\t\t</div>

@@ -1,7 +1,8 @@
 //
 // Molecules
 // --------------------------------------------------
-
+$mrg-mobile: rem-calc(24);
+$mrg-desktop: rem-calc(24);
 
 
 //
@@ -9,17 +10,17 @@
 // --------------------------------------------------
 .award-block {
 	display: block;
-	margin-bottom: rem-calc(24);
-	color: #666;
+	margin-bottom: $mrg-mobile;
+	color: $medgray-color;
 	
 	&:hover,
 	&.is-active,
 	{
-		color: #000;
+		color: $black-color;
 		
 		.award-title,
 		.award-subtitle {
-			color: #000;
+			color: $black-color;
 		}
 	}
 }
@@ -27,7 +28,7 @@
 .award-title,
 .award-subtitle {
 	margin: 0;
-	color: #666;
+	color: $medgray-color;
 }
 
 .award-notions-list {
@@ -36,6 +37,14 @@
 
 .award-notion {
 	line-height: 1.4;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media #{$large-up} {
+		margin-bottom: 0;
+	}
 }
 
 
@@ -57,7 +66,22 @@
 }
 
 .contact-phone {
-	margin-top: rem-calc(24);
+	margin-top: $mrg-mobile;
+}
+
+.google-map {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+
+	iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    //height: 100% !important;
+	}
 }
 
 
@@ -67,15 +91,45 @@
 // --------------------------------------------------
 button,
 .button {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: rem-calc(14);
+	font-family: $alt-font;
+	font-size: $mobile-font-size;
 	padding: rem-calc(10 20);
 	
 	text-transform: uppercase;
 	
 	&:hover {
-		background: #333;
+		background: $darkergray-color;
 	}
+
+	@media #{$large-up} {
+		font-size: $desktop-font-size;
+		padding: rem-calc(6 18);
+	}
+}
+
+@media #{$large-up} {
+		label {
+			font-size: $desktop-font-size;
+		}
+
+		input[type="text"], 
+		input[type="password"], 
+		input[type="date"], 
+		input[type="datetime"], 
+		input[type="datetime-local"], 
+		input[type="month"], 
+		input[type="week"], 
+		input[type="email"], 
+		input[type="number"], 
+		input[type="search"], 
+		input[type="tel"], 
+		input[type="time"], 
+		input[type="url"], 
+		textarea {
+			font-size: rem-calc(12);
+			height: rem-calc(30);
+			margin-bottom: rem-calc(8);
+		}
 }
 
 
@@ -85,7 +139,7 @@ button,
 // --------------------------------------------------
 .project-title {
 	text-transform: uppercase;
-	margin: rem-calc(0 0 24 0);
+	margin: 0 0 $mrg-mobile 0;
 	line-height: 1.2;
 	
 	.divider {
@@ -94,19 +148,34 @@ button,
 }
 
 .project-client {
-	color: #000;
-	font-weight: 400;
+	color: $black-color;
+	font-weight: $alt-font-reg;
 	font-size: rem-calc(18);
+
+	@media #{$large-up} {
+		font-size: rem-calc(15);
+	}
 }
 
 .project-detail-item {
 	line-height: 1.4;
+
+	@media #{$large-up} {
+		font-size: rem-calc(12);
+		margin-bottom: rem-calc(2);
+	}
 }
 
 ul.project-pagination,
 .project-navbar .btn {
 	display: inline-block;
 	vertical-align: top;
+}
+
+ul.project-pagination {
+	@media #{$large-up} {
+		margin-top: rem-calc(3);
+	}
 }
 
 .project-navbar .btn {	
@@ -117,6 +186,10 @@ ul.project-pagination,
 .btn-proj-gallery {
 	font-size: rem-calc(20);
 	margin-right: rem-calc(8);
+
+	@media #{$large-up} {
+		font-size: rem-calc(16);
+	}
 }
 
 
@@ -180,7 +253,7 @@ ul.project-pagination,
 	left: 0;
 	padding: rem-calc(8 20);
 	background: #fff;
-	color: #333;
+	color: $darkergray-color;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -188,7 +261,7 @@ ul.project-pagination,
 .project-grid .project-thumb-title {
 	margin: 0;
 	padding: 0;
-	color: #333;
+	color: $darkergray-color;
 	font-size: rem-calc(13);
 	line-height: 1.2;
 }
@@ -248,8 +321,6 @@ ul.project-pagination,
 //
 // Project Carousel
 // --------------------------------------------------
-
-
 /* Styling Pagination */
 .corben-carousel .owl-controls {	
 
@@ -297,7 +368,7 @@ ul.project-pagination,
 	&.clickable .owl-page:hover span {
 		filter: Alpha(Opacity=100); /*IE7 fix*/
 		opacity: 1;
-		color: #000;
+		color: $black-color;
 	}
 	
 	.owl-page.active span {		
@@ -307,20 +378,28 @@ ul.project-pagination,
 	/* Styling Next and Prev buttons */
 	.owl-buttons {
 			div {
-				color: #000;
+				color: $black-color;
 				display: inline-block;
 				zoom: 1;
 				position: absolute;
 				*display: inline; /*IE7 life-saver */
 				margin: 0;
 				padding: 0;
-				font-size: 140px;
+				font-size: 70px;
 				-webkit-border-radius: 0;
 				-moz-border-radius: 0;
 				border-radius: 0;
-				background: #fff;
 				filter: Alpha(Opacity=100); /*IE7 fix*/
 				opacity: 1;
+
+				@media #{$medium-up} {
+					font-size: 120px;
+				}
+
+				@media #{$large-up} {
+					font-size: 140px;
+				}
+
 			}
 			
 			/* Clickable class fix problem with hover on touch devices */
@@ -329,60 +408,50 @@ ul.project-pagination,
 				filter: Alpha(Opacity=100);/*IE7 fix*/
 				opacity: 1;
 				text-decoration: none;
-				color: #333;
+				color: $darkergray-color;
 			}
 
   	.owl-prev {
-		  left: -70px;
+		  left: 5%;
 		  top: 50%; 
-		  margin-top: -80px;
+		  margin-top: -50px;
+
+		  @media #{$medium-up} {
+		  	left: 3%;
+		  	margin-top: -75px;
+			}
+
+		  @media #{$large-up} {
+				left: -70px;
+		  	margin-top: -80px;
+			}
 		}
 		
 		.owl-next {
-		  right: -70px;
+		  right: 5%;
 		  top: 50%;
-		  margin-top: -80px;
+		  margin-top: -50px;
+
+		  @media #{$medium-up} {
+		  	right: 3%;
+		  	margin-top: -75px;
+			}
+
+			@media #{$large-up} {
+				right: -70px;
+		  	margin-top: -80px;
+			}
+
 		}
 
 	}
 
 }
-
-
-
 
 /* preloading images */
 .corben-carousel .owl-item.loading {
 	min-height: 150px;
 	background: url(../images/AjaxLoader.gif) no-repeat center center
-}
-
-ul.pagination {
-	margin: 0;
-	
-	li {
-		color: #424242;
-		margin-left: 0;	
-		margin-bottom: 0;
-		
-		&.current a,
-		&.current a:hover {
-			background: #fff;
-			color: #000;
-			font-weight: 700;
-		}
-			
-	}
-	
-	li a {
-		color: #424242;
-		
-		&:hover {
-			color: #000;
-			background: #fff;
-		}
-	}
-	
 }
 
 
@@ -424,7 +493,7 @@ ul.pagination {
 }
 
 .team-item {
-	margin-bottom: rem-calc(24);
+	margin-bottom: $mrg-mobile;
 }
 
 .emp-name,
@@ -435,24 +504,41 @@ ul.pagination {
 
 .emp-name {
 	text-transform: uppercase;
-	margin: rem-calc(40 0 0 0);
+	margin: rem-calc(12 0 0 0);
 	line-height: 1.2;
+
+	@media #{$large-up} {
+		margin: rem-calc(36 0 2 0);
+	}
 }
 
 .emp-position {
-	color: #000;
+	color: $black-color;
 	font-weight: 400;
 	font-size: rem-calc(16);
+
+	@media #{$large-up} {
+		font-size: rem-calc(13);
+	}
 }
 
 .emp-job {
-	font-size: rem-calc(14);
+	font-size: $mobile-font-size;
 	line-height: 1.4;
 	margin: 0;
+
+	@media #{$large-up} {
+		font-size: $desktop-font-size;
+		line-height: 1.2;
+	}
 }
 
 .emp-bio {
-	margin: rem-calc(24 0 0 0)
+	margin: rem-calc(10 0 0 0);
+
+	@media #{$large-up} {
+		margin: rem-calc(20 0 0 0);
+	}
 }
 
 
