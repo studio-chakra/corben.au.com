@@ -19,11 +19,106 @@ html {
 	padding-bottom: 100px;
 }
 
-@media #{$large-up} {
+@media #{$xlarge-up} {
 	.inner-wrap-forarrows,
 	.footer-wrap-forarrows {
 		padding-left: 100px;
 		padding-right: 100px;
+	}
+}
+
+
+// Page
+.page-content,
+.awards-list {
+	@media #{$large-up} {
+		padding-right: rem-calc(30);
+	}
+}
+
+.page-img {
+	text-align: right;
+}
+
+
+.project-carousel {
+	position: relative;
+}
+
+
+
+.col-div {
+	background: url("../images/div.png") repeat-y -100px 40px;
+}
+
+
+
+
+.page-contact {
+	
+	.contact-details,
+	.contact-find,
+	.contact-us {
+			padding: rem-calc(30 0);
+	}
+
+	.contact-find,
+	.contact-us {
+		border-top: 1px solid $gray-color;
+	}
+
+
+	@media #{$medium-up} {
+		.contact-find {
+			border-top: none;
+		}
+	}
+
+	@media #{$large-up} {
+
+	}
+
+
+	@media #{$xlarge-up} {
+		.contact-us {
+			border-top: none;
+		}
+
+		.contact-details,
+		.contact-find,
+		.contact-us {
+				padding: rem-calc(0);
+				min-height: 260px;
+		}
+
+		.contact-details,
+		.contact-find {
+			background: url("../images/div.png") repeat-y right 20px;
+		}
+		.contact-find {
+			padding-right: 40px;
+		}
+
+	}
+	
+
+	@media #{$xxlarge-up} {
+		.contact-details,
+		.contact-find,
+		.contact-us {
+			min-height: 260px;
+			border-top: none;
+		}
+
+		.contact-details,
+		.contact-find {
+			background: url("../images/div.png") repeat-y right 40px;
+			margin-right: 40px;
+		}
+
+		.contact-find {
+			padding-right: 120px;
+		}
 	}
 
 }

@@ -52,37 +52,37 @@
 					<div class="row">
 						<div class="xlarge-12 columns">		  		  
 			  		  <!-- /* Nav(s) -->	
-			    		<nav class="tab-bar show-for-small">
-								<h1 class="logo-mobile"><a href="/dev/index"><span class="hidden">Corben Architects</span></a></h1>
+			    		<nav class="tab-bar hide-for-large-up">
+								<h1 class="logo-mobile"><a href="{{ siteUrl }}/dev/index"><span class="hidden">Corben Architects</span></a></h1>
 								<a class="right-off-canvas-toggle" href="#"><i class="fa fa-bars"></i> Menu</a>
 			    		</nav>
-			    		<nav class="top-bar hide-for-small" data-topbar>
-							  <h1 class="logo"><a href="/dev/index"><span class="hidden">Corben Architects</span></a></h1>
+			    		<nav class="top-bar show-for-large-up" data-topbar>
+							  <h1 class="logo"><a href="{{ siteUrl }}/dev/index"><span class="hidden">Corben Architects</span></a></h1>
 
 							  <section class="top-bar-section">
 							    <ul class="right">
 							      <li class="has-dropdown">
-							      	<a href="/dev/projects">Projects</a>
+							      	<a href="{{ siteUrl }}/dev/projects">Projects</a>
 							      	<!-- <ul class="dropdown">
-							          <li><a href="#">In Progress</a></li>
-							          <li><a href="#">Apartments</a></li>
-							          <li><a href="#">Commercial</a></li>
-							          <li><a href="#">Alterations &amp; Additions</a></li>
-							          <li><a href="#">New Houses</a></li>
+							          <li><a href="/dev/projects">In Progress</a></li>
+							          <li><a href="/dev/projects">Apartments</a></li>
+							          <li><a href="/dev/projects">Commercial</a></li>
+							          <li><a href="/dev/projects">Alterations &amp; Additions</a></li>
+							          <li><a href="/dev/projects">New Houses</a></li>
 							        </ul> -->
 							      </li>
 							      <li class="has-dropdown">
-							        <a href="/dev/about">Practice</a>
+							        <a href="/dev/page">Practice</a>
 							        <!-- <ul class="dropdown">
-							          <li><a href="#">Awards</a></li>
-							          <li><a href="#">Fees</a></li>
-							          <li><a href="#">Service</a></li>
-							          <li><a href="#">Architecture</a></li>
-							          <li><a href="#">About</a></li>
+							          <li><a href="/dev/awards">Awards</a></li>
+							          <li><a href="/dev/page">Fees</a></li>
+							          <li><a href="/dev/page">Service</a></li>
+							          <li><a href="/dev/page">Architecture</a></li>
+							          <li><a href="/dev/page">About</a></li>
 							        </ul> -->
 							      </li>
 										<li><a href="/dev/people">People</a></li>
-							      <li><a href="/dev/place">Place</a></li>
+							      <li><a href="/dev/contact">Place</a></li>
 							    </ul>
 							  </section>
 							</nav><!-- Nav(s) */ -->	
@@ -95,30 +95,30 @@
 	          	<li class="has-dropdown">
 	          		<a href="/dev/projects" class="is-active">Projects</a>
 								<ul>
-									<li><a href="#">In Progress</a></li>
-							    <li><a href="#">Apartments</a></li>
-							    <li><a href="#">Commercial</a></li>
-							    <li><a href="#" class="is-active">Alterations &amp; Additions</a></li>
-							    <li><a href="#">New Houses</a></li>
+									<li><a href="/dev/projects">In Progress</a></li>
+							    <li><a href="/dev/projects">Apartments</a></li>
+							    <li><a href="/dev/projects">Commercial</a></li>
+							    <li><a href="/dev/projects" class="is-active">Alterations &amp; Additions</a></li>
+							    <li><a href="/dev/projects">New Houses</a></li>
 								</ul>
 	          	</li>
 	          	<li>
-	          		<a href="#">Practice</a>
+	          		<a href="/dev/page">Practice</a>
 	          		<ul class="dropdown">
-							    <li><a href="#">Awards</a></li>
-							    <li><a href="#">Fees</a></li>
-							    <li><a href="#">Service</a></li>
-							    <li><a href="#">Architecture</a></li>
-							    <li><a href="/dev/about">About</a></li>
+							    <li><a href="/dev/awards">Awards</a></li>
+							    <li><a href="/dev/page">Fees</a></li>
+							    <li><a href="/dev/page">Service</a></li>
+							    <li><a href="/dev/page">Architecture</a></li>
+							    <li><a href="/dev/page">About</a></li>
 							  </ul>	
 	          	</li>
 	          	<li><a href="/dev/people">People</a></li>
-	          	<li><a href="/dev/place">Place</a></li>
+	          	<li><a href="/dev/contact">Place</a></li>
 	        	</ul>
 	    		</aside><!-- Off Canvas Menu */ -->
 
 					<!-- /* Main Content Block -->
-			    <main class="main" role="main">{% block content %}{% endblock %}</main>
+			    <main class="main main-content" role="main">{% block content %}{% endblock %}</main>
 					<!-- Main Block */ -->		
 								
 				</div><!-- Inner Wrap for Arrows */ -->	
@@ -150,8 +150,8 @@
 					      </ul>
 					      <ul class="footer-info-list">
 					        <li class="footer-info-item"><a href="/dev/styleguide">Style Guide</a></li>
-					        <li class="footer-info-item"><a href="#">Disclaimer</a></li>
-					        <li class="footer-info-item nowrap"><a href="#">Privacy Policy</a></li>
+					        <li class="footer-info-item"><a href="/dev/page">Disclaimer</a></li>
+					        <li class="footer-info-item nowrap"><a href="/dev/page">Privacy Policy</a></li>
 					        <li class="footer-info-copyright nowrap">&copy; <a href="#">{{ now.year }} Corben Architects</a></li>
 					        <li class="footer-info-hash nospace">/</li>
 					        <li class="footer-info-sitedesign nowrap">Site Design <a href="#">All Things Visual</a></li>

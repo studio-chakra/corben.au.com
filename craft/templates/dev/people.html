@@ -1,0 +1,35 @@
+{% extends "_layout-dev" %}
+
+{% block content %}
+
+<article class="page-team">
+	<div class="row">
+		<div class="large-12 columns">
+			<section class="team">
+				<ul class="team-grid">
+					{% for i in 0..4 %}
+				  <li class="team-item">
+				  	<div class="employee employee-director">
+					  	<img class="emp-photo" src="http://placehold.it/480x320" />
+							<h2 class="emp-name">First Last <small class="emp-position">Postition</small></h2>
+							<p class="emp-job">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+							<p class="emp-bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
+				  	</div>
+				  </li>
+				  {% endfor %}
+				  {% for i in 0..4 %}
+				  <li class="team-item">
+				  	<div class="employee employee-staff">
+					  	<img class="emp-photo" src="http://placehold.it/480x320" />
+							<h2 class="emp-name">First Last <small class="emp-position">Postition</small></h2>
+							<p class="emp-job">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+				  	</div>
+				  </li>
+				  {% endfor %}
+				</ul>
+			</section>
+		</div>
+	</div>
+</article>
+
+{% endblock %}

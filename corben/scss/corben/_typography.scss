@@ -13,12 +13,17 @@ a {
 
 h1	{ font-size: rem-calc(18); }
 h2	{ font-size: rem-calc(18); }
-h3	{ font-size: rem-calc(17); }
+h3	{ font-size: rem-calc(17); text-transform: uppercase; }
 h4	{ font-size: rem-calc(15); }
 h5	{ font-size: rem-calc(14); }
 h6	{ font-size: rem-calc(14); }
 
-@media #{$large-up} {
+// p, ul, dl, ol {
+// 	font-size: 14px;
+// 	line-height: $mobile-line-height;
+// }
+
+@media #{$xlarge-up} {
 	h1	{ font-size: rem-calc(15); }
 	h2	{ font-size: rem-calc(15); }
 	h3	{ font-size: rem-calc(14); }
@@ -39,6 +44,7 @@ li {
 
 
 .btn {
+	display: inline-block;
 	text-transform: uppercase;
 	color: $medgray-color;
 	
@@ -46,7 +52,7 @@ li {
 	font-size: $mobile-font-size;
 	line-height: 1;
 
-	@media #{$large-up} {
+	@media #{$xlarge-up} {
 		font-size: $desktop-font-size;
 	}
 	

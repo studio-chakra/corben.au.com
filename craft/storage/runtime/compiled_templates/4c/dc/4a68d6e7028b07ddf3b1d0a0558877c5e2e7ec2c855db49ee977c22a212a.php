@@ -29,37 +29,38 @@ class __TwigTemplate_4cdc4a68d6e7028b07ddf3b1d0a0558877c5e2e7ec2c855db49ee977c22
     {
         // line 4
         echo "
-<section class=\"section-projects\">
+<article class=\"page-projects\">
 \t<div class=\"row\">
 \t\t<div class=\"large-12 columns\">
-\t\t\t<h4 class=\"sg-label\">Project Grid</h4>
-\t\t\t<ul class=\"project-grid project-grid-hover\">
-\t\t\t\t";
+\t\t\t<section class=\"projects\">
+\t\t\t\t<ul class=\"project-grid project-grid-hover\">
+\t\t\t\t\t";
         // line 10
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable(range(0, 20));
+        $context['_seq'] = twig_ensure_traversable(range(0, 19));
         foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
             // line 11
-            echo "\t\t\t  <li class=\"project-grid-item\">
-\t\t\t  \t<a href=\"/dev/project\" class=\"project-thumb\">
-\t\t\t\t\t\t<figure>
-\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
-\t\t\t\t\t\t\t<figcaption>
-\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
-\t\t\t\t\t\t\t</figcaption>
-\t\t\t\t\t\t</figure>
-\t\t\t  \t</a>
-\t\t\t  </li>
-\t\t\t  ";
+            echo "\t\t\t\t  <li class=\"project-grid-item\">
+\t\t\t\t  \t<a href=\"/dev/project\" class=\"project-thumb\">
+\t\t\t\t\t\t\t<figure>
+\t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
+\t\t\t\t\t\t\t\t<figcaption>
+\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
+\t\t\t\t\t\t\t\t</figcaption>
+\t\t\t\t\t\t\t</figure>
+\t\t\t\t  \t</a>
+\t\t\t\t  </li>
+\t\t\t\t  ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 22
-        echo "\t\t\t</ul>
+        echo "\t\t\t\t</ul>
+\t\t\t</section>
 \t\t</div>
 \t</div>
-</div>
+</article>
 
 ";
     }

@@ -85,11 +85,11 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
 \t\t\t\t\t<div class=\"row\">
 \t\t\t\t\t\t<div class=\"xlarge-12 columns\">\t\t  \t\t  
 \t\t\t  \t\t  <!-- /* Nav(s) -->\t
-\t\t\t    \t\t<nav class=\"tab-bar show-for-small\">
+\t\t\t    \t\t<nav class=\"tab-bar hide-for-large-up\">
 \t\t\t\t\t\t\t\t<h1 class=\"logo-mobile\"><a href=\"/dev/index\"><span class=\"hidden\">Corben Architects</span></a></h1>
 \t\t\t\t\t\t\t\t<a class=\"right-off-canvas-toggle\" href=\"#\"><i class=\"fa fa-bars\"></i> Menu</a>
 \t\t\t    \t\t</nav>
-\t\t\t    \t\t<nav class=\"top-bar hide-for-small\" data-topbar>
+\t\t\t    \t\t<nav class=\"top-bar show-for-large-up\" data-topbar>
 \t\t\t\t\t\t\t  <h1 class=\"logo\"><a href=\"/dev/index\"><span class=\"hidden\">Corben Architects</span></a></h1>
 
 \t\t\t\t\t\t\t  <section class=\"top-bar-section\">
@@ -97,25 +97,25 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
 \t\t\t\t\t\t\t      <li class=\"has-dropdown\">
 \t\t\t\t\t\t\t      \t<a href=\"/dev/projects\">Projects</a>
 \t\t\t\t\t\t\t      \t<!-- <ul class=\"dropdown\">
-\t\t\t\t\t\t\t          <li><a href=\"#\">In Progress</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"#\">Apartments</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"#\">Commercial</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"#\">Alterations &amp; Additions</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"#\">New Houses</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"/dev/projects\">In Progress</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"/dev/projects\">Apartments</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"/dev/projects\">Commercial</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"/dev/projects\">Alterations &amp; Additions</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"/dev/projects\">New Houses</a></li>
 \t\t\t\t\t\t\t        </ul> -->
 \t\t\t\t\t\t\t      </li>
 \t\t\t\t\t\t\t      <li class=\"has-dropdown\">
-\t\t\t\t\t\t\t        <a href=\"/dev/about\">Practice</a>
+\t\t\t\t\t\t\t        <a href=\"/dev/page\">Practice</a>
 \t\t\t\t\t\t\t        <!-- <ul class=\"dropdown\">
-\t\t\t\t\t\t\t          <li><a href=\"#\">Awards</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"#\">Fees</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"#\">Service</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"#\">Architecture</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"#\">About</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"/dev/awards\">Awards</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"/dev/page\">Fees</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"/dev/page\">Service</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"/dev/page\">Architecture</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"/dev/page\">About</a></li>
 \t\t\t\t\t\t\t        </ul> -->
 \t\t\t\t\t\t\t      </li>
 \t\t\t\t\t\t\t\t\t\t<li><a href=\"/dev/people\">People</a></li>
-\t\t\t\t\t\t\t      <li><a href=\"/dev/place\">Place</a></li>
+\t\t\t\t\t\t\t      <li><a href=\"/dev/contact\">Place</a></li>
 \t\t\t\t\t\t\t    </ul>
 \t\t\t\t\t\t\t  </section>
 \t\t\t\t\t\t\t</nav><!-- Nav(s) */ -->\t
@@ -128,30 +128,30 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
 \t          \t<li class=\"has-dropdown\">
 \t          \t\t<a href=\"/dev/projects\" class=\"is-active\">Projects</a>
 \t\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t\t<li><a href=\"#\">In Progress</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"#\">Apartments</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"#\">Commercial</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"#\" class=\"is-active\">Alterations &amp; Additions</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"#\">New Houses</a></li>
+\t\t\t\t\t\t\t\t\t<li><a href=\"/dev/projects\">In Progress</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"/dev/projects\">Apartments</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"/dev/projects\">Commercial</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"/dev/projects\" class=\"is-active\">Alterations &amp; Additions</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"/dev/projects\">New Houses</a></li>
 \t\t\t\t\t\t\t\t</ul>
 \t          \t</li>
 \t          \t<li>
-\t          \t\t<a href=\"#\">Practice</a>
+\t          \t\t<a href=\"/dev/page\">Practice</a>
 \t          \t\t<ul class=\"dropdown\">
-\t\t\t\t\t\t\t    <li><a href=\"#\">Awards</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"#\">Fees</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"#\">Service</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"#\">Architecture</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"/dev/about\">About</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"/dev/awards\">Awards</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"/dev/page\">Fees</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"/dev/page\">Service</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"/dev/page\">Architecture</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"/dev/page\">About</a></li>
 \t\t\t\t\t\t\t  </ul>\t
 \t          \t</li>
 \t          \t<li><a href=\"/dev/people\">People</a></li>
-\t          \t<li><a href=\"/dev/place\">Place</a></li>
+\t          \t<li><a href=\"/dev/contact\">Place</a></li>
 \t        \t</ul>
 \t    \t\t</aside><!-- Off Canvas Menu */ -->
 
 \t\t\t\t\t<!-- /* Main Content Block -->
-\t\t\t    <main class=\"main\" role=\"main\">";
+\t\t\t    <main class=\"main main-content\" role=\"main\">";
         // line 121
         $this->displayBlock('content', $context, $blocks);
         echo "</main>

@@ -18,7 +18,7 @@
 	font-family: $alt-font;
 	font-size: rem-calc(13);
 
-	@media #{$medium-up} {	
+	@media #{$large-up} {	
 		margin: 18px 0 0 0;
 		font-size: $desktop-font-size;
 		float: right;
@@ -57,7 +57,7 @@
 	font-family: $alt-font;	
 	font-size: rem-calc(14);
 
-	@media #{$medium-up} {	
+	@media #{$large-up} {	
 		font-size: rem-calc(12);
 		float: left;
 	}
@@ -93,7 +93,7 @@
 	.fa-lg {
 		font-size: rem-calc(15);
 
-		@media #{$medium-up} {	
+		@media #{$large-up} {	
 			font-size: rem-calc(13);
 		}
 	}

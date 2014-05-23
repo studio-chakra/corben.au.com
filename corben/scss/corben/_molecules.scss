@@ -2,7 +2,7 @@
 // Molecules
 // --------------------------------------------------
 $mrg-mobile: rem-calc(24);
-$mrg-desktop: rem-calc(24);
+$mrg-desktop: rem-calc(20);
 
 
 //
@@ -12,9 +12,13 @@ $mrg-desktop: rem-calc(24);
 	display: block;
 	margin-bottom: $mrg-mobile;
 	color: $medgray-color;
+
+	@media #{$xlarge-up} {
+		margin-bottom: $mrg-desktop;
+	}
 	
 	&:hover,
-	&.is-active,
+	&.is-selected,
 	{
 		color: $black-color;
 		
@@ -42,9 +46,13 @@ $mrg-desktop: rem-calc(24);
 		margin-bottom: 0;
 	}
 
-	@media #{$large-up} {
+	@media #{$xlarge-up} {
 		margin-bottom: 0;
 	}
+}
+
+.btn-view-project {
+	margin-top: rem-calc(10);
 }
 
 
@@ -71,7 +79,7 @@ $mrg-desktop: rem-calc(24);
 
 .google-map {
   position: relative;
-  padding-bottom: 75%; // This is the aspect ratio
+  padding-bottom: 36%; // This is the aspect ratio
   height: 0;
   overflow: hidden;
 
@@ -80,9 +88,16 @@ $mrg-desktop: rem-calc(24);
     top: 0;
     left: 0;
     width: 100% !important;
-    //height: 100% !important;
+    height: 100% !important;
 	}
+
+	@media #{$large-up} {
+		margin-bottom: rem-calc(30);
+	}
+
 }
+
+
 
 
 
@@ -101,13 +116,13 @@ button,
 		background: $darkergray-color;
 	}
 
-	@media #{$large-up} {
+	@media #{$xlarge-up} {
 		font-size: $desktop-font-size;
 		padding: rem-calc(6 18);
 	}
 }
 
-@media #{$large-up} {
+@media #{$xlarge-up} {
 		label {
 			font-size: $desktop-font-size;
 		}
@@ -132,6 +147,10 @@ button,
 		}
 }
 
+.contact-find p:last-child {
+	margin-bottom: 0;
+}
+
 
 
 //
@@ -139,8 +158,14 @@ button,
 // --------------------------------------------------
 .project-title {
 	text-transform: uppercase;
-	margin: 0 0 $mrg-mobile 0;
+	//margin: 0 0 $mrg-mobile 0;
+	margin: rem-calc(0 0 10 0);
+	font-size: rem-calc(15);
 	line-height: 1.2;
+
+	@media #{$medium-up} {
+		font-size: rem-calc(15);
+	}
 	
 	.divider {
 		padding: rem-calc(0 4);
@@ -150,19 +175,34 @@ button,
 .project-client {
 	color: $black-color;
 	font-weight: $alt-font-reg;
-	font-size: rem-calc(18);
+	font-size: rem-calc(15);
 
-	@media #{$large-up} {
+	@media #{$medium-up} {
 		font-size: rem-calc(15);
 	}
 }
 
 .project-detail-item {
+	font-size: rem-calc(12);
 	line-height: 1.4;
+	margin-bottom: rem-calc(2);
 
-	@media #{$large-up} {
-		font-size: rem-calc(12);
-		margin-bottom: rem-calc(2);
+	@media #{$medium-up} {
+		//font-size: rem-calc(12);
+		//margin-bottom: rem-calc(2);
+	}
+}
+
+.btn-project-pdf {
+	font-size: inherit;
+}
+
+.project-description p {
+	font-size: rem-calc(12);
+
+	@media #{$medium-up} {
+		font-size: $desktop-font-size;
+		line-height: $desktop-line-height;
 	}
 }
 
@@ -173,7 +213,7 @@ ul.project-pagination,
 }
 
 ul.project-pagination {
-	@media #{$large-up} {
+	@media #{$xlarge-up} {
 		margin-top: rem-calc(3);
 	}
 }
@@ -187,25 +227,41 @@ ul.project-pagination {
 	font-size: rem-calc(20);
 	margin-right: rem-calc(8);
 
-	@media #{$large-up} {
+	@media #{$xlarge-up} {
 		font-size: rem-calc(16);
 	}
 }
 
 .project-navbar {
+	text-align: center;
 	margin: rem-calc(6 0 0 10);
 	z-index: 200;
+
+	@media #{$large-up} {		
+		text-align: left;
+	}
 }
 
 .project-panel {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	padding: rem-calc(26 0 0 38);
+	display: none;
+	
+	width: 100%;	
+	padding: rem-calc(26 0 0 0);
 
 	background: #fff;
-	border-bottom: 1px solid #e5e5e5;
+
+	@media #{$large-up} {		
+		position: absolute;
+		left: 0;
+		bottom: 30px;
+
+		padding: rem-calc(26 10 0 42);
+		font-size: rem-calc(16);
+	}
+
+	@media #{$xlarge-up} {	
+		padding-left: rem-calc(38);
+	}	
 
 }
 
@@ -342,15 +398,19 @@ ul.project-pagination {
 
 	margin-top: 10px;
 	text-align: center;
-	display: inline-block;
-	float: right;
+
+	@media #{$large-up} {
+		display: block;
+		float: right;
+		text-align: right;
+	}
 	
 	.owl-pagination {
-		text-align: right;
+		text-align: center;
 		font-size: rem-calc(14);
 		padding-right: 2px;
 
-		@media #{$large-up} {
+		@media #{$xlarge-up} {
 			font-size: rem-calc(11);
 		}
 	}
@@ -414,11 +474,11 @@ ul.project-pagination {
 				filter: Alpha(Opacity=100); /*IE7 fix*/
 				opacity: 1;
 
-				@media #{$medium-up} {
+				@media #{$large-up} {
 					font-size: 120px;
 				}
 
-				@media #{$large-up} {
+				@media #{$xlarge-up} {
 					font-size: 140px;
 				}
 
@@ -438,12 +498,12 @@ ul.project-pagination {
 		  top: 50%; 
 		  margin-top: -50px;
 
-		  @media #{$medium-up} {
+		  @media #{$large-up} {
 		  	left: 3%;
 		  	margin-top: -75px;
 			}
 
-		  @media #{$large-up} {
+		  @media #{$xlarge-up} {
 				left: -70px;
 		  	margin-top: -80px;
 			}
@@ -454,12 +514,12 @@ ul.project-pagination {
 		  top: 50%;
 		  margin-top: -50px;
 
-		  @media #{$medium-up} {
+		  @media #{$large-up} {
 		  	right: 3%;
 		  	margin-top: -75px;
 			}
 
-			@media #{$large-up} {
+			@media #{$xlarge-up} {
 				right: -70px;
 		  	margin-top: -80px;
 			}
@@ -529,8 +589,8 @@ ul.project-pagination {
 	margin: rem-calc(12 0 0 0);
 	line-height: 1.2;
 
-	@media #{$large-up} {
-		margin: rem-calc(36 0 2 0);
+	@media #{$xlarge-up} {
+		margin: rem-calc(30 0 2 0);
 	}
 }
 
@@ -539,7 +599,7 @@ ul.project-pagination {
 	font-weight: 400;
 	font-size: rem-calc(16);
 
-	@media #{$large-up} {
+	@media #{$xlarge-up} {
 		font-size: rem-calc(13);
 	}
 }
@@ -549,7 +609,7 @@ ul.project-pagination {
 	line-height: 1.4;
 	margin: 0;
 
-	@media #{$large-up} {
+	@media #{$xlarge-up} {
 		font-size: $desktop-font-size;
 		line-height: 1.2;
 	}
@@ -558,7 +618,7 @@ ul.project-pagination {
 .emp-bio {
 	margin: rem-calc(10 0 0 0);
 
-	@media #{$large-up} {
+	@media #{$xlarge-up} {
 		margin: rem-calc(20 0 0 0);
 	}
 }
