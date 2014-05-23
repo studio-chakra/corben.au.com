@@ -86,36 +86,84 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
 \t\t\t\t\t\t<div class=\"xlarge-12 columns\">\t\t  \t\t  
 \t\t\t  \t\t  <!-- /* Nav(s) -->\t
 \t\t\t    \t\t<nav class=\"tab-bar hide-for-large-up\">
-\t\t\t\t\t\t\t\t<h1 class=\"logo-mobile\"><a href=\"/dev/index\"><span class=\"hidden\">Corben Architects</span></a></h1>
+\t\t\t\t\t\t\t\t<h1 class=\"logo-mobile\"><a href=\"";
+        // line 56
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/index\"><span class=\"hidden\">Corben Architects</span></a></h1>
 \t\t\t\t\t\t\t\t<a class=\"right-off-canvas-toggle\" href=\"#\"><i class=\"fa fa-bars\"></i> Menu</a>
 \t\t\t    \t\t</nav>
 \t\t\t    \t\t<nav class=\"top-bar show-for-large-up\" data-topbar>
-\t\t\t\t\t\t\t  <h1 class=\"logo\"><a href=\"/dev/index\"><span class=\"hidden\">Corben Architects</span></a></h1>
+\t\t\t\t\t\t\t  <h1 class=\"logo\"><a href=\"";
+        // line 60
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/index\"><span class=\"hidden\">Corben Architects</span></a></h1>
 
 \t\t\t\t\t\t\t  <section class=\"top-bar-section\">
 \t\t\t\t\t\t\t    <ul class=\"right\">
 \t\t\t\t\t\t\t      <li class=\"has-dropdown\">
-\t\t\t\t\t\t\t      \t<a href=\"/dev/projects\">Projects</a>
+\t\t\t\t\t\t\t      \t<a href=\"";
+        // line 65
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\">Projects</a>
 \t\t\t\t\t\t\t      \t<!-- <ul class=\"dropdown\">
-\t\t\t\t\t\t\t          <li><a href=\"/dev/projects\">In Progress</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"/dev/projects\">Apartments</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"/dev/projects\">Commercial</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"/dev/projects\">Alterations &amp; Additions</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"/dev/projects\">New Houses</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"";
+        // line 67
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\">In Progress</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"";
+        // line 68
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\">Apartments</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"";
+        // line 69
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\">Commercial</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"";
+        // line 70
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\">Alterations &amp; Additions</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"";
+        // line 71
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\">New Houses</a></li>
 \t\t\t\t\t\t\t        </ul> -->
 \t\t\t\t\t\t\t      </li>
 \t\t\t\t\t\t\t      <li class=\"has-dropdown\">
-\t\t\t\t\t\t\t        <a href=\"/dev/page\">Practice</a>
+\t\t\t\t\t\t\t        <a href=\"";
+        // line 75
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/page\">Practice</a>
 \t\t\t\t\t\t\t        <!-- <ul class=\"dropdown\">
-\t\t\t\t\t\t\t          <li><a href=\"/dev/awards\">Awards</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"/dev/page\">Fees</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"/dev/page\">Service</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"/dev/page\">Architecture</a></li>
-\t\t\t\t\t\t\t          <li><a href=\"/dev/page\">About</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"";
+        // line 77
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/awards\">Awards</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"";
+        // line 78
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/page\">Fees</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"";
+        // line 79
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/page\">Service</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"";
+        // line 80
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/page\">Architecture</a></li>
+\t\t\t\t\t\t\t          <li><a href=\"";
+        // line 81
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/page\">About</a></li>
 \t\t\t\t\t\t\t        </ul> -->
 \t\t\t\t\t\t\t      </li>
-\t\t\t\t\t\t\t\t\t\t<li><a href=\"/dev/people\">People</a></li>
-\t\t\t\t\t\t\t      <li><a href=\"/dev/contact\">Place</a></li>
+\t\t\t\t\t\t\t\t\t\t<li><a href=\"";
+        // line 84
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/people\">People</a></li>
+\t\t\t\t\t\t\t      <li><a href=\"";
+        // line 85
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/contact\">Place</a></li>
 \t\t\t\t\t\t\t    </ul>
 \t\t\t\t\t\t\t  </section>
 \t\t\t\t\t\t\t</nav><!-- Nav(s) */ -->\t
@@ -126,27 +174,69 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
 \t    \t\t<aside class=\"right-off-canvas-menu\">
 \t        \t<ul class=\"off-canvas-menu\">
 \t          \t<li class=\"has-dropdown\">
-\t          \t\t<a href=\"/dev/projects\" class=\"is-active\">Projects</a>
+\t          \t\t<a href=\"";
+        // line 96
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\" class=\"is-active\">Projects</a>
 \t\t\t\t\t\t\t\t<ul>
-\t\t\t\t\t\t\t\t\t<li><a href=\"/dev/projects\">In Progress</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"/dev/projects\">Apartments</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"/dev/projects\">Commercial</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"/dev/projects\" class=\"is-active\">Alterations &amp; Additions</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"/dev/projects\">New Houses</a></li>
+\t\t\t\t\t\t\t\t\t<li><a href=\"";
+        // line 98
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\">In Progress</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"";
+        // line 99
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\">Apartments</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"";
+        // line 100
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\">Commercial</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"";
+        // line 101
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\" class=\"is-active\">Alterations &amp; Additions</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"";
+        // line 102
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\">New Houses</a></li>
 \t\t\t\t\t\t\t\t</ul>
 \t          \t</li>
 \t          \t<li>
-\t          \t\t<a href=\"/dev/page\">Practice</a>
+\t          \t\t<a href=\"";
+        // line 106
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/page\">Practice</a>
 \t          \t\t<ul class=\"dropdown\">
-\t\t\t\t\t\t\t    <li><a href=\"/dev/awards\">Awards</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"/dev/page\">Fees</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"/dev/page\">Service</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"/dev/page\">Architecture</a></li>
-\t\t\t\t\t\t\t    <li><a href=\"/dev/page\">About</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"";
+        // line 108
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/awards\">Awards</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"";
+        // line 109
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/page\">Fees</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"";
+        // line 110
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/page\">Service</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"";
+        // line 111
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/page\">Architecture</a></li>
+\t\t\t\t\t\t\t    <li><a href=\"";
+        // line 112
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/page\">About</a></li>
 \t\t\t\t\t\t\t  </ul>\t
 \t          \t</li>
-\t          \t<li><a href=\"/dev/people\">People</a></li>
-\t          \t<li><a href=\"/dev/contact\">Place</a></li>
+\t          \t<li><a href=\"";
+        // line 115
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/people\">People</a></li>
+\t          \t<li><a href=\"";
+        // line 116
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/contact\">Place</a></li>
 \t        \t</ul>
 \t    \t\t</aside><!-- Off Canvas Menu */ -->
 
@@ -185,9 +275,18 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
 \t\t\t\t\t        <li classs=\"footer-nav-item\"><a href=\"#\">News</a></li>
 \t\t\t\t\t      </ul>
 \t\t\t\t\t      <ul class=\"footer-info-list\">
-\t\t\t\t\t        <li class=\"footer-info-item\"><a href=\"/dev/styleguide\">Style Guide</a></li>
-\t\t\t\t\t        <li class=\"footer-info-item\"><a href=\"#\">Disclaimer</a></li>
-\t\t\t\t\t        <li class=\"footer-info-item nowrap\"><a href=\"#\">Privacy Policy</a></li>
+\t\t\t\t\t        <li class=\"footer-info-item\"><a href=\"";
+        // line 152
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/styleguide\">Style Guide</a></li>
+\t\t\t\t\t        <li class=\"footer-info-item\"><a href=\"";
+        // line 153
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/page\">Disclaimer</a></li>
+\t\t\t\t\t        <li class=\"footer-info-item nowrap\"><a href=\"";
+        // line 154
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/page\">Privacy Policy</a></li>
 \t\t\t\t\t        <li class=\"footer-info-copyright nowrap\">&copy; <a href=\"#\">";
         // line 155
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["now"]) ? $context["now"] : $this->getContext($context, "now")), "year"), "html", null, true);
@@ -241,6 +340,6 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
 
     public function getDebugInfo()
     {
-        return array (  228 => 121,  223 => 23,  193 => 155,  156 => 121,  57 => 24,  55 => 23,  44 => 15,  36 => 14,  21 => 1,);
+        return array (  327 => 121,  322 => 23,  292 => 155,  288 => 154,  284 => 153,  280 => 152,  246 => 121,  238 => 116,  234 => 115,  228 => 112,  224 => 111,  220 => 110,  216 => 109,  212 => 108,  207 => 106,  200 => 102,  196 => 101,  192 => 100,  188 => 99,  184 => 98,  179 => 96,  165 => 85,  161 => 84,  155 => 81,  151 => 80,  147 => 79,  143 => 78,  139 => 77,  134 => 75,  127 => 71,  123 => 70,  119 => 69,  115 => 68,  111 => 67,  106 => 65,  98 => 60,  91 => 56,  57 => 24,  55 => 23,  44 => 15,  36 => 14,  21 => 1,  62 => 22,  46 => 12,  43 => 11,  39 => 10,  31 => 4,  28 => 3,);
     }
 }

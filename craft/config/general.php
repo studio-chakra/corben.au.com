@@ -29,7 +29,7 @@ return array(
         'cooldownDuration' => 0,
 
         'environmentVariables' => array(
-            'siteUrl'        => 'http://staging.studiochakra.com/corben/corben',
+            'siteUrl'        => 'http://staging.studiochakra.com/corben/corben/',
             'fileSystemPath' => '/home/ryanbeli/public_html/studiochakra-staging/corben/corben/images/',
         ),
     ),

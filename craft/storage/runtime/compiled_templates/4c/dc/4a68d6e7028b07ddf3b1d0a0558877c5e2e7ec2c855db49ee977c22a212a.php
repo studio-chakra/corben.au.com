@@ -41,7 +41,10 @@ class __TwigTemplate_4cdc4a68d6e7028b07ddf3b1d0a0558877c5e2e7ec2c855db49ee977c22
         foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
             // line 11
             echo "\t\t\t\t  <li class=\"project-grid-item\">
-\t\t\t\t  \t<a href=\"/dev/project\" class=\"project-thumb\">
+\t\t\t\t  \t<a href=\"";
+            // line 12
+            echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+            echo "dev/project\" class=\"project-thumb\">
 \t\t\t\t\t\t\t<figure>
 \t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
 \t\t\t\t\t\t\t\t<figcaption>
@@ -77,6 +80,6 @@ class __TwigTemplate_4cdc4a68d6e7028b07ddf3b1d0a0558877c5e2e7ec2c855db49ee977c22
 
     public function getDebugInfo()
     {
-        return array (  59 => 22,  43 => 11,  39 => 10,  31 => 4,  28 => 3,);
+        return array (  62 => 22,  46 => 12,  43 => 11,  39 => 10,  31 => 4,  28 => 3,);
     }
 }
