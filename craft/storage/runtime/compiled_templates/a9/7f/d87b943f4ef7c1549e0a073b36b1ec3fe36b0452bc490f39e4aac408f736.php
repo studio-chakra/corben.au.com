@@ -29,18 +29,19 @@ class __TwigTemplate_a97fd87b943f4ef7c1549e0a073b36b1ec3fe36b0452bc490f39e4aac40
     {
         // line 4
         echo " 
-<!-- /* Home Carousel -->
-<section class=\"section-carousel\">
+<article class=\"page-home\">
 \t<div class=\"row\">
-\t  <div class=\"xlarge-12 columns\">  \t
-\t\t\t<div id=\"home-carousel\" class=\"owl-carousel corben-carousel\"> 
-\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"http://placehold.it/1470x830\" alt=\"Slide One\" /></div>
-\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"http://placehold.it/1470x830\" alt=\"Slide Two\" /></div>
-\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"http://placehold.it/1470x830\" alt=\"Slide Three\" /></div>
-\t\t\t</div>\t\t
+\t  <div class=\"xlarge-12 columns\">  
+\t  \t<section class=\"project-carousel\">
+\t\t  \t\t<div id=\"home-carousel\" class=\"owl-carousel corben-carousel\"> 
+\t\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"http://placehold.it/1470x830\" alt=\"Slide One\" /></div>
+\t\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"http://placehold.it/1470x830\" alt=\"Slide Two\" /></div>
+\t\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"http://placehold.it/1470x830\" alt=\"Slide Three\" /></div>
+\t\t\t\t</div>
+\t  \t</section>\t\t\t\t\t\t
 \t  </div>
 \t</div>
-</section><!-- Home Carousel */ -->
+</section>
 
 ";
     }

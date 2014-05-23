@@ -625,3 +625,44 @@ ul.project-pagination {
 
 
 
+//
+// Posts
+// --------------------------------------------------
+.post {
+	margin-bottom: $mrg-mobile*2;
+	padding-bottom: $mrg-mobile*2;
+	border-bottom: 1px solid #e5e5e5;
+
+	&:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
+
+}
+
+.post-media,
+.post-header {
+	margin: 0 0 $mrg-mobile 0;
+}
+
+.post-title {
+	margin-bottom: rem-calc(2);	
+	a {
+		color: $darkgray-color;
+		&:hover {
+			color: $black-color;
+		}
+	}
+}
+
+.post-meta {
+	margin-bottom: 0;
+	color: $medgray-color;
+}
+
+
