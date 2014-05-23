@@ -156,6 +156,44 @@ button,
 //
 // Project
 // --------------------------------------------------
+.project-panel {
+	display: none;
+	position: relative;
+	
+	width: 100%;	
+	padding: rem-calc(56 0 0 0);
+	text-align: center;
+	background: #fff;
+
+	@media #{$medium-up} {	
+		text-align: left;
+	}
+	
+	@media #{$large-up} {		
+		position: absolute;
+		left: 0;
+		bottom: 30px;
+
+		padding: rem-calc(26 10 0 42);
+		font-size: rem-calc(16);
+	}
+
+	@media #{$xlarge-up} {	
+		padding-left: rem-calc(38);
+	}	
+
+}
+
+.close-panel {
+	display: block;
+	position: absolute;
+	top: rem-calc(6);
+	left: 50%;
+	margin-left: rem-calc(-18);
+	font-size: rem-calc(18);
+	color: $gray-color;
+}
+
 .project-title {
 	text-transform: uppercase;
 	//margin: 0 0 $mrg-mobile 0;
@@ -242,28 +280,7 @@ ul.project-pagination {
 	}
 }
 
-.project-panel {
-	display: none;
-	
-	width: 100%;	
-	padding: rem-calc(26 0 0 0);
 
-	background: #fff;
-
-	@media #{$large-up} {		
-		position: absolute;
-		left: 0;
-		bottom: 30px;
-
-		padding: rem-calc(26 10 0 42);
-		font-size: rem-calc(16);
-	}
-
-	@media #{$xlarge-up} {	
-		padding-left: rem-calc(38);
-	}	
-
-}
 
 
 //

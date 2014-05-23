@@ -66,6 +66,7 @@ class __TwigTemplate_110541359eade3219d208482c020b160441f2cc49061ef0abbc408c4b20
 \t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
+\t\t\t\t\t<a href=\"\" class=\"close-panel\" id=\"btn-close-panel\"><i class=\"fa fa-angle-double-down fa-3x\"></i></a>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"project-navbar\">
 \t\t\t\t\t<a href=\"\" class=\"btn btn-proj-gallery\"><i class=\"fa fa-th\"></i></a>

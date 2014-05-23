@@ -38,10 +38,14 @@ $(document).ready(function() {
   });
  
   $('#btn-proj-overview').click(function() {
-    // $('.project-panel').toggle();
     $('.project-panel').toggle();
     return false;
-});
+  });
+
+  $('#btn-close-panel').click(function() {
+    $('.project-panel').toggle();
+    return false;
+  });
 
 
 });

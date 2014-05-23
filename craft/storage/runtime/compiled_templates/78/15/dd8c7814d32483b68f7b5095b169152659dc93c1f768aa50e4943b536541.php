@@ -237,12 +237,16 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
         // line 116
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
         echo "dev/contact\">Place</a></li>
+\t          \t<li><a href=\"";
+        // line 117
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/news\">News</a></li>
 \t        \t</ul>
 \t    \t\t</aside><!-- Off Canvas Menu */ -->
 
 \t\t\t\t\t<!-- /* Main Content Block -->
 \t\t\t    <main class=\"main main-content\" role=\"main\">";
-        // line 121
+        // line 122
         $this->displayBlock('content', $context, $blocks);
         echo "</main>
 \t\t\t\t\t<!-- Main Block */ -->\t\t
@@ -273,25 +277,25 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
 \t\t\t\t\t        \t</a>
 \t\t\t\t\t        </li>
 \t\t\t\t\t        <li classs=\"footer-nav-item\"><a href=\"";
-        // line 149
+        // line 150
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
         echo "dev/news\">News</a></li>
 \t\t\t\t\t      </ul>
 \t\t\t\t\t      <ul class=\"footer-info-list\">
 \t\t\t\t\t        <li class=\"footer-info-item\"><a href=\"";
-        // line 152
+        // line 153
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
         echo "dev/styleguide\">Style Guide</a></li>
 \t\t\t\t\t        <li class=\"footer-info-item\"><a href=\"";
-        // line 153
+        // line 154
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
         echo "dev/page\">Disclaimer</a></li>
 \t\t\t\t\t        <li class=\"footer-info-item nowrap\"><a href=\"";
-        // line 154
+        // line 155
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
         echo "dev/page\">Privacy Policy</a></li>
 \t\t\t\t\t        <li class=\"footer-info-copyright nowrap\">&copy; <a href=\"#\">";
-        // line 155
+        // line 156
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["now"]) ? $context["now"] : $this->getContext($context, "now")), "year"), "html", null, true);
         echo " Corben Architects</a></li>
 \t\t\t\t\t        <li class=\"footer-info-hash nospace\">/</li>
@@ -326,7 +330,7 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
     {
     }
 
-    // line 121
+    // line 122
     public function block_content($context, array $blocks = array())
     {
     }
@@ -343,6 +347,6 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
 
     public function getDebugInfo()
     {
-        return array (  330 => 121,  325 => 23,  295 => 155,  291 => 154,  287 => 153,  283 => 152,  277 => 149,  246 => 121,  238 => 116,  234 => 115,  228 => 112,  224 => 111,  220 => 110,  216 => 109,  212 => 108,  207 => 106,  200 => 102,  196 => 101,  192 => 100,  188 => 99,  184 => 98,  179 => 96,  165 => 85,  161 => 84,  155 => 81,  151 => 80,  147 => 79,  143 => 78,  139 => 77,  134 => 75,  127 => 71,  123 => 70,  119 => 69,  115 => 68,  111 => 67,  106 => 65,  98 => 60,  91 => 56,  57 => 24,  55 => 23,  44 => 15,  36 => 14,  21 => 1,);
+        return array (  334 => 122,  329 => 23,  299 => 156,  295 => 155,  291 => 154,  287 => 153,  281 => 150,  250 => 122,  242 => 117,  238 => 116,  234 => 115,  228 => 112,  224 => 111,  220 => 110,  216 => 109,  212 => 108,  207 => 106,  200 => 102,  196 => 101,  192 => 100,  188 => 99,  184 => 98,  179 => 96,  165 => 85,  161 => 84,  155 => 81,  151 => 80,  147 => 79,  143 => 78,  139 => 77,  134 => 75,  127 => 71,  123 => 70,  119 => 69,  115 => 68,  111 => 67,  106 => 65,  98 => 60,  91 => 56,  57 => 24,  55 => 23,  44 => 15,  36 => 14,  21 => 1,);
     }
 }
