@@ -33,21 +33,21 @@ class __TwigTemplate_3f6efda4f989b0713e2d8bc1a483dc53ff6e2479bf00934d31f3f45664f
 \t<div class=\"row\">
 \t\t<div class=\"xlarge-4 large-6 columns\">
 \t\t\t<section class=\"awards\">\t
-\t\t\t\t<a class=\"award-block\">
+\t\t\t\t<a href=\"\" class=\"award-block\">
 \t\t\t\t\t<h6 class=\"award-title\">Avery-Wright House</h6>
 \t\t\t\t\t<p class=\"award-subtitle\">Carrington Avenue Mosman</p>
 \t\t\t\t\t<ul class=\"no-bullet award-notions-list\">
 \t\t\t\t\t\t<li class=\"award-notion\">Commendation Mosman Good Design Awards 2011</li>
 \t\t\t\t\t</ul>
 \t\t\t\t</a>\t\t\t
-\t\t\t\t<a class=\"award-block is-selected\">
+\t\t\t\t<a href=\"\" class=\"award-block is-selected\">
 \t\t\t\t\t<h6 class=\"award-title\">Avery-Wright House (Selected)</h6>
 \t\t\t\t\t<p class=\"award-subtitle\">Carrington Avenue Mosman</p>
 \t\t\t\t\t<ul class=\"no-bullet award-notions-list\">
 \t\t\t\t\t\t<li class=\"award-notion\">Commendation Mosman Good Design Awards 2011</li>
 \t\t\t\t\t</ul>
 \t\t\t\t</a>
-\t\t\t\t<a class=\"award-block\">
+\t\t\t\t<a href=\"\" class=\"award-block\">
 \t\t\t\t\t<h6 class=\"award-title\">Avery-Wright House</h6>
 \t\t\t\t\t<p class=\"award-subtitle\">Carrington Avenue Mosman</p>
 \t\t\t\t\t<ul class=\"no-bullet award-notions-list\">
@@ -61,7 +61,10 @@ class __TwigTemplate_3f6efda4f989b0713e2d8bc1a483dc53ff6e2479bf00934d31f3f45664f
 \t\t<div class=\"xlarge-8 large-6 columns\">
 \t\t\t<section class=\"page-img show-for-large-up\">
 \t\t\t\t<img src=\"http://placehold.it/1050x700\" class=\"award-image\" />
-\t\t\t\t<a href=\"#\" class=\"btn btn-link btn-view-project\">View Project</a>
+\t\t\t\t<a href=\"";
+        // line 37
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/project\" class=\"btn btn-link btn-view-project\">View Project</a>
 \t\t\t</section>
 \t\t</div>
 \t</div>
@@ -82,6 +85,6 @@ class __TwigTemplate_3f6efda4f989b0713e2d8bc1a483dc53ff6e2479bf00934d31f3f45664f
 
     public function getDebugInfo()
     {
-        return array (  31 => 4,  28 => 3,);
+        return array (  66 => 37,  31 => 4,  28 => 3,);
     }
 }

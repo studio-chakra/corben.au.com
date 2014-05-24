@@ -22,6 +22,22 @@
 	line-height: 1;
 }
 
+.top-bar-section .dropdown {
+	top: auto;
+	bottom: 100%;
+	text-align: right;
+	li {
+		margin: 0;		
+		a {
+			background: none !important;
+			padding: 0 !important;
+		}
+	}
+}
+
+.top-bar-section a.is-active {
+	color: $black-color !important;
+}
 
 // Mobile Nav
 .tab-bar {

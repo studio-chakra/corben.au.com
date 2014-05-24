@@ -104,8 +104,8 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
 \t\t\t\t\t\t\t      \t<a href=\"";
         // line 65
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "dev/projects\">Projects</a>
-\t\t\t\t\t\t\t      \t<!-- <ul class=\"dropdown\">
+        echo "dev/projects\" class=\"is-active\">Projects</a>
+\t\t\t\t\t\t\t      \t<ul class=\"dropdown\">
 \t\t\t\t\t\t\t          <li><a href=\"";
         // line 67
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
@@ -113,7 +113,7 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
 \t\t\t\t\t\t\t          <li><a href=\"";
         // line 68
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "dev/projects\">Apartments</a></li>
+        echo "dev/projects\" class=\"is-active\">Apartments</a></li>
 \t\t\t\t\t\t\t          <li><a href=\"";
         // line 69
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
@@ -126,14 +126,14 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
         // line 71
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
         echo "dev/projects\">New Houses</a></li>
-\t\t\t\t\t\t\t        </ul> -->
+\t\t\t\t\t\t\t        </ul>
 \t\t\t\t\t\t\t      </li>
 \t\t\t\t\t\t\t      <li class=\"has-dropdown\">
 \t\t\t\t\t\t\t        <a href=\"";
         // line 75
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
         echo "dev/page\">Practice</a>
-\t\t\t\t\t\t\t        <!-- <ul class=\"dropdown\">
+\t\t\t\t\t\t\t        <ul class=\"dropdown\">
 \t\t\t\t\t\t\t          <li><a href=\"";
         // line 77
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
@@ -154,7 +154,7 @@ class __TwigTemplate_7815dd8c7814d32483b68f7b5095b169152659dc93c1f768aa50e4943b5
         // line 81
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
         echo "dev/page\">About</a></li>
-\t\t\t\t\t\t\t        </ul> -->
+\t\t\t\t\t\t\t        </ul>
 \t\t\t\t\t\t\t      </li>
 \t\t\t\t\t\t\t\t\t\t<li><a href=\"";
         // line 84

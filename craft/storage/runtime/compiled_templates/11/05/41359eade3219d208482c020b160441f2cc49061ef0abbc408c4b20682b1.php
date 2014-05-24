@@ -69,7 +69,10 @@ class __TwigTemplate_110541359eade3219d208482c020b160441f2cc49061ef0abbc408c4b20
 \t\t\t\t\t<a href=\"\" class=\"close-panel\" id=\"btn-close-panel\"><i class=\"fa fa-angle-double-down fa-3x\"></i></a>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"project-navbar\">
-\t\t\t\t\t<a href=\"\" class=\"btn btn-proj-gallery\"><i class=\"fa fa-th\"></i></a>
+\t\t\t\t\t<a href=\"";
+        // line 35
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "dev/projects\" class=\"btn btn-proj-gallery\"><i class=\"fa fa-th\"></i></a>
 \t\t\t\t\t<a href=\"\" class=\"btn btn-proj-overview\" id=\"btn-proj-overview\">Project Overview</a>
 \t\t\t\t</div>\t\t\t\t\t
 \t\t\t</section>
@@ -92,6 +95,6 @@ class __TwigTemplate_110541359eade3219d208482c020b160441f2cc49061ef0abbc408c4b20
 
     public function getDebugInfo()
     {
-        return array (  52 => 15,  43 => 11,  39 => 10,  31 => 4,  28 => 3,);
+        return array (  74 => 35,  52 => 15,  43 => 11,  39 => 10,  31 => 4,  28 => 3,);
     }
 }
