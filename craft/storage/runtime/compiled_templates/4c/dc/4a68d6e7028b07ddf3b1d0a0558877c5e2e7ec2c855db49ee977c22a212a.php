@@ -48,7 +48,7 @@ class __TwigTemplate_4cdc4a68d6e7028b07ddf3b1d0a0558877c5e2e7ec2c855db49ee977c22
 \t\t\t\t\t\t\t<figure>
 \t\t\t\t\t\t\t\t<img class=\"project-thumb-img\" src=\"http://placehold.it/480x320\" />
 \t\t\t\t\t\t\t\t<figcaption>
-\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-client\">| Client</span></h6>
+\t\t\t\t\t\t\t\t\t<h6 class=\"project-thumb-title\">Project Name <span class=\"project-thumb-suburb\">| Suburb</span></h6>
 \t\t\t\t\t\t\t\t</figcaption>
 \t\t\t\t\t\t\t</figure>
 \t\t\t\t  \t</a>

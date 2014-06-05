@@ -189,9 +189,18 @@ button,
 	position: absolute;
 	top: rem-calc(6);
 	left: 50%;
-	margin-left: rem-calc(-18);
-	font-size: rem-calc(18);
+	margin-left: rem-calc(-12);
+	// font-size: rem-calc(18);
 	color: $gray-color;
+
+	img {
+		width: 40px;
+	}
+
+	&:hover {
+		opacity: .5;
+	}
+
 }
 
 .project-title {
@@ -210,7 +219,7 @@ button,
 	}
 }
 
-.project-client {
+.project-suburb {
 	color: $black-color;
 	font-weight: $alt-font-reg;
 	font-size: rem-calc(15);
@@ -355,7 +364,7 @@ ul.project-pagination {
 	line-height: 1.2;
 }
 
-.project-grid .project-thumb-client {
+.project-grid .project-thumb-suburb {
 	font-weight: 400;
 }
 
@@ -484,19 +493,23 @@ ul.project-pagination {
 				*display: inline; /*IE7 life-saver */
 				margin: 0;
 				padding: 0;
-				font-size: 70px;
+				// font-size: 70px;
 				-webkit-border-radius: 0;
 				-moz-border-radius: 0;
 				border-radius: 0;
 				filter: Alpha(Opacity=100); /*IE7 fix*/
-				opacity: 1;
+				opacity: 1;				
 
-				@media #{$large-up} {
-					font-size: 120px;
-				}
+				img {
+					width: 25px;
 
-				@media #{$xlarge-up} {
-					font-size: 140px;
+					@media #{$large-up} {
+						width: 35px;
+					}
+
+					@media #{$xlarge-up} {
+						width: 50px;
+					}
 				}
 
 			}
@@ -504,8 +517,8 @@ ul.project-pagination {
 			/* Clickable class fix problem with hover on touch devices */
 			/* Use it for non-touch hover action */
 			div:hover {
-				filter: Alpha(Opacity=100);/*IE7 fix*/
-				opacity: 1;
+				filter: Alpha(Opacity=50);/*IE7 fix*/
+				opacity: .5;
 				text-decoration: none;
 				color: $darkergray-color;
 			}
@@ -513,32 +526,32 @@ ul.project-pagination {
   	.owl-prev {
 		  left: 5%;
 		  top: 50%; 
-		  margin-top: -50px;
+		  margin-top: -40px;
 
 		  @media #{$large-up} {
 		  	left: 3%;
-		  	margin-top: -75px;
+		  	margin-top: -35px;
 			}
 
 		  @media #{$xlarge-up} {
 				left: -70px;
-		  	margin-top: -80px;
+		  	margin-top: -56px;
 			}
 		}
 		
 		.owl-next {
 		  right: 5%;
 		  top: 50%;
-		  margin-top: -50px;
+		  margin-top: -40px;
 
 		  @media #{$large-up} {
 		  	right: 3%;
-		  	margin-top: -75px;
+		  	margin-top: -35px;
 			}
 
 			@media #{$xlarge-up} {
 				right: -70px;
-		  	margin-top: -80px;
+		  	margin-top: -56px;
 			}
 
 		}
@@ -596,7 +609,7 @@ ul.project-pagination {
 }
 
 .emp-name,
-.emp-job,
+.emp-cred,
 .emp-bio {
 	padding: rem-calc(0 12);
 }
@@ -611,7 +624,7 @@ ul.project-pagination {
 	}
 }
 
-.emp-position {
+.emp-title {
 	color: $black-color;
 	font-weight: 400;
 	font-size: rem-calc(16);
@@ -621,7 +634,7 @@ ul.project-pagination {
 	}
 }
 
-.emp-job {
+.emp-cred {
 	font-size: $mobile-font-size;
 	line-height: 1.4;
 	margin: 0;

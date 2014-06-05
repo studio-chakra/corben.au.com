@@ -8,6 +8,11 @@
 	background: #e5e5e5;
 	text-align: center;
 	padding-bottom: 10px;
+
+	@media #{$large-up} {	
+		margin-top: -50px;
+	}
+
 }
 
 

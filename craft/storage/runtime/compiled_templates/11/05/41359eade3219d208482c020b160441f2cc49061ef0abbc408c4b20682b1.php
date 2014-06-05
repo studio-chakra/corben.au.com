@@ -51,7 +51,7 @@ class __TwigTemplate_110541359eade3219d208482c020b160441f2cc49061ef0abbc408c4b20
         // line 15
         echo "\t\t\t\t</div>
 \t\t\t\t<div class=\"project-panel\">
-\t\t\t\t\t<h2 class=\"project-title\">Project Title <span class=\"divider\">|</span> <small class=\"project-client\">Client</small></h2>
+\t\t\t\t\t<h2 class=\"project-title\">Project Title <span class=\"divider\">|</span> <small class=\"project-suburb\">Suburb</small></h2>
 \t\t\t\t\t<div class=\"row\">
 \t\t\t\t\t\t<div class=\"xlarge-3 large-3 medium-4 small-12 columns project-details\">
 \t\t\t\t\t\t\t<ul class=\"no-bullet project-details-list\">
@@ -66,11 +66,15 @@ class __TwigTemplate_110541359eade3219d208482c020b160441f2cc49061ef0abbc408c4b20
 \t\t\t\t\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
-\t\t\t\t\t<a href=\"\" class=\"close-panel\" id=\"btn-close-panel\"><i class=\"fa fa-angle-double-down fa-3x\"></i></a>
+\t\t\t\t\t<!-- <a href=\"\" class=\"close-panel\" id=\"btn-close-panel\"><i class=\"fa fa-angle-double-down fa-3x\"></i></a> -->
+\t\t\t\t\t<a href=\"\" class=\"close-panel\" id=\"btn-close-panel\"><img class=\"arrow-down\" src=\"";
+        // line 33
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "images/arrow-down.svg\"></a>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"project-navbar\">
 \t\t\t\t\t<a href=\"";
-        // line 35
+        // line 36
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
         echo "dev/projects\" class=\"btn btn-proj-gallery\"><i class=\"fa fa-th\"></i></a>
 \t\t\t\t\t<a href=\"\" class=\"btn btn-proj-overview\" id=\"btn-proj-overview\">Project Overview</a>
@@ -95,6 +99,6 @@ class __TwigTemplate_110541359eade3219d208482c020b160441f2cc49061ef0abbc408c4b20
 
     public function getDebugInfo()
     {
-        return array (  74 => 35,  52 => 15,  43 => 11,  39 => 10,  31 => 4,  28 => 3,);
+        return array (  78 => 36,  72 => 33,  52 => 15,  43 => 11,  39 => 10,  31 => 4,  28 => 3,);
     }
 }

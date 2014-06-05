@@ -1,6 +1,6 @@
 <?php
 
-/* dev/index */
+/* dev */
 class __TwigTemplate_a97fd87b943f4ef7c1549e0a073b36b1ec3fe36b0452bc490f39e4aac408f736 extends Craft\BaseTemplate
 {
     public function __construct(Twig_Environment $env)
@@ -34,9 +34,18 @@ class __TwigTemplate_a97fd87b943f4ef7c1549e0a073b36b1ec3fe36b0452bc490f39e4aac40
 \t  <div class=\"xlarge-12 columns\">  
 \t  \t<section class=\"project-carousel\">
 \t\t  \t\t<div id=\"home-carousel\" class=\"owl-carousel corben-carousel\"> 
-\t\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"http://placehold.it/1470x830\" alt=\"Slide One\" /></div>
-\t\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"http://placehold.it/1470x830\" alt=\"Slide Two\" /></div>
-\t\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"http://placehold.it/1470x830\" alt=\"Slide Three\" /></div>
+\t\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"";
+        // line 10
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "images/homepage-photo-1.jpg\" alt=\"Slide One\" /></div>
+\t\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"";
+        // line 11
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "images/homepage-photo-2.jpg\" alt=\"Slide Two\" /></div>
+\t\t\t\t\t<div class=\"carousel-item home-carousel-item\"><img src=\"";
+        // line 12
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "images/homepage-photo-3.jpg\" alt=\"Slide Three\" /></div>
 \t\t\t\t</div>
 \t  \t</section>\t\t\t\t\t\t
 \t  </div>
@@ -48,7 +57,7 @@ class __TwigTemplate_a97fd87b943f4ef7c1549e0a073b36b1ec3fe36b0452bc490f39e4aac40
 
     public function getTemplateName()
     {
-        return "dev/index";
+        return "dev";
     }
 
     public function isTraitable()
@@ -58,6 +67,6 @@ class __TwigTemplate_a97fd87b943f4ef7c1549e0a073b36b1ec3fe36b0452bc490f39e4aac40
 
     public function getDebugInfo()
     {
-        return array (  31 => 4,  28 => 3,);
+        return array (  47 => 12,  43 => 11,  39 => 10,  31 => 4,  28 => 3,);
     }
 }

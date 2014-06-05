@@ -16,16 +16,33 @@ html {
 }
 
 .inner-wrap-forarrows {
-	padding-bottom: 100px;
+	padding-bottom: 40px;
+	
+	@media #{$large-up} {	
+		min-height:100vh;
+		padding-bottom: 100px;
+	}
+
+	@media #{$xlarge-up} {			
+
+	}
+
 }
 
-@media #{$xlarge-up} {
+
 	.inner-wrap-forarrows,
 	.footer-wrap-forarrows {
-		padding-left: 100px;
-		padding-right: 100px;
+		@media #{$large-up} {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+
+		@media #{$xlarge-up} {
+			padding-left: 100px;
+			padding-right: 100px;
+		}
 	}
-}
+
 
 
 // Page

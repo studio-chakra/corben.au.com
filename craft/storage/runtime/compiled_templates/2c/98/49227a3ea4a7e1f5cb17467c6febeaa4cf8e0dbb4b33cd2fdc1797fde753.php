@@ -43,8 +43,8 @@ class __TwigTemplate_2c9849227a3ea4a7e1f5cb17467c6febeaa4cf8e0dbb4b33cd2fdc1797f
             echo "\t\t\t\t  <li class=\"team-item\">
 \t\t\t\t  \t<div class=\"employee employee-director\">
 \t\t\t\t\t  \t<img class=\"emp-photo\" src=\"http://placehold.it/480x320\" />
-\t\t\t\t\t\t\t<h2 class=\"emp-name\">First Last <small class=\"emp-position\">Postition</small></h2>
-\t\t\t\t\t\t\t<p class=\"emp-job\">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+\t\t\t\t\t\t\t<h2 class=\"emp-name\">First Last <small class=\"emp-title\">Title</small></h2>
+\t\t\t\t\t\t\t<p class=\"emp-cred\">Credentials</p>
 \t\t\t\t\t\t\t<p class=\"emp-bio\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sequi voluptatem voluptatum perspiciatis sed consequatur assumenda ratione id dolor alias provident rem modi deserunt odit laboriosam pariatur exercitationem atque quo?</p>
 \t\t\t\t  \t</div>
 \t\t\t\t  </li>
@@ -62,8 +62,8 @@ class __TwigTemplate_2c9849227a3ea4a7e1f5cb17467c6febeaa4cf8e0dbb4b33cd2fdc1797f
             echo "\t\t\t\t  <li class=\"team-item\">
 \t\t\t\t  \t<div class=\"employee employee-staff\">
 \t\t\t\t\t  \t<img class=\"emp-photo\" src=\"http://placehold.it/480x320\" />
-\t\t\t\t\t\t\t<h2 class=\"emp-name\">First Last <small class=\"emp-position\">Postition</small></h2>
-\t\t\t\t\t\t\t<p class=\"emp-job\">B.Sc. (Arch) B Arch (Hon) FRAIA  Registration 4616</p>
+\t\t\t\t\t\t\t<h2 class=\"emp-name\">First Last <small class=\"emp-title\">Title</small></h2>
+\t\t\t\t\t\t\t<p class=\"emp-cred\">Credentials</p>
 \t\t\t\t  \t</div>
 \t\t\t\t  </li>
 \t\t\t\t  ";

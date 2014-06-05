@@ -34,7 +34,7 @@ class __TwigTemplate_d94fcea7648cdb0686ddc026019a3e4b3a0e66301a36ea7592a2a6fa3b2
 \t\t<div class=\"large-12 columns\">
 \t\t\t<section class=\"contact-map\">
 \t\t\t\t<div class=\"google-map\">
-\t\t\t\t\t<iframe width=\"1470\" height=\"480\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/place?q=Suite%2014%2C%2040%20Yeo%20St%20Neutral%20Bay%2C%20NSW%202089&key=AIzaSyBiAD2tlzv1CXVhOPFqf-bLDk_nM4k1EC8\"></iframe>
+\t\t\t\t\t<iframe width=\"1470\" height=\"480\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/place?q=Suite%2014%2C%2040%20Yeo%20St%20Neutral%20Bay%2C%20NSW%202089&key=AIzaSyBiAD2tlzv1CXVhOPFqf-bLDk_nM4k1EC8&maptype=satellite\"></iframe>
 \t\t\t\t</div>
 \t\t\t</section>
 \t\t</div>
