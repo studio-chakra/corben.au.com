@@ -23,7 +23,7 @@ $(document).ready(function() {
       singleItem: true,
       paginationNumbers: true,
       //navigationText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
-      navigationText: ["<img class='arrow-left' src='../images/arrow-left.svg'/>","<img class='arrow-right' src='../images/arrow-right.svg'/>"]
+      navigationText: ["<img class='arrow-left' src='/images/arrow-left.svg'/>","<img class='arrow-right' src='/images/arrow-right.svg'/>"]
   });
   
   $("#project-carousel").owlCarousel({
@@ -34,7 +34,7 @@ $(document).ready(function() {
       singleItem: true,
       paginationNumbers: true,
       //navigationText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
-      navigationText: ["<img class='arrow-left' src='../images/arrow-left.svg'/>","<img class='arrow-right' src='../images/arrow-right.svg'/>"]
+      navigationText: ["<img class='arrow-left' src='/images/arrow-left.svg'/>","<img class='arrow-right' src='/images/arrow-right.svg'/>"]
   });
  
   $('#btn-proj-overview').click(function() {

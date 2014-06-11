@@ -25,12 +25,12 @@ return array(
     ),
 
     // Live site config
-    'staging.studiochakra.com' => array(
+    'corben.staging.studiochakra.com' => array(
         'cooldownDuration' => 0,
 
         'environmentVariables' => array(
-            'siteUrl'        => 'http://staging.studiochakra.com/corben/corben/',
-            'fileSystemPath' => '/home/ryanbeli/public_html/studiochakra-staging/corben/corben/images/',
+            'siteUrl'        => 'http://corben.staging.studiochakra.com/',
+            'fileSystemPath' => '/home/ryanbeli/public_html/staging-corben/corben/images/',
         ),
     ),
 

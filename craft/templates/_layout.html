@@ -23,8 +23,8 @@
 		{% block meta %}{% endblock %}
 
 		<!-- HEAD: Favicons -->
-		<link rel="icon" type="image/x-icon" href="{{ siteUrl }}images/favicon.ico">
-		<link rel="shortcut icon" type="image/x-icon" href="{{ siteUrl }}images/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 		<!-- 
 		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
@@ -32,14 +32,14 @@
 		-->
 
 		<!-- HEAD: Stylesheets -->
-    <link rel="stylesheet" href="{{ siteUrl }}stylesheets/app.css" />
-    <link rel="stylesheet" href="{{ siteUrl }}bower_components/fontawesome/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="{{ siteUrl }}bower_components/owlcarousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="/stylesheets/app.css" />
+    <link rel="stylesheet" href="/bower_components/fontawesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="/bower_components/owlcarousel/owl-carousel/owl.carousel.css">
     
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
 
     <!-- HEAD: Scripts -->
-    <script src="{{ siteUrl }}bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
 
   </head>
   
@@ -64,11 +64,6 @@
 							      <li class="has-dropdown">
 							      	<a href="{{ siteUrl }}projects" class="is-active">Projects</a>
 							      	<ul class="dropdown">
-							          <!-- <li><a href="{{ siteUrl }}projects">In Progress</a></li>
-							          <li><a href="{{ siteUrl }}projects" class="is-active">Apartments</a></li>
-							          <li><a href="{{ siteUrl }}projects">Commercial</a></li>
-							          <li><a href="{{ siteUrl }}projects">Alterations &amp; Additions</a></li>
-							          <li><a href="{{ siteUrl }}projects">New Houses</a></li> -->
 							          {% nav category in craft.categories %}
    											<li><a href="{{ category.url }}">{{ category.title }}</a></li>
 												{% endnav %}
@@ -98,11 +93,6 @@
 	          	<li class="has-dropdown">
 	          		<a href="{{ siteUrl }}projects" class="is-active">Projects</a>
 								<ul>
-									<!-- <li><a href="{{ siteUrl }}projects">In Progress</a></li>
-							    <li><a href="{{ siteUrl }}projects">Apartments</a></li>
-							    <li><a href="{{ siteUrl }}projects">Commercial</a></li>
-							    <li><a href="{{ siteUrl }}projects" class="is-active">Alterations &amp; Additions</a></li>
-							    <li><a href="{{ siteUrl }}projects">New Houses</a></li> -->
 							    {% nav category in craft.categories %}
    								<li><a href="{{ category.url }}">{{ category.title }}</a></li>
 									{% endnav %}
@@ -170,10 +160,10 @@
     
 
 		<!-- /BODY: Scripts -->
-		<script src="{{ siteUrl }}bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="{{ siteUrl }}bower_components/foundation/js/foundation.min.js"></script>
-		<script src="{{ siteUrl }}bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
-		<script src="{{ siteUrl }}js/app.js"></script>
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/foundation/js/foundation.min.js"></script>
+		<script src="/bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+		<script src="/js/app.js"></script>
 
 
   </body>
