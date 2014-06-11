@@ -56,8 +56,14 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
         // line 24
         echo "
 \t\t<!-- HEAD: Favicons -->
-\t\t<link rel=\"icon\" type=\"image/x-icon\" href=\"images/favicon.ico\">
-\t\t<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"images/favicon.ico\">
+\t\t<link rel=\"icon\" type=\"image/x-icon\" href=\"";
+        // line 26
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "images/favicon.ico\">
+\t\t<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"";
+        // line 27
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "images/favicon.ico\">
 \t\t<!-- 
 \t\t<link rel=\"apple-touch-icon\" href=\"images/apple-touch-icon.png\">
 \t\t<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"images/apple-touch-icon-72x72.png\">
@@ -65,14 +71,26 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 \t\t-->
 
 \t\t<!-- HEAD: Stylesheets -->
-    <link rel=\"stylesheet\" href=\"/stylesheets/app.css\" />
-    <link rel=\"stylesheet\" href=\"/bower_components/fontawesome/css/font-awesome.min.css\" />
-\t\t<link rel=\"stylesheet\" href=\"/bower_components/owlcarousel/owl-carousel/owl.carousel.css\">
+    <link rel=\"stylesheet\" href=\"";
+        // line 35
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "stylesheets/app.css\" />
+    <link rel=\"stylesheet\" href=\"";
+        // line 36
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "bower_components/fontawesome/css/font-awesome.min.css\" />
+\t\t<link rel=\"stylesheet\" href=\"";
+        // line 37
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "bower_components/owlcarousel/owl-carousel/owl.carousel.css\">
     
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
 
     <!-- HEAD: Scripts -->
-    <script src=\"/bower_components/modernizr/modernizr.js\"></script>
+    <script src=\"";
+        // line 42
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "bower_components/modernizr/modernizr.js\"></script>
 
   </head>
   
@@ -444,10 +462,22 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
     
 
 \t\t<!-- /BODY: Scripts -->
-\t\t<script src=\"/bower_components/jquery/dist/jquery.min.js\"></script>
-\t\t<script src=\"/bower_components/foundation/js/foundation.min.js\"></script>
-\t\t<script src=\"/bower_components/owlcarousel/owl-carousel/owl.carousel.min.js\"></script>
-\t\t<script src=\"/js/app.js\"></script>
+\t\t<script src=\"";
+        // line 173
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "bower_components/jquery/dist/jquery.min.js\"></script>
+\t\t<script src=\"";
+        // line 174
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "bower_components/foundation/js/foundation.min.js\"></script>
+\t\t<script src=\"";
+        // line 175
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "bower_components/owlcarousel/owl-carousel/owl.carousel.min.js\"></script>
+\t\t<script src=\"";
+        // line 176
+        echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
+        echo "js/app.js\"></script>
 
 
   </body>
@@ -476,6 +506,6 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 
     public function getDebugInfo()
     {
-        return array (  463 => 128,  458 => 23,  428 => 155,  424 => 154,  420 => 153,  413 => 150,  402 => 145,  396 => 142,  393 => 141,  389 => 140,  374 => 128,  366 => 123,  362 => 122,  358 => 121,  352 => 118,  348 => 117,  344 => 116,  340 => 115,  336 => 114,  331 => 112,  326 => 109,  302 => 107,  266 => 106,  262 => 105,  258 => 104,  254 => 103,  250 => 102,  246 => 101,  241 => 99,  227 => 88,  223 => 87,  217 => 84,  213 => 83,  209 => 82,  205 => 81,  201 => 80,  196 => 78,  191 => 75,  167 => 73,  131 => 72,  127 => 71,  123 => 70,  119 => 69,  115 => 68,  111 => 67,  106 => 65,  98 => 60,  91 => 56,  57 => 24,  55 => 23,  44 => 15,  36 => 14,  21 => 1,);
+        return array (  493 => 128,  488 => 23,  479 => 176,  475 => 175,  471 => 174,  467 => 173,  446 => 155,  442 => 154,  438 => 153,  431 => 150,  420 => 145,  414 => 142,  411 => 141,  407 => 140,  392 => 128,  384 => 123,  380 => 122,  376 => 121,  370 => 118,  366 => 117,  362 => 116,  358 => 115,  354 => 114,  349 => 112,  344 => 109,  320 => 107,  284 => 106,  280 => 105,  276 => 104,  272 => 103,  268 => 102,  264 => 101,  259 => 99,  245 => 88,  241 => 87,  235 => 84,  231 => 83,  227 => 82,  223 => 81,  219 => 80,  214 => 78,  209 => 75,  185 => 73,  149 => 72,  145 => 71,  141 => 70,  137 => 69,  133 => 68,  129 => 67,  124 => 65,  116 => 60,  109 => 56,  92 => 42,  84 => 37,  80 => 36,  76 => 35,  65 => 27,  61 => 26,  57 => 24,  55 => 23,  44 => 15,  36 => 14,  21 => 1,);
     }
 }
