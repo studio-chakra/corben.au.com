@@ -1,0 +1,50 @@
+{% extends "_layout" %}
+
+{# Check for category template to display correct title #}
+{% set isCatPage = false %}
+{% set articleClass = "" %}
+{% if craft.request.getSegment(2) == '' %}
+	{% set title = "Projects" %}
+{% else %}
+	{% set title = category ~ ' | Projects' %}
+	{% set isCatPage = true %}
+	{% set articleClass = " page-projects-category" %}
+{% endif %}
+
+{% block content %}
+
+{% if isCatPage %}
+	{% set projects = craft.entries.section('projects').relatedTo(category).find() %}
+{% else %}
+	{% set projects = craft.entries.section('projects').find() %}
+{% endif %}	
+
+<article class="page-projects{{ articleClass }}">
+	<div class="row">
+		<div class="large-12 columns">
+			<section class="projects">
+				<ul class="project-grid project-grid-hover">
+					{% for entry in projects %}
+					{% set asset = entry.projectThumbnail.first() %}
+				  <li class="project-grid-item">
+				  	<a href="{{ entry.url }}" class="project-thumb">
+							<figure>
+								{% if asset %}
+									<img src="{{ asset.url }}" class="project-thumb-img" alt="{{ entry.projectTitle }}" width="{{ asset.width }}" height="{{ asset.height }}" />
+								{% else %}								
+									<img class="project-thumb-img" src="http://placehold.it/480x320" />
+								{% endif %}	
+								<figcaption>
+									<h6 class="project-thumb-title">{{ entry.projectTitle }} {% if entry.projectSuburb is not empty and entry.projectThumbDisplaySettings.contains('showSuburb') %}<span class="project-thumb-suburb">| {{ entry.projectSuburb }}</span>{% endif %}</h6>
+								</figcaption>
+							</figure>
+				  	</a>
+				  </li>
+				  {% endfor %}
+				</ul>
+			</section>
+		</div>
+	</div>
+</article>
+
+{% endblock %}

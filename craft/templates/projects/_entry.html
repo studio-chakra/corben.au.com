@@ -1,0 +1,59 @@
+{% extends "_layout" %}
+{% set title = entry.title %}
+
+{% block content %}
+
+<article class="page-project">
+	<div class="row">
+		<div class="large-12 columns">	
+			<section class="project-carousel">
+				<div id="project-carousel" class="owl-carousel corben-carousel"> 
+					{% for block in entry.projectSlides.type('slide') %}
+						{% set slide = block.image.first() %}
+						{% if slide %}
+						<div class="carousel-item project-carousel-item">
+							<img src="{{ slide.url }}" alt="{{ block.altText ?: slide.title }}" width="{{ slide.width }}"  height="{{ slide.height }}" />
+						</div>						
+						{% endif %}
+					{% endfor %}
+				</div>
+				<div class="project-panel">
+					<h2 class="project-title">{{ entry.projectTitle }} {% if entry.projectSuburb is not empty and entry.projectDisplaySettings.contains('showSuburb') %}<span class="divider">|</span> <small class="project-suburb">{{ entry.projectSuburb }}</small>{% endif %}</h2>
+					<div class="row">
+						<div class="xlarge-3 large-3 medium-4 small-12 columns project-details">
+							<ul class="no-bullet project-details-list">
+								{% if entry.projectCompleted is not empty and entry.projectDisplaySettings.contains('showCompleted') %}
+								<li class="project-detail-item"><strong class="project-detail-label">Completed:</strong> {{ entry.projectCompleted }}</li>
+								{% endif %}
+								{% if entry.projectBuilder is not empty and entry.projectDisplaySettings.contains('showBuilder') %}
+								<li class="project-detail-item"><strong class="project-detail-label">Builder:</strong> {{ entry.projectBuilder }}</li>
+								{% endif %}
+								{% if entry.projectArea is not empty and entry.projectDisplaySettings.contains('showArea') %}
+								<li class="project-detail-item"><strong class="project-detail-label">Area:</strong> {{ entry.projectArea }}</li>
+								{% endif %}
+								{% if entry.projectPhotographer is not empty and entry.projectDisplaySettings.contains('showPhotographer') %}
+								<li class="project-detail-item"><strong class="project-detail-label">Photographer:</strong> {{ entry.projectPhotographer }}</li>
+								{% endif %}
+								{% set pdf = entry.projectPdf.first() %}
+								{% if pdf %}
+								<li class="project-detail-item"><a href="{{ pdf.url }}" class="btn btn-link btn-project-pdf">Download PDF</a></li>
+								{% endif %}
+							</ul>
+						</div>
+						<div class="xlarge-5 large-7 medium-8 small-12 end columns project-description">
+							{{ entry.projectDescription }}
+						</div>
+					</div>
+					<!-- <a href="" class="close-panel" id="btn-close-panel"><i class="fa fa-angle-double-down fa-3x"></i></a> -->
+					<a href="" class="close-panel" id="btn-close-panel"><img class="arrow-down" src="{{siteUrl}}images/arrow-down.svg"></a>
+				</div>
+				<div class="project-navbar">
+					<a href="{{ siteUrl }}projects" class="btn btn-proj-gallery"><i class="fa fa-th"></i></a>
+					<a href="" class="btn btn-proj-overview" id="btn-proj-overview">Project Overview</a>
+				</div>					
+			</section>
+		</div>
+	</div>
+</article>
+
+{% endblock %}

@@ -1,24 +1,31 @@
-{#
- # News entry template
- # -------------------
- #
- # This template gets loaded whenever a News entry’s URL is
- # requested. That’s because the News section’s Template setting is
- # set to “news/_entry”, the path to this template.
- #
- # When this template is loaded, it will already have an ‘entry’
- # variable, set to the requested News entry.
- #
- # See this page for more details on how Craft routes requests:
- # http://buildwithcraft.com/docs/routing
- #}
-
 {% extends "_layout" %}
+{% set title = entry.title %}
 
 {% block content %}
-	<article>
-		<h1>{{ entry.title }}</h1>
-		<p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
-		{{ entry.body }}
-	</article>
+
+{% set asset = entry.postImage.first() %}
+
+<div class="page-post">
+	<div class="row">
+		<div class="large-12 columns">
+			<article class="post post-type-image">
+				{% if asset %}
+				<div class="post-media">
+					<img src="{{ asset.url }}" class="post-image" alt="{{ asset.altText }}" width="{{ asset.width }}" height="{{ asset.height }}" />
+				</div>
+				{% endif %}	
+				<header class="post-header">
+					<h2 class="post-title">{{ entry.title }}</h2>
+					<p class="post-meta">{{ entry.postDate|date('M d, Y') }}</p>
+				</header>
+				{% if entry.postDisplaySettings | length %}
+					{{ entry.postIntro }}
+				{% endif %}	
+				{{ entry.postBody }}
+				<a href="{{ siteUrl }}news" class="btn btn-link">Back to News</a>
+			</article>
+		</div>
+	</div>
+</div>
+
 {% endblock %}

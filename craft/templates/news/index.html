@@ -1,27 +1,29 @@
-{#
- # News index template
- # -------------------
- #
- # This template is loaded whenever http://example.com/news is
- # requested, because it is located at news/index.html in your
- # craft/templates/ folder.
- #
- # See this page for more details on how Craft routes requests:
- # http://buildwithcraft.com/docs/routing
- #}
-
 {% extends "_layout" %}
 {% set title = "News" %}
 
 {% block content %}
-	<h1>News</h1>
 
-	{% for entry in craft.entries.section('news').find() %}
-		<article>
-			<h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
-			<p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
-			{{ entry.body.getPage(1) }}
-			<p><a href="{{ entry.url }}">Continue reading</a></p>
-		</article>
-	{% endfor %}
+<div class="page-news">
+	<div class="row">
+		<div class="large-12 columns">
+			{% for entry in craft.entries.section('news').find() %}
+				{% set asset = entry.postImage.first() %}
+				<article class="post post-type-image">
+					{% if asset %}
+					<div class="post-media">
+						<img src="{{ asset.url }}" class="post-image" alt="{{ asset.altText }}" width="{{ asset.width }}" height="{{ asset.height }}" />
+					</div>
+					{% endif %}	
+					<header class="post-header">
+						<h2 class="post-title"><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+						<p class="post-meta">{{ entry.postDate|date('M d, Y') }}</p>
+					</header>
+					{{ entry.postIntro }}
+					<a href="{{ entry.url }}" class="btn btn-link">Continue Reading</a>
+				</article>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
 {% endblock %}

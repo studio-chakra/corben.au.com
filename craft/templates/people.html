@@ -1,0 +1,30 @@
+{% extends "_layout" %}
+{% set title = "People" %}
+
+{% block content %}
+
+<article class="page-team">
+	<div class="row">
+		<div class="large-12 columns">
+			<section class="team">
+				<ul class="team-grid">
+					{% for entry in craft.entries.section('people').find() %}
+						{% set asset = entry.employeePhoto.first() %}
+					  <li class="team-item">
+					  	<div class="employee employee-{{ entry.employeeType }}">
+						  	{% if asset %}<img class="emp-photo" src="{{ asset.url }}" alt="{{ entry.employeeFirstName }} {{ entry.employeeLastName }}" width="{{ asset.width }}" height="{{ asset.height }}" />{% endif %}				  	
+								<h2 class="emp-name">{{ entry.employeeFirstName }} {{ entry.employeeLastName }} <small class="emp-title">{{ entry.employeeTitle }}</small></h2>
+								<p class="emp-cred">{{ entry.employeeCredentials }}</p>
+								{% if entry.employeeDisplaySettings | length %}
+									<div class="emp-bio">{{ entry.employeeBio }}</div>
+								{% endif %}
+					  	</div>
+					  </li>
+				  {% endfor %}
+				</ul>
+			</section>
+		</div>
+	</div>
+</article>
+
+{% endblock %}

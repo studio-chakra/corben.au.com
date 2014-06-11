@@ -7,9 +7,14 @@
   <div class="xlarge-12 columns">
   	<section class="carousel">
 			<div id="home-carousel" class="owl-carousel corben-carousel"> 
-				<div class="carousel-item home-carousel-item"><img src="http://placehold.it/1470x830" alt="Slide One" /></div>
-				<div class="carousel-item home-carousel-item"><img src="http://placehold.it/1470x830" alt="Slide Two" /></div>
-				<div class="carousel-item home-carousel-item"><img src="http://placehold.it/1470x830" alt="Slide Three" /></div>
+			{% for block in entry.projectSlides.type('slide') %}
+					{% set slide = block.image.first() %}
+					{% if slide %}
+					<div class="carousel-item home-carousel-item">
+						<img src="{{ slide.url }}" alt="{{ block.altText ?: slide.title }}" width="{{ slide.width }}"  height="{{ slide.height }}" />
+					</div>						
+					{% endif %}
+				{% endfor %}
 			</div>						
 		</section>
   </div>

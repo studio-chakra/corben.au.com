@@ -32,14 +32,14 @@
 		-->
 
 		<!-- HEAD: Stylesheets -->
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="bower_components/owlcarousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="/stylesheets/app.css" />
+    <link rel="stylesheet" href="/bower_components/fontawesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="/bower_components/owlcarousel/owl-carousel/owl.carousel.css">
     
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
 
     <!-- HEAD: Scripts -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
 
   </head>
   
@@ -52,37 +52,40 @@
 					<div class="row">
 						<div class="xlarge-12 columns">		  		  
 			  		  <!-- /* Nav(s) -->	
-			    		<nav class="tab-bar show-for-small">
-								<h1 class="logo-mobile"><a href="/"><span class="hidden">Corben Architects</span></a></h1>
+			    		<nav class="tab-bar hide-for-large-up">
+								<h1 class="logo-mobile"><a href="{{ siteUrl }}"><span class="hidden">Corben Architects</span></a></h1>
 								<a class="right-off-canvas-toggle" href="#"><i class="fa fa-bars"></i> Menu</a>
 			    		</nav>
-			    		<nav class="top-bar hide-for-small" data-topbar>
-							  <h1 class="logo"><a href="/"><span class="hidden">Corben Architects</span></a></h1>
+			    		<nav class="top-bar show-for-large-up" data-topbar>
+							  <h1 class="logo"><a href="{{ siteUrl }}"><span class="hidden">Corben Architects</span></a></h1>
 
 							  <section class="top-bar-section">
 							    <ul class="right">
 							      <li class="has-dropdown">
-							      	<a href="#">Projects</a>
-							      	<!-- <ul class="dropdown">
-							          <li><a href="#">In Progress</a></li>
-							          <li><a href="#">Apartments</a></li>
-							          <li><a href="#">Commercial</a></li>
-							          <li><a href="#">Alterations &amp; Additions</a></li>
-							          <li><a href="#">New Houses</a></li>
-							        </ul> -->
+							      	<a href="{{ siteUrl }}projects" class="is-active">Projects</a>
+							      	<ul class="dropdown">
+							          <!-- <li><a href="{{ siteUrl }}projects">In Progress</a></li>
+							          <li><a href="{{ siteUrl }}projects" class="is-active">Apartments</a></li>
+							          <li><a href="{{ siteUrl }}projects">Commercial</a></li>
+							          <li><a href="{{ siteUrl }}projects">Alterations &amp; Additions</a></li>
+							          <li><a href="{{ siteUrl }}projects">New Houses</a></li> -->
+							          {% nav category in craft.categories %}
+   											<li><a href="{{ category.url }}">{{ category.title }}</a></li>
+												{% endnav %}
+							        </ul>
 							      </li>
 							      <li class="has-dropdown">
-							        <a href="#">Practice</a>
-							        <!-- <ul class="dropdown">
-							          <li><a href="#">Awards</a></li>
-							          <li><a href="#">Fees</a></li>
-							          <li><a href="#">Service</a></li>
-							          <li><a href="#">Architecture</a></li>
-							          <li><a href="#">About</a></li>
-							        </ul> -->
+							        <a href="{{ siteUrl }}about">Practice</a>
+							        <ul class="dropdown">
+							          <li><a href="{{ siteUrl }}awards">Awards</a></li>
+							          <li><a href="{{ siteUrl }}fees">Fees</a></li>
+							          <li><a href="{{ siteUrl }}service">Service</a></li>
+							          <li><a href="{{ siteUrl }}architecture">Architecture</a></li>
+							          <li><a href="{{ siteUrl }}about">About</a></li>
+							        </ul>
 							      </li>
-										<li><a href="#">People</a></li>
-							      <li><a href="#">Place</a></li>
+										<li><a href="{{ siteUrl }}people">People</a></li>
+							      <li><a href="{{ siteUrl }}place">Place</a></li>
 							    </ul>
 							  </section>
 							</nav><!-- Nav(s) */ -->	
@@ -93,32 +96,36 @@
 	    		<aside class="right-off-canvas-menu">
 	        	<ul class="off-canvas-menu">
 	          	<li class="has-dropdown">
-	          		<a href="#" class="is-active">Projects</a>
+	          		<a href="{{ siteUrl }}projects" class="is-active">Projects</a>
 								<ul>
-									<li><a href="#">In Progress</a></li>
-							    <li><a href="#">Apartments</a></li>
-							    <li><a href="#">Commercial</a></li>
-							    <li><a href="#" class="is-active">Alterations &amp; Additions</a></li>
-							    <li><a href="#">New Houses</a></li>
+									<!-- <li><a href="{{ siteUrl }}projects">In Progress</a></li>
+							    <li><a href="{{ siteUrl }}projects">Apartments</a></li>
+							    <li><a href="{{ siteUrl }}projects">Commercial</a></li>
+							    <li><a href="{{ siteUrl }}projects" class="is-active">Alterations &amp; Additions</a></li>
+							    <li><a href="{{ siteUrl }}projects">New Houses</a></li> -->
+							    {% nav category in craft.categories %}
+   								<li><a href="{{ category.url }}">{{ category.title }}</a></li>
+									{% endnav %}
 								</ul>
 	          	</li>
 	          	<li>
-	          		<a href="#">Practice</a>
+	          		<a href="{{ siteUrl }}page">Practice</a>
 	          		<ul class="dropdown">
-							    <li><a href="#">Awards</a></li>
-							    <li><a href="#">Fees</a></li>
-							    <li><a href="#">Service</a></li>
-							    <li><a href="#">Architecture</a></li>
-							    <li><a href="#">About</a></li>
+							    <li><a href="{{ siteUrl }}awards">Awards</a></li>
+							    <li><a href="{{ siteUrl }}fees">Fees</a></li>
+							    <li><a href="{{ siteUrl }}service">Service</a></li>
+							    <li><a href="{{ siteUrl }}architecture">Architecture</a></li>
+							    <li><a href="{{ siteUrl }}about">About</a></li>
 							  </ul>	
 	          	</li>
-	          	<li><a href="#">People</a></li>
-	          	<li><a href="#">Place</a></li>
+	          	<li><a href="{{ siteUrl }}people">People</a></li>
+	          	<li><a href="{{ siteUrl }}place">Place</a></li>
+	          	<li><a href="{{ siteUrl }}news">News</a></li>
 	        	</ul>
 	    		</aside><!-- Off Canvas Menu */ -->
 
 					<!-- /* Main Content Block -->
-			    <main class="main" role="main">{% block content %}{% endblock %}</main>
+			    <main class="main main-content" role="main">{% block content %}{% endblock %}</main>
 					<!-- Main Block */ -->		
 								
 				</div><!-- Inner Wrap for Arrows */ -->	
@@ -130,30 +137,24 @@
 				  	<div class="row">
 				  		<div class="large-12 columns">
 					      <ul class="footer-nav-list">
+					      	{% for block in general.socialNetworks %}
 					        <li class="footer-nav-social nospace">
-					        	<a href="#" class="icon-link">
+					        	<a href="{{ block.networkUrl }}" class="icon-link">
 											<span class="fa-stack fa-lg">
 											  <i class="fa fa-circle fa-stack-2x"></i>
-											  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+											  <i class="fa {{ block.networkIcon }} fa-stack-1x fa-inverse"></i>
 											</span>
 					        	</a>
 					        </li>
-					        <li class="footer-nav-social nospace">
-					        	<a href="#" class="icon-link">
-											<span class="fa-stack fa-lg">
-											  <i class="fa fa-circle fa-stack-2x"></i>
-											  <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
-											</span>
-					        	</a>
-					        </li>
-					        <li classs="footer-nav-item"><a href="#">News</a></li>
+					        {% endfor %}
+					        <li classs="footer-nav-item"><a href="{{ siteUrl }}news">News</a></li>
 					      </ul>
 					      <ul class="footer-info-list">
-					        <li class="footer-info-item"><a href="#">Disclaimer</a></li>
-					        <li class="footer-info-item nowrap"><a href="#">Privacy Policy</a></li>
+					        <li class="footer-info-item"><a href="{{ siteUrl }}disclaimer">Disclaimer</a></li>
+					        <li class="footer-info-item nowrap"><a href="{{ siteUrl }}privacy-policy">Privacy Policy</a></li>
 					        <li class="footer-info-copyright nowrap">&copy; <a href="#">{{ now.year }} Corben Architects</a></li>
 					        <li class="footer-info-hash nospace">/</li>
-					        <li class="footer-info-sitedesign nowrap">Site Design <a href="#">All Things Visual</a></li>
+					        <li class="footer-info-sitedesign nowrap">Site Design <a href="http://petercrumpton.com.au/">All Things Visual</a></li>
 					      </ul>
 					    </div>
 				  	</div>
@@ -169,10 +170,10 @@
     
 
 		<!-- /BODY: Scripts -->
-		<script src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="bower_components/foundation/js/foundation.min.js"></script>
-		<script src="bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
-		<script src="js/app.js"></script>
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/foundation/js/foundation.min.js"></script>
+		<script src="/bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+		<script src="/js/app.js"></script>
 
 
   </body>
