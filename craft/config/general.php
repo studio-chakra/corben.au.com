@@ -20,17 +20,17 @@ return array(
         'devMode' => true,
         'environmentVariables' => array(
             'siteUrl'        => 'http://corben.dev/',
-            'fileSystemPath' => '../corben/images/',
+            'fileSystemPath' => '../images/',
         ),
     ),
 
     // Live site config
-    'corben.staging.studiochakra.com' => array(
+    'corben-staging.studiochakra.com' => array(
         'cooldownDuration' => 0,
 
         'environmentVariables' => array(
-            'siteUrl'        => 'http://corben.staging.studiochakra.com/',
-            'fileSystemPath' => '/home/ryanbeli/public_html/staging-corben/corben/images/',
+            'siteUrl'        => 'http://corben-staging.studiochakra.com/',
+            'fileSystemPath' => '/home/ryanbeli/public_html/corben-staging/images/',
         ),
     ),
 
