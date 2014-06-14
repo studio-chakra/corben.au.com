@@ -15,21 +15,16 @@
     <link rel="home" href="{{ siteUrl }}" />
 		
 		<!-- HEAD: Meta -->
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="author" content="">
-		<meta name="google-site-verification" content="" />
-		<meta property="og:site_name" content="Corben Architects">
+		<meta name="description" content="{{ meta.metaDescription }}">
+		<meta name="keywords" content="{{ meta.metaKeywords }}">
+		<meta name="author" content="{{ meta.metaAuthor }}">
+		<meta name="google-site-verification" content="{{ meta.metaGoogleSiteVerificationCode }}" />
+		<meta property="og:site_name" content="{{ siteName }}">
 		{% block meta %}{% endblock %}
 
 		<!-- HEAD: Favicons -->
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 		<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-		<!-- 
-		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"> 
-		-->
 
 		<!-- HEAD: Stylesheets -->
     <link rel="stylesheet" href="/stylesheets/app.css" />
@@ -62,25 +57,25 @@
 							  <section class="top-bar-section">
 							    <ul class="right">
 							      <li class="has-dropdown">
-							      	<a href="{{ siteUrl }}projects" class="is-active">Projects</a>
-							      	<ul class="dropdown">
+							      	<a href="{{ siteUrl }}projects" {{ activeClass('projects',1,'is-active') }}>Projects</a>
+							      	<ul class="dropdown {{ active('projects',1,'is-active') }}">
 							          {% nav category in craft.categories %}
-   											<li><a href="{{ category.url }}">{{ category.title }}</a></li>
+   											<li><a href="{{ category.url }}" {{ activeClass(category.slug,2,'is-active') }}>{{ category.title }}</a></li>
 												{% endnav %}
 							        </ul>
 							      </li>
 							      <li class="has-dropdown">
-							        <a href="{{ siteUrl }}about">Practice</a>
-							        <ul class="dropdown">
-							          <li><a href="{{ siteUrl }}awards">Awards</a></li>
-							          <li><a href="{{ siteUrl }}fees">Fees</a></li>
-							          <li><a href="{{ siteUrl }}service">Service</a></li>
-							          <li><a href="{{ siteUrl }}architecture">Architecture</a></li>
-							          <li><a href="{{ siteUrl }}about">About</a></li>
+							        <a href="{{ siteUrl }}about" {{ activeClass('practice|about|architecture|service|fees|awards',1,'is-active') }}>Practice</a>
+							        <ul class="dropdown {{ active('practice|about|architecture|service|fees|awards',1,'is-active') }}">
+							          <li><a href="{{ siteUrl }}awards" {{ activeClass('awards',1,'is-active') }}>Awards</a></li>
+							          <li><a href="{{ siteUrl }}fees" {{ activeClass('fees',1,'is-active') }}>Fees</a></li>
+							          <li><a href="{{ siteUrl }}service" {{ activeClass('service',1,'is-active') }}>Service</a></li>
+							          <li><a href="{{ siteUrl }}architecture" {{ activeClass('architecture',1,'is-active') }}>Architecture</a></li>
+							          <li><a href="{{ siteUrl }}about" {{ activeClass('about',1,'is-active') }}>About</a></li>
 							        </ul>
 							      </li>
-										<li><a href="{{ siteUrl }}people">People</a></li>
-							      <li><a href="{{ siteUrl }}place">Place</a></li>
+										<li><a href="{{ siteUrl }}people" {{ activeClass('people',1,'is-active') }}>People</a></li>
+							      <li><a href="{{ siteUrl }}place" {{ activeClass('place',1,'is-active') }}>Place</a></li>
 							    </ul>
 							  </section>
 							</nav><!-- Nav(s) */ -->	
@@ -91,26 +86,26 @@
 	    		<aside class="right-off-canvas-menu">
 	        	<ul class="off-canvas-menu">
 	          	<li class="has-dropdown">
-	          		<a href="{{ siteUrl }}projects" class="is-active">Projects</a>
-								<ul>
+	          		<a href="{{ siteUrl }}projects" {{ activeClass('projects',1,'is-active') }}>Projects</a>
+								<ul class="dropdown {{ active('projects',1,'is-active') }}">
 							    {% nav category in craft.categories %}
-   								<li><a href="{{ category.url }}">{{ category.title }}</a></li>
+   								<li><a href="{{ category.url }}" {{ activeClass(category.slug,2,'is-active') }}>{{ category.title }}</a></li>
 									{% endnav %}
 								</ul>
 	          	</li>
 	          	<li>
-	          		<a href="{{ siteUrl }}page">Practice</a>
-	          		<ul class="dropdown">
-							    <li><a href="{{ siteUrl }}awards">Awards</a></li>
-							    <li><a href="{{ siteUrl }}fees">Fees</a></li>
-							    <li><a href="{{ siteUrl }}service">Service</a></li>
-							    <li><a href="{{ siteUrl }}architecture">Architecture</a></li>
-							    <li><a href="{{ siteUrl }}about">About</a></li>
+	          		<a href="{{ siteUrl }}about" {{ activeClass('practice|about|architecture|service|fees|awards',1,'is-active') }}>Practice</a>
+	          		<ul class="dropdown {{ active('practice|about|architecture|service|fees|awards',1,'is-active') }}">
+							    <li><a href="{{ siteUrl }}awards" {{ activeClass('awards',1,'is-active') }}>Awards</a></li>
+							    <li><a href="{{ siteUrl }}fees" {{ activeClass('fees',1,'is-active') }}>Fees</a></li>
+							    <li><a href="{{ siteUrl }}service" {{ activeClass('service',1,'is-active') }}>Service</a></li>
+							    <li><a href="{{ siteUrl }}architecture" {{ activeClass('architecture',1,'is-active') }}>Architecture</a></li>
+							    <li><a href="{{ siteUrl }}about" {{ activeClass('about',1,'is-active') }}>About</a></li>
 							  </ul>	
 	          	</li>
-	          	<li><a href="{{ siteUrl }}people">People</a></li>
-	          	<li><a href="{{ siteUrl }}place">Place</a></li>
-	          	<li><a href="{{ siteUrl }}news">News</a></li>
+	          	<li><a href="{{ siteUrl }}people" {{ activeClass('people',1,'is-active') }}>People</a></li>
+	          	<li><a href="{{ siteUrl }}place" {{ activeClass('place',1,'is-active') }}>Place</a></li>
+	          	<li><a href="{{ siteUrl }}news" {{ activeClass('news',1,'is-active') }}>News</a></li>
 	        	</ul>
 	    		</aside><!-- Off Canvas Menu */ -->
 

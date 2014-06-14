@@ -48,6 +48,18 @@
 	}
 }
 
+.top-bar-section .dropdown.is-active {
+	display: block;
+  position: static !important;
+  height: auto;
+  width: auto;
+  overflow: visible;
+  clip: auto;
+  position: absolute !important;
+}
+
+
+
 .top-bar-section a.is-active {
 	color: $black-color !important;
 }
