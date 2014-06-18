@@ -485,6 +485,7 @@ ul.project-pagination {
 	
 	/* Styling Next and Prev buttons */
 	.owl-buttons {
+
 			div {
 				color: $black-color;
 				display: inline-block;
@@ -498,17 +499,17 @@ ul.project-pagination {
 				-moz-border-radius: 0;
 				border-radius: 0;
 				filter: Alpha(Opacity=100); /*IE7 fix*/
-				opacity: 1;				
+				opacity: .5;				
 
 				img {
 					width: 25px;
 
 					@media #{$large-up} {
-						width: 35px;
+						// width: 35px;
 					}
 
 					@media #{$xlarge-up} {
-						width: 50px;
+						// width: 50px;
 					}
 				}
 
@@ -518,7 +519,7 @@ ul.project-pagination {
 			/* Use it for non-touch hover action */
 			div:hover {
 				filter: Alpha(Opacity=50);/*IE7 fix*/
-				opacity: .5;
+				opacity: 1;
 				text-decoration: none;
 				color: $darkergray-color;
 			}
@@ -530,12 +531,12 @@ ul.project-pagination {
 
 		  @media #{$large-up} {
 		  	left: 3%;
-		  	margin-top: -35px;
+		  	// margin-top: -35px;
 			}
 
 		  @media #{$xlarge-up} {
 				left: -70px;
-		  	margin-top: -56px;
+		  	// margin-top: -56px;
 			}
 		}
 		
@@ -546,12 +547,12 @@ ul.project-pagination {
 
 		  @media #{$large-up} {
 		  	right: 3%;
-		  	margin-top: -35px;
+		  	// margin-top: -35px;
 			}
 
 			@media #{$xlarge-up} {
 				right: -70px;
-		  	margin-top: -56px;
+		  	// margin-top: -56px;
 			}
 
 		}

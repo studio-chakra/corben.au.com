@@ -7,12 +7,14 @@
 .top-bar {
 	position: relative;
 
+	margin-bottom: 14px;
+
 	@media #{$large-up} {
 		height: 80px;
 	}
 
 	@media #{$xlarge-up} {
-		height: 142px;
+		height: 112px;
 	}
 }
 
@@ -22,7 +24,7 @@
 	}
 
 	@media #{$xlarge-up} {
-		margin-top: 130px;
+		margin-top: 102px;
 	}
 }
 
@@ -66,7 +68,7 @@
 
 // Mobile Nav
 .tab-bar {
-	margin-bottom: $topbar-margin-bottom;
+	margin-bottom: 14px;
 }
 
 .right-off-canvas-toggle {
@@ -106,21 +108,21 @@ h1.logo-mobile {
 		display: block;
 		width: 200px;
 		height: $tabbar-height;
-		background-image: url("../images/logo.png");
+		background-image: url("../images/logo-sm.png");
 		background-size: 200px 112px;
 		background-position: 0 -36px;
 		
 		@media #{$large-up} {
-			width: 253px;
+			width: 200px;
 			height: 80px;
-			background-size: 253px 142px;
-			background-position: 0 -62px;
+			background-size: 200px 112px;
+			background-position: 0 -32;
 		}
 
 		@media #{$xlarge-up} {
-			width: 253px;
-			height: 142px;
-			background-size: 253px 142px;
+			width: 200px;
+			height: 112px;
+			background-size: 200px 112px;
 			background-position: 0 0;
 		}
 	}

@@ -87,13 +87,13 @@ class __TwigTemplate_555c3e976e880202323c0234c447b4d934e6d48dc496424cf2f41ba46d1
             if ((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset"))) {
                 // line 33
                 echo "\t\t\t\t\t\t\t\t\t<img src=\"";
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset")), "url"), "html", null, true);
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset")), "url", array(0 => "projectThumbnailGrid"), "method"), "html", null, true);
                 echo "\" class=\"project-thumb-img\" alt=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectTitle"), "html", null, true);
                 echo "\" width=\"";
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset")), "width"), "html", null, true);
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset")), "getWidth", array(0 => "projectThumbnailGrid"), "method"), "html", null, true);
                 echo "\" height=\"";
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset")), "height"), "html", null, true);
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset")), "getHeight", array(0 => "projectThumbnailGrid"), "method"), "html", null, true);
                 echo "\" />
 \t\t\t\t\t\t\t\t";
             } else {

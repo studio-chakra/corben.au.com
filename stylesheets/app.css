@@ -4245,7 +4245,7 @@ input[type="time"],
 input[type="url"],
 textarea {
   -webkit-appearance: none;
-  background-color: #f1f1f1;
+  background-color: #eeeeee;
   font-family: inherit;
   border: 1px solid white;
   box-shadow: none;
@@ -8787,6 +8787,7 @@ ul.errors {
 /* line 7, ../scss/corben/_header.scss */
 .top-bar {
   position: relative;
+  margin-bottom: 14px;
 }
 @media only screen and (min-width: 48em) {
   /* line 7, ../scss/corben/_header.scss */
@@ -8797,51 +8798,51 @@ ul.errors {
 @media only screen and (min-width: 64.063em) {
   /* line 7, ../scss/corben/_header.scss */
   .top-bar {
-    height: 142px;
+    height: 112px;
   }
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 19, ../scss/corben/_header.scss */
+  /* line 21, ../scss/corben/_header.scss */
   .top-bar-section {
     margin-top: 67px;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 19, ../scss/corben/_header.scss */
+  /* line 21, ../scss/corben/_header.scss */
   .top-bar-section {
-    margin-top: 130px;
+    margin-top: 102px;
   }
 }
 
-/* line 29, ../scss/corben/_header.scss */
+/* line 31, ../scss/corben/_header.scss */
 .top-bar-section ul li > a,
 .top-bar-section .has-dropdown > a {
   padding: 0 0 0 48px !important;
 }
 
-/* line 34, ../scss/corben/_header.scss */
+/* line 36, ../scss/corben/_header.scss */
 .top-bar-section ul li > a {
   line-height: 1;
 }
 
-/* line 38, ../scss/corben/_header.scss */
+/* line 40, ../scss/corben/_header.scss */
 .top-bar-section .dropdown {
   top: auto;
   bottom: 100%;
   text-align: right;
 }
-/* line 42, ../scss/corben/_header.scss */
+/* line 44, ../scss/corben/_header.scss */
 .top-bar-section .dropdown li {
   margin: 0;
 }
-/* line 44, ../scss/corben/_header.scss */
+/* line 46, ../scss/corben/_header.scss */
 .top-bar-section .dropdown li a {
   background: none !important;
   padding: 0 !important;
 }
 
-/* line 51, ../scss/corben/_header.scss */
+/* line 53, ../scss/corben/_header.scss */
 .top-bar-section .dropdown.is-active {
   display: block;
   position: static !important;
@@ -8852,17 +8853,17 @@ ul.errors {
   position: absolute !important;
 }
 
-/* line 63, ../scss/corben/_header.scss */
+/* line 65, ../scss/corben/_header.scss */
 .top-bar-section a.is-active {
   color: black !important;
 }
 
-/* line 68, ../scss/corben/_header.scss */
+/* line 70, ../scss/corben/_header.scss */
 .tab-bar {
-  margin-bottom: 22px;
+  margin-bottom: 14px;
 }
 
-/* line 72, ../scss/corben/_header.scss */
+/* line 74, ../scss/corben/_header.scss */
 .right-off-canvas-toggle {
   color: #666;
   font-family: "Source Sans Pro", sans-serif;
@@ -8876,54 +8877,54 @@ ul.errors {
   top: 14px;
   right: 0;
 }
-/* line 87, ../scss/corben/_header.scss */
+/* line 89, ../scss/corben/_header.scss */
 .right-off-canvas-toggle:hover {
   color: #000;
   border-color: #666;
 }
-/* line 92, ../scss/corben/_header.scss */
+/* line 94, ../scss/corben/_header.scss */
 .right-off-canvas-toggle .fa {
   display: block;
 }
 
-/* line 99, ../scss/corben/_header.scss */
+/* line 101, ../scss/corben/_header.scss */
 h1.logo,
 h1.logo-mobile {
   margin: 0;
   padding: 0;
   float: left;
 }
-/* line 105, ../scss/corben/_header.scss */
+/* line 107, ../scss/corben/_header.scss */
 h1.logo a,
 h1.logo-mobile a {
   display: block;
   width: 200px;
   height: 4.6875rem;
-  background-image: url("../images/logo.png");
+  background-image: url("../images/logo-sm.png");
   background-size: 200px 112px;
   background-position: 0 -36px;
 }
 @media only screen and (min-width: 48em) {
-  /* line 105, ../scss/corben/_header.scss */
+  /* line 107, ../scss/corben/_header.scss */
   h1.logo a,
   h1.logo-mobile a {
-    width: 253px;
+    width: 200px;
     height: 80px;
-    background-size: 253px 142px;
-    background-position: 0 -62px;
+    background-size: 200px 112px;
+    background-position: 0 -32;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 105, ../scss/corben/_header.scss */
+  /* line 107, ../scss/corben/_header.scss */
   h1.logo a,
   h1.logo-mobile a {
-    width: 253px;
-    height: 142px;
-    background-size: 253px 142px;
+    width: 200px;
+    height: 112px;
+    background-size: 200px 112px;
     background-position: 0 0;
   }
 }
-/* line 128, ../scss/corben/_header.scss */
+/* line 130, ../scss/corben/_header.scss */
 h1.logo .hidden,
 h1.logo-mobile .hidden {
   display: none;
@@ -9703,7 +9704,7 @@ ul.project-pagination,
   /* Clickable class fix problem with hover on touch devices */
   /* Use it for non-touch hover action */
 }
-/* line 488, ../scss/corben/_molecules.scss */
+/* line 489, ../scss/corben/_molecules.scss */
 .corben-carousel .owl-controls .owl-buttons div {
   color: black;
   display: inline-block;
@@ -9718,81 +9719,65 @@ ul.project-pagination,
   border-radius: 0;
   filter: Alpha(Opacity=100);
   /*IE7 fix*/
-  opacity: 1;
+  opacity: .5;
 }
-/* line 503, ../scss/corben/_molecules.scss */
+/* line 504, ../scss/corben/_molecules.scss */
 .corben-carousel .owl-controls .owl-buttons div img {
   width: 25px;
 }
-@media only screen and (min-width: 48em) {
-  /* line 503, ../scss/corben/_molecules.scss */
-  .corben-carousel .owl-controls .owl-buttons div img {
-    width: 35px;
-  }
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 503, ../scss/corben/_molecules.scss */
-  .corben-carousel .owl-controls .owl-buttons div img {
-    width: 50px;
-  }
-}
-/* line 519, ../scss/corben/_molecules.scss */
+/* line 520, ../scss/corben/_molecules.scss */
 .corben-carousel .owl-controls .owl-buttons div:hover {
   filter: Alpha(Opacity=50);
   /*IE7 fix*/
-  opacity: .5;
+  opacity: 1;
   text-decoration: none;
   color: #333333;
 }
-/* line 526, ../scss/corben/_molecules.scss */
+/* line 527, ../scss/corben/_molecules.scss */
 .corben-carousel .owl-controls .owl-buttons .owl-prev {
   left: 5%;
   top: 50%;
   margin-top: -40px;
 }
 @media only screen and (min-width: 48em) {
-  /* line 526, ../scss/corben/_molecules.scss */
+  /* line 527, ../scss/corben/_molecules.scss */
   .corben-carousel .owl-controls .owl-buttons .owl-prev {
     left: 3%;
-    margin-top: -35px;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 526, ../scss/corben/_molecules.scss */
+  /* line 527, ../scss/corben/_molecules.scss */
   .corben-carousel .owl-controls .owl-buttons .owl-prev {
     left: -70px;
-    margin-top: -56px;
   }
 }
-/* line 542, ../scss/corben/_molecules.scss */
+/* line 543, ../scss/corben/_molecules.scss */
 .corben-carousel .owl-controls .owl-buttons .owl-next {
   right: 5%;
   top: 50%;
   margin-top: -40px;
 }
 @media only screen and (min-width: 48em) {
-  /* line 542, ../scss/corben/_molecules.scss */
+  /* line 543, ../scss/corben/_molecules.scss */
   .corben-carousel .owl-controls .owl-buttons .owl-next {
     right: 3%;
-    margin-top: -35px;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 542, ../scss/corben/_molecules.scss */
+  /* line 543, ../scss/corben/_molecules.scss */
   .corben-carousel .owl-controls .owl-buttons .owl-next {
     right: -70px;
-    margin-top: -56px;
   }
 }
 
 /* preloading images */
-/* line 564, ../scss/corben/_molecules.scss */
+/* line 565, ../scss/corben/_molecules.scss */
 .corben-carousel .owl-item.loading {
   min-height: 150px;
   background: url(../images/AjaxLoader.gif) no-repeat center center;
 }
 
-/* line 574, ../scss/corben/_molecules.scss */
+/* line 575, ../scss/corben/_molecules.scss */
 .team-grid {
   display: block;
   padding: 0;
@@ -9830,7 +9815,7 @@ ul.project-pagination,
   clear: both;
 }
 @media only screen and (min-width: 480px) {
-  /* line 574, ../scss/corben/_molecules.scss */
+  /* line 575, ../scss/corben/_molecules.scss */
   .team-grid {
     display: block;
     padding: 0;
@@ -9869,7 +9854,7 @@ ul.project-pagination,
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 574, ../scss/corben/_molecules.scss */
+  /* line 575, ../scss/corben/_molecules.scss */
   .team-grid {
     display: block;
     padding: 0;
@@ -9908,7 +9893,7 @@ ul.project-pagination,
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 574, ../scss/corben/_molecules.scss */
+  /* line 575, ../scss/corben/_molecules.scss */
   .team-grid {
     display: block;
     padding: 0;
@@ -9947,7 +9932,7 @@ ul.project-pagination,
   }
 }
 @media only screen and (min-width: 1400px) {
-  /* line 574, ../scss/corben/_molecules.scss */
+  /* line 575, ../scss/corben/_molecules.scss */
   .team-grid {
     display: block;
     padding: 0;
@@ -9986,106 +9971,106 @@ ul.project-pagination,
   }
 }
 
-/* line 607, ../scss/corben/_molecules.scss */
+/* line 608, ../scss/corben/_molecules.scss */
 .team-item {
   margin-bottom: 1.5rem;
 }
 
-/* line 611, ../scss/corben/_molecules.scss */
+/* line 612, ../scss/corben/_molecules.scss */
 .emp-name,
 .emp-cred,
 .emp-bio {
   padding: 0 0.75rem;
 }
 
-/* line 617, ../scss/corben/_molecules.scss */
+/* line 618, ../scss/corben/_molecules.scss */
 .emp-name {
   text-transform: uppercase;
   margin: 0.75rem 0 0 0;
   line-height: 1.2;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 617, ../scss/corben/_molecules.scss */
+  /* line 618, ../scss/corben/_molecules.scss */
   .emp-name {
     margin: 1.875rem 0 0.125rem 0;
   }
 }
 
-/* line 627, ../scss/corben/_molecules.scss */
+/* line 628, ../scss/corben/_molecules.scss */
 .emp-title {
   color: black;
   font-weight: 400;
   font-size: 1rem;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 627, ../scss/corben/_molecules.scss */
+  /* line 628, ../scss/corben/_molecules.scss */
   .emp-title {
     font-size: 0.8125rem;
   }
 }
 
-/* line 637, ../scss/corben/_molecules.scss */
+/* line 638, ../scss/corben/_molecules.scss */
 .emp-cred {
   font-size: 0.875rem;
   line-height: 1.4;
   margin: 0;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 637, ../scss/corben/_molecules.scss */
+  /* line 638, ../scss/corben/_molecules.scss */
   .emp-cred {
     font-size: 0.6875rem;
     line-height: 1.2;
   }
 }
 
-/* line 648, ../scss/corben/_molecules.scss */
+/* line 649, ../scss/corben/_molecules.scss */
 .emp-bio {
   margin: 0.625rem 0 0 0;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 648, ../scss/corben/_molecules.scss */
+  /* line 649, ../scss/corben/_molecules.scss */
   .emp-bio {
     margin: 1.25rem 0 0 0;
   }
 }
 
-/* line 661, ../scss/corben/_molecules.scss */
+/* line 662, ../scss/corben/_molecules.scss */
 .post {
   margin-bottom: 3rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 666, ../scss/corben/_molecules.scss */
+/* line 667, ../scss/corben/_molecules.scss */
 .post:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
 }
-/* line 672, ../scss/corben/_molecules.scss */
+/* line 673, ../scss/corben/_molecules.scss */
 .post > *:last-child {
   margin-bottom: 0;
 }
 
-/* line 678, ../scss/corben/_molecules.scss */
+/* line 679, ../scss/corben/_molecules.scss */
 .post-media,
 .post-header {
   margin: 0 0 1.5rem 0;
 }
 
-/* line 683, ../scss/corben/_molecules.scss */
+/* line 684, ../scss/corben/_molecules.scss */
 .post-title {
   margin-bottom: 0.125rem;
 }
-/* line 685, ../scss/corben/_molecules.scss */
+/* line 686, ../scss/corben/_molecules.scss */
 .post-title a {
   color: #424242;
 }
-/* line 687, ../scss/corben/_molecules.scss */
+/* line 688, ../scss/corben/_molecules.scss */
 .post-title a:hover {
   color: black;
 }
 
-/* line 693, ../scss/corben/_molecules.scss */
+/* line 694, ../scss/corben/_molecules.scss */
 .post-meta {
   margin-bottom: 0;
   color: #666666;

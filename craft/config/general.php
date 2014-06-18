@@ -20,7 +20,7 @@ return array(
         'devMode' => true,
         'environmentVariables' => array(
             'siteUrl'        => 'http://corben.dev/',
-            'fileSystemPath' => '../images/',
+            'fileSystemPath' => '/Applications/MAMP/htdocs/corben.au.com/images/',
         ),
     ),
 

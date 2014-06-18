@@ -30,7 +30,7 @@
 				  	<a href="{{ entry.url }}" class="project-thumb">
 							<figure>
 								{% if asset %}
-									<img src="{{ asset.url }}" class="project-thumb-img" alt="{{ entry.projectTitle }}" width="{{ asset.width }}" height="{{ asset.height }}" />
+									<img src="{{ asset.url('projectThumbnailGrid') }}" class="project-thumb-img" alt="{{ entry.projectTitle }}" width="{{ asset.getWidth('projectThumbnailGrid') }}" height="{{ asset.getHeight('projectThumbnailGrid') }}" />
 								{% else %}								
 									<img class="project-thumb-img" src="http://placehold.it/480x320" />
 								{% endif %}	

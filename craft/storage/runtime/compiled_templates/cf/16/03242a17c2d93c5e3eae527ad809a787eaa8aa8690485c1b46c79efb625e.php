@@ -24,7 +24,7 @@ class __TwigTemplate_cf1603242a17c2d93c5e3eae527ad809a787eaa8aa8690485c1b46c79ef
         echo "
 ";
         // line 28
-        $context["__internal_6de92b0439a7b4c532198226ed8dd67ac57526fb9634f7dd6c2e8fc6bbad0ede"] = $this;
+        $context["__internal_adb9f03718a800eab7e5955438f1bef9fd6ec8b87760b2bcc21de4d3b7c2ffbb"] = $this;
         // line 29
         echo "
 ";
@@ -61,7 +61,7 @@ class __TwigTemplate_cf1603242a17c2d93c5e3eae527ad809a787eaa8aa8690485c1b46c79ef
 
 \t";
         // line 58
-        echo $context["forms"]->getfield(array("label" => \Craft\Craft::t("Default Upload Location"), "instructions" => ((\Craft\Craft::t("Where should files be uploaded when they are dragged directly onto the field, or uploaded from the front end?") . " ") . \Craft\Craft::t("Note that the subfolder path can contain variables like <code>{slug}</code> or <code>{author.username}</code>.")), "errors" => $this->getAttribute((isset($context["settings"]) ? $context["settings"] : $this->getContext($context, "settings")), "getErrors", array(0 => "defaultUploadLocationSubpath"), "method")), $context["__internal_6de92b0439a7b4c532198226ed8dd67ac57526fb9634f7dd6c2e8fc6bbad0ede"]->getuploadLocationInput("defaultUploadLocation", (isset($context["settings"]) ? $context["settings"] : $this->getContext($context, "settings")), (isset($context["sourceOptions"]) ? $context["sourceOptions"] : $this->getContext($context, "sourceOptions"))));
+        echo $context["forms"]->getfield(array("label" => \Craft\Craft::t("Default Upload Location"), "instructions" => ((\Craft\Craft::t("Where should files be uploaded when they are dragged directly onto the field, or uploaded from the front end?") . " ") . \Craft\Craft::t("Note that the subfolder path can contain variables like <code>{slug}</code> or <code>{author.username}</code>.")), "errors" => $this->getAttribute((isset($context["settings"]) ? $context["settings"] : $this->getContext($context, "settings")), "getErrors", array(0 => "defaultUploadLocationSubpath"), "method")), $context["__internal_adb9f03718a800eab7e5955438f1bef9fd6ec8b87760b2bcc21de4d3b7c2ffbb"]->getuploadLocationInput("defaultUploadLocation", (isset($context["settings"]) ? $context["settings"] : $this->getContext($context, "settings")), (isset($context["sourceOptions"]) ? $context["sourceOptions"] : $this->getContext($context, "sourceOptions"))));
         // line 62
         echo "
 </div>
@@ -74,7 +74,7 @@ class __TwigTemplate_cf1603242a17c2d93c5e3eae527ad809a787eaa8aa8690485c1b46c79ef
         echo ">
 \t";
         // line 66
-        echo $context["forms"]->getfield(array("label" => \Craft\Craft::t("Upload Location"), "instructions" => \Craft\Craft::t("Note that the subfolder path can contain variables like <code>{slug}</code> or <code>{author.username}</code>."), "errors" => $this->getAttribute((isset($context["settings"]) ? $context["settings"] : $this->getContext($context, "settings")), "getErrors", array(0 => "singleUploadLocationSubpath"), "method")), $context["__internal_6de92b0439a7b4c532198226ed8dd67ac57526fb9634f7dd6c2e8fc6bbad0ede"]->getuploadLocationInput("singleUploadLocation", (isset($context["settings"]) ? $context["settings"] : $this->getContext($context, "settings")), (isset($context["sourceOptions"]) ? $context["sourceOptions"] : $this->getContext($context, "sourceOptions"))));
+        echo $context["forms"]->getfield(array("label" => \Craft\Craft::t("Upload Location"), "instructions" => \Craft\Craft::t("Note that the subfolder path can contain variables like <code>{slug}</code> or <code>{author.username}</code>."), "errors" => $this->getAttribute((isset($context["settings"]) ? $context["settings"] : $this->getContext($context, "settings")), "getErrors", array(0 => "singleUploadLocationSubpath"), "method")), $context["__internal_adb9f03718a800eab7e5955438f1bef9fd6ec8b87760b2bcc21de4d3b7c2ffbb"]->getuploadLocationInput("singleUploadLocation", (isset($context["settings"]) ? $context["settings"] : $this->getContext($context, "settings")), (isset($context["sourceOptions"]) ? $context["sourceOptions"] : $this->getContext($context, "sourceOptions"))));
         // line 70
         echo "
 </div>
@@ -137,21 +137,21 @@ class __TwigTemplate_cf1603242a17c2d93c5e3eae527ad809a787eaa8aa8690485c1b46c79ef
         try {
             // line 4
             echo "\t";
-            $context["__internal_a87a5fd0e0878e1e0f134d6b3c7d911f7ee042b0e5039fc3f0e38d4995394797"] = $this->env->loadTemplate("_includes/forms");
+            $context["__internal_3d0fff4451e9cd3b377d4d99cc4b2c26f346be8f9e3ef1eac5666567fbc6ea00"] = $this->env->loadTemplate("_includes/forms");
             // line 5
             echo "\t<table class=\"inputs fullwidth\">
 \t\t<tr>
 \t\t\t<td class=\"thin\">
 \t\t\t\t";
             // line 8
-            echo $context["__internal_a87a5fd0e0878e1e0f134d6b3c7d911f7ee042b0e5039fc3f0e38d4995394797"]->getselect(array("id" => ((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")) . "Source"), "name" => ((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")) . "Source"), "options" => (isset($context["sourceOptions"]) ? $context["sourceOptions"] : $this->getContext($context, "sourceOptions")), "value" => $this->getAttribute((isset($context["settings"]) ? $context["settings"] : $this->getContext($context, "settings")), ((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")) . "Source"), array(), "array")));
+            echo $context["__internal_3d0fff4451e9cd3b377d4d99cc4b2c26f346be8f9e3ef1eac5666567fbc6ea00"]->getselect(array("id" => ((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")) . "Source"), "name" => ((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")) . "Source"), "options" => (isset($context["sourceOptions"]) ? $context["sourceOptions"] : $this->getContext($context, "sourceOptions")), "value" => $this->getAttribute((isset($context["settings"]) ? $context["settings"] : $this->getContext($context, "settings")), ((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")) . "Source"), array(), "array")));
             // line 13
             echo "
 \t\t\t</td>
 \t\t\t<td>
 \t\t\t\t";
             // line 16
-            echo $context["__internal_a87a5fd0e0878e1e0f134d6b3c7d911f7ee042b0e5039fc3f0e38d4995394797"]->gettext(array("id" => ((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")) . "Subpath"), "class" => "ltr", "name" => ((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")) . "Subpath"), "value" => $this->getAttribute((isset($context["settings"]) ? $context["settings"] : $this->getContext($context, "settings")), ((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")) . "Subpath"), array(), "array"), "placeholder" => \Craft\Craft::t("path/to/subfolder")));
+            echo $context["__internal_3d0fff4451e9cd3b377d4d99cc4b2c26f346be8f9e3ef1eac5666567fbc6ea00"]->gettext(array("id" => ((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")) . "Subpath"), "class" => "ltr", "name" => ((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")) . "Subpath"), "value" => $this->getAttribute((isset($context["settings"]) ? $context["settings"] : $this->getContext($context, "settings")), ((isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")) . "Subpath"), array(), "array"), "placeholder" => \Craft\Craft::t("path/to/subfolder")));
             // line 22
             echo "
 \t\t\t</td>
@@ -179,6 +179,6 @@ class __TwigTemplate_cf1603242a17c2d93c5e3eae527ad809a787eaa8aa8690485c1b46c79ef
 
     public function getDebugInfo()
     {
-        return array (  156 => 22,  147 => 8,  142 => 5,  126 => 3,  121 => 105,  119 => 97,  114 => 95,  103 => 91,  100 => 85,  96 => 84,  86 => 81,  84 => 73,  71 => 65,  66 => 62,  64 => 58,  56 => 54,  53 => 52,  46 => 43,  44 => 42,  29 => 29,  27 => 28,  21 => 2,  19 => 1,  258 => 163,  256 => 162,  249 => 156,  243 => 152,  236 => 150,  232 => 149,  226 => 147,  220 => 145,  217 => 144,  207 => 149,  201 => 147,  195 => 145,  192 => 144,  185 => 143,  176 => 142,  173 => 141,  169 => 140,  165 => 138,  163 => 129,  158 => 126,  154 => 16,  151 => 120,  149 => 13,  145 => 117,  143 => 108,  139 => 4,  137 => 96,  133 => 94,  131 => 84,  127 => 82,  124 => 74,  118 => 73,  115 => 72,  110 => 93,  108 => 70,  105 => 69,  99 => 67,  97 => 66,  92 => 63,  90 => 83,  87 => 58,  85 => 57,  82 => 54,  79 => 70,  77 => 66,  75 => 50,  73 => 48,  70 => 44,  67 => 42,  65 => 41,  63 => 35,  60 => 56,  58 => 30,  54 => 26,  51 => 24,  49 => 50,  47 => 22,  45 => 20,  42 => 17,  40 => 16,  38 => 41,  34 => 39,  32 => 30,  30 => 8,  28 => 7,  26 => 5,  24 => 27,);
+        return array (  156 => 22,  147 => 8,  142 => 5,  126 => 3,  121 => 105,  119 => 97,  114 => 95,  103 => 91,  100 => 85,  96 => 84,  86 => 81,  84 => 73,  71 => 65,  66 => 62,  64 => 58,  56 => 54,  46 => 43,  44 => 42,  29 => 29,  27 => 28,  53 => 52,  39 => 13,  33 => 12,  25 => 11,  23 => 9,  21 => 2,  19 => 1,  258 => 163,  256 => 162,  249 => 156,  243 => 152,  236 => 150,  232 => 149,  226 => 147,  220 => 145,  217 => 144,  207 => 149,  201 => 147,  195 => 145,  192 => 144,  185 => 143,  176 => 142,  173 => 141,  169 => 140,  165 => 138,  163 => 129,  158 => 126,  154 => 16,  151 => 120,  149 => 13,  145 => 117,  143 => 108,  139 => 4,  137 => 96,  133 => 94,  131 => 84,  127 => 82,  124 => 74,  118 => 73,  115 => 72,  110 => 93,  108 => 70,  105 => 69,  99 => 67,  97 => 66,  92 => 63,  90 => 83,  87 => 58,  85 => 57,  82 => 54,  79 => 70,  77 => 66,  75 => 50,  73 => 48,  70 => 44,  67 => 42,  65 => 41,  63 => 35,  60 => 56,  58 => 30,  54 => 26,  51 => 24,  49 => 50,  47 => 22,  45 => 14,  42 => 17,  40 => 16,  38 => 41,  34 => 39,  32 => 30,  30 => 8,  28 => 7,  26 => 5,  24 => 27,);
     }
 }
