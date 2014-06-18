@@ -37,28 +37,22 @@ class __TwigTemplate_555c3e976e880202323c0234c447b4d934e6d48dc496424cf2f41ba46d1
             // line 11
             $context["articleClass"] = " page-projects-category";
         }
+        // line 14
+        if ((isset($context["isCatPage"]) ? $context["isCatPage"] : $this->getContext($context, "isCatPage"))) {
+            // line 15
+            $context["projects"] = $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["craft"]) ? $context["craft"] : $this->getContext($context, "craft")), "entries"), "section", array(0 => "projects"), "method"), "relatedTo", array(0 => (isset($context["category"]) ? $context["category"] : $this->getContext($context, "category"))), "method"), "find", array(), "method");
+        } else {
+            // line 17
+            $context["projects"] = $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["craft"]) ? $context["craft"] : $this->getContext($context, "craft")), "entries"), "section", array(0 => "projects"), "method"), "find", array(), "method");
+        }
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 14
+    // line 20
     public function block_content($context, array $blocks = array())
     {
-        // line 15
+        // line 21
         echo "
-";
-        // line 16
-        if ((isset($context["isCatPage"]) ? $context["isCatPage"] : $this->getContext($context, "isCatPage"))) {
-            // line 17
-            echo "\t";
-            $context["projects"] = $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["craft"]) ? $context["craft"] : $this->getContext($context, "craft")), "entries"), "section", array(0 => "projects"), "method"), "relatedTo", array(0 => (isset($context["category"]) ? $context["category"] : $this->getContext($context, "category"))), "method"), "find", array(), "method");
-        } else {
-            // line 19
-            echo "\t";
-            $context["projects"] = $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["craft"]) ? $context["craft"] : $this->getContext($context, "craft")), "entries"), "section", array(0 => "projects"), "method"), "find", array(), "method");
-        }
-        // line 20
-        echo "\t
-
 <article class=\"page-projects";
         // line 22
         echo twig_escape_filter($this->env, (isset($context["articleClass"]) ? $context["articleClass"] : $this->getContext($context, "articleClass")), "html", null, true);
@@ -146,6 +140,6 @@ class __TwigTemplate_555c3e976e880202323c0234c447b4d934e6d48dc496424cf2f41ba46d1
 
     public function getDebugInfo()
     {
-        return array (  128 => 44,  110 => 38,  106 => 36,  101 => 34,  89 => 33,  87 => 32,  82 => 30,  79 => 29,  76 => 28,  72 => 27,  64 => 22,  60 => 20,  56 => 19,  52 => 17,  50 => 16,  47 => 15,  44 => 14,  38 => 11,  36 => 10,  34 => 9,  31 => 7,  29 => 6,  27 => 5,  25 => 4,);
+        return array (  122 => 44,  104 => 38,  100 => 36,  95 => 34,  83 => 33,  81 => 32,  76 => 30,  73 => 29,  70 => 28,  66 => 27,  58 => 22,  55 => 21,  52 => 20,  46 => 17,  43 => 15,  41 => 14,  38 => 11,  36 => 10,  34 => 9,  31 => 7,  29 => 6,  27 => 5,  25 => 4,);
     }
 }

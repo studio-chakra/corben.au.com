@@ -11,13 +11,13 @@
 	{% set articleClass = " page-projects-category" %}
 {% endif %}
 
-{% block content %}
-
 {% if isCatPage %}
 	{% set projects = craft.entries.section('projects').relatedTo(category).find() %}
 {% else %}
 	{% set projects = craft.entries.section('projects').find() %}
 {% endif %}	
+
+{% block content %}
 
 <article class="page-projects{{ articleClass }}">
 	<div class="row">

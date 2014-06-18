@@ -191,7 +191,7 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 \t\t\t\t\t\t\t        <a href=\"";
         // line 68
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "about\" ";
+        echo "practice/about\" ";
         echo $this->env->getExtension('Sprout Active')->getActiveClass("practice|about|architecture|service|fees|awards", 1, "is-active");
         echo ">Practice</a>
 \t\t\t\t\t\t\t        <ul class=\"dropdown ";
@@ -201,31 +201,31 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 \t\t\t\t\t\t\t          <li><a href=\"";
         // line 70
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "awards\" ";
+        echo "practice/awards\" ";
         echo $this->env->getExtension('Sprout Active')->getActiveClass("awards", 1, "is-active");
         echo ">Awards</a></li>
 \t\t\t\t\t\t\t          <li><a href=\"";
         // line 71
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "fees\" ";
+        echo "practice/fees\" ";
         echo $this->env->getExtension('Sprout Active')->getActiveClass("fees", 1, "is-active");
         echo ">Fees</a></li>
 \t\t\t\t\t\t\t          <li><a href=\"";
         // line 72
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "service\" ";
+        echo "practice/service\" ";
         echo $this->env->getExtension('Sprout Active')->getActiveClass("service", 1, "is-active");
         echo ">Service</a></li>
 \t\t\t\t\t\t\t          <li><a href=\"";
         // line 73
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "architecture\" ";
+        echo "practice/architecture\" ";
         echo $this->env->getExtension('Sprout Active')->getActiveClass("architecture", 1, "is-active");
         echo ">Architecture</a></li>
 \t\t\t\t\t\t\t          <li><a href=\"";
         // line 74
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "about\" ";
+        echo "practice/about\" ";
         echo $this->env->getExtension('Sprout Active')->getActiveClass("about", 1, "is-active");
         echo ">About</a></li>
 \t\t\t\t\t\t\t        </ul>
@@ -332,7 +332,7 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 \t          \t\t<a href=\"";
         // line 97
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "about\" ";
+        echo "practice/about\" ";
         echo $this->env->getExtension('Sprout Active')->getActiveClass("practice|about|architecture|service|fees|awards", 1, "is-active");
         echo ">Practice</a>
 \t          \t\t<ul class=\"dropdown ";
@@ -342,31 +342,31 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 \t\t\t\t\t\t\t    <li><a href=\"";
         // line 99
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "awards\" ";
+        echo "practice/awards\" ";
         echo $this->env->getExtension('Sprout Active')->getActiveClass("awards", 1, "is-active");
         echo ">Awards</a></li>
 \t\t\t\t\t\t\t    <li><a href=\"";
         // line 100
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "fees\" ";
+        echo "practice/fees\" ";
         echo $this->env->getExtension('Sprout Active')->getActiveClass("fees", 1, "is-active");
         echo ">Fees</a></li>
 \t\t\t\t\t\t\t    <li><a href=\"";
         // line 101
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "service\" ";
+        echo "practice/service\" ";
         echo $this->env->getExtension('Sprout Active')->getActiveClass("service", 1, "is-active");
         echo ">Service</a></li>
 \t\t\t\t\t\t\t    <li><a href=\"";
         // line 102
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "architecture\" ";
+        echo "practice/architecture\" ";
         echo $this->env->getExtension('Sprout Active')->getActiveClass("architecture", 1, "is-active");
         echo ">Architecture</a></li>
 \t\t\t\t\t\t\t    <li><a href=\"";
         // line 103
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
-        echo "about\" ";
+        echo "practice/about\" ";
         echo $this->env->getExtension('Sprout Active')->getActiveClass("about", 1, "is-active");
         echo ">About</a></li>
 \t\t\t\t\t\t\t  </ul>\t
@@ -500,6 +500,6 @@ class __TwigTemplate_70023bc6103a067e7838c7c997789bf41129593490b83c47efe06925ede
 
     public function getDebugInfo()
     {
-        return array (  487 => 113,  482 => 23,  452 => 140,  448 => 139,  444 => 138,  437 => 135,  426 => 130,  420 => 127,  417 => 126,  413 => 125,  398 => 113,  388 => 108,  382 => 107,  376 => 106,  368 => 103,  362 => 102,  356 => 101,  350 => 100,  344 => 99,  340 => 98,  334 => 97,  329 => 94,  303 => 92,  267 => 91,  263 => 90,  257 => 89,  241 => 78,  235 => 77,  227 => 74,  221 => 73,  215 => 72,  209 => 71,  203 => 70,  199 => 69,  193 => 68,  188 => 65,  162 => 63,  126 => 62,  122 => 61,  116 => 60,  108 => 55,  70 => 23,  66 => 22,  62 => 21,  58 => 20,  54 => 19,  21 => 1,  128 => 44,  110 => 38,  106 => 36,  101 => 51,  89 => 33,  87 => 32,  82 => 30,  79 => 29,  76 => 28,  72 => 24,  64 => 22,  60 => 20,  56 => 19,  52 => 17,  50 => 18,  47 => 15,  44 => 15,  38 => 11,  36 => 14,  34 => 9,  31 => 7,  29 => 6,  27 => 5,  25 => 4,);
+        return array (  487 => 113,  482 => 23,  452 => 140,  448 => 139,  444 => 138,  437 => 135,  426 => 130,  420 => 127,  417 => 126,  413 => 125,  398 => 113,  388 => 108,  382 => 107,  376 => 106,  368 => 103,  362 => 102,  356 => 101,  350 => 100,  344 => 99,  340 => 98,  334 => 97,  329 => 94,  303 => 92,  267 => 91,  263 => 90,  257 => 89,  241 => 78,  235 => 77,  227 => 74,  221 => 73,  215 => 72,  209 => 71,  203 => 70,  199 => 69,  193 => 68,  188 => 65,  162 => 63,  126 => 62,  122 => 61,  116 => 60,  108 => 55,  101 => 51,  72 => 24,  70 => 23,  66 => 22,  62 => 21,  58 => 20,  54 => 19,  50 => 18,  44 => 15,  36 => 14,  21 => 1,);
     }
 }

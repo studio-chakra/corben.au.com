@@ -1,9 +1,19 @@
 {% extends "_layout" %}
-{% set title = entry.title %}
 
-{% block content %}
+{% set entrySlug = '' %}
+
+{# Check for Practice Route to display correct title #}
+{% if craft.request.getFirstSegment() == 'practice' %}
+	{% set entrySlug = craft.request.getSegment(2) %}	
+	{% set entry = craft.entries.slug(entrySlug).first() %}
+	{% set title = entry.title ~ " | Practice" %}
+{% else %}
+	{% set title = entry.title %}
+{% endif %}
 
 {% set asset = entry.pageImage.first() %}
+
+{% block content %}
 
 <article class="page-general">
 	<div class="row">
