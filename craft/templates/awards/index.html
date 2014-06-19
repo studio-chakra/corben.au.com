@@ -1,0 +1,59 @@
+{% extends "_layout" %}
+{% set title = "Awards" %}
+
+{% set awards = craft.entries.order('awardDate desc').section('awards').find() %}
+
+{% set awardId = craft.request.getParam('id') %}
+
+{% if awardId == '' %}
+	{% set selAward = craft.entries.order('awardDate desc').section('awards').first() %}
+{% else %}
+	{% set selAward = craft.entries.id(awardId).first() %}
+{% endif %}
+{% set selAwardId = selAward.id %}
+{% set selAsset = selAward.awardImage.first() %}
+
+{% block content %}
+
+<article class="page-awards">
+	<div class="row">
+		<div class="xlarge-4 large-6 columns">
+			<section class="awards">
+			{% for entry in awards %}	
+				{% set awardClass = '' %}
+				{% if selAwardId == entry.id %}
+					{% set awardClass = ' is-selected' %}
+				{% endif %}
+
+				<a href="{{ siteUrl }}practice/awards&id={{ entry.id }}" class="award-block{{ awardClass }}">
+					<h6 class="award-title">{{ entry.title }}</h6>
+					{% if entry.awardSubtitle is not empty %}
+					<p class="award-subtitle">{{ entry.awardSubtitle }}</p>
+					{% endif %}
+					{% if entry.awardNotions | length %}
+						<ul class="no-bullet award-notions-list">
+						{% for block in entry.awardNotions.type('notion') %}
+							<li class="award-notion">{{ block.notion }}</li>
+						{% endfor %}
+					{% endif %}
+					</ul>
+				</a>
+			{% endfor %}
+			</section>
+		</div>
+		<div class="xlarge-8 large-6 columns">
+			<section class="page-img show-for-large-up">		
+				{% if selAsset %}
+					<img src="{{ selAsset.url }}" class="award-image" alt="{{ selAsset.altText }}" width="{{ selAsset.width }}" height="{{ selAsset.height }}" />
+				{% endif %}
+				{% if selAward.awardRelatedProject | length %}
+					{% for project in selAward.awardRelatedProject %}
+					<a href="{{ project.url }}" class="btn btn-link btn-view-project">View Project</a>
+					{% endfor %}
+				{% endif %}
+			</section>
+		</div>
+	</div>
+</article>
+
+{% endblock %}
