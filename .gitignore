@@ -1,1 +1,41 @@
-corben/.sass-cache
+# Craft runtime and backups folders
+# ----------------------------------------------------------------------
+craft/storage/runtime/*
+craft/storage/backups/*
+ 
+# Uploaded files
+# ----------------------------------------------------------------------
+public/assets/uploads/*
+ 
+# Misc files
+# ----------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-workspace
+*.sublime-project
+*.komodoproject
+.komodotools
+_notes
+dwsync.xml
+logs/*
+craft/storage/runtime/logs/craft.log.1
+
+craft/storage/runtime/logs/craft.log.2
+
+craft/storage/runtime/logs/craft.log.5
+
+craft/storage/runtime/compiled_templates/70/02/3bc6103a067e7838c7c997789bf41129593490b83c47efe06925edec4aa8.php
+
+craft/storage/runtime/logs/craft.log.3
+
+craft/storage/runtime/logs/craft.log.4
+
+craft/storage/runtime/logs/craft.log
+
+craft/storage/runtime/sessions/sess_e9eb03c5e6ceaa124d44e2d0e5accc91
