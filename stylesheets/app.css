@@ -8486,8 +8486,8 @@ html {
   /* line 33, ../scss/corben/_global.scss */
   .inner-wrap-forarrows,
   .footer-wrap-forarrows {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 160px;
+    padding-right: 160px;
   }
 }
 
