@@ -39,40 +39,33 @@ class __TwigTemplate_3a2c03cb47ec58b848443fcdbbe3ae353c974db610bb80167f771f58c45
 \t\t\t\t\t";
         // line 11
         $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectSlides"), "type", array(0 => "slide"), "method"));
-        foreach ($context['_seq'] as $context["_key"] => $context["block"]) {
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "simpleSlides"));
+        foreach ($context['_seq'] as $context["_key"] => $context["asset"]) {
             // line 12
-            echo "\t\t\t\t\t\t";
-            $context["slide"] = $this->getAttribute($this->getAttribute((isset($context["block"]) ? $context["block"] : $this->getContext($context, "block")), "image"), "first", array(), "method");
-            // line 13
-            echo "\t\t\t\t\t\t";
-            if ((isset($context["slide"]) ? $context["slide"] : $this->getContext($context, "slide"))) {
-                // line 14
-                echo "\t\t\t\t\t\t<div class=\"carousel-item project-carousel-item\">
+            echo "\t\t\t\t\t\t<div class=\"carousel-item project-carousel-item\">
 \t\t\t\t\t\t\t<img src=\"";
-                // line 15
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["slide"]) ? $context["slide"] : $this->getContext($context, "slide")), "url"), "html", null, true);
-                echo "\" alt=\"";
-                echo twig_escape_filter($this->env, (($this->getAttribute((isset($context["block"]) ? $context["block"] : $this->getContext($context, "block")), "altText")) ? ($this->getAttribute((isset($context["block"]) ? $context["block"] : $this->getContext($context, "block")), "altText")) : ($this->getAttribute((isset($context["slide"]) ? $context["slide"] : $this->getContext($context, "slide")), "title"))), "html", null, true);
-                echo "\" width=\"";
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["slide"]) ? $context["slide"] : $this->getContext($context, "slide")), "width"), "html", null, true);
-                echo "\"  height=\"";
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["slide"]) ? $context["slide"] : $this->getContext($context, "slide")), "height"), "html", null, true);
-                echo "\" />
-\t\t\t\t\t\t</div>\t\t\t\t\t\t
-\t\t\t\t\t\t";
-            }
-            // line 18
-            echo "\t\t\t\t\t";
+            // line 13
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset")), "url"), "html", null, true);
+            echo "\" alt=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset")), "filename"), "html", null, true);
+            echo "\" width=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset")), "width"), "html", null, true);
+            echo "\"  height=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset")), "height"), "html", null, true);
+            echo "\" />
+\t\t\t\t\t\t</div>
+\t\t\t\t\t";
         }
         $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['block'], $context['_parent'], $context['loop']);
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['asset'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 19
+        // line 16
         echo "\t\t\t\t</div>
-\t\t\t\t<div class=\"project-panel\">
+\t\t\t\t";
+        // line 28
+        echo "\t\t\t\t<div class=\"project-panel\">
 \t\t\t\t\t<h2 class=\"project-title\">";
-        // line 21
+        // line 29
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectTitle"), "html", null, true);
         echo " ";
         if (((!twig_test_empty($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectSuburb"))) && $this->getAttribute($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectDisplaySettings"), "contains", array(0 => "showSuburb"), "method"))) {
@@ -85,72 +78,72 @@ class __TwigTemplate_3a2c03cb47ec58b848443fcdbbe3ae353c974db610bb80167f771f58c45
 \t\t\t\t\t\t<div class=\"xlarge-3 large-3 medium-4 small-12 columns project-details\">
 \t\t\t\t\t\t\t<ul class=\"no-bullet project-details-list\">
 \t\t\t\t\t\t\t\t";
-        // line 25
+        // line 33
         if (((!twig_test_empty($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectCompleted"))) && $this->getAttribute($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectDisplaySettings"), "contains", array(0 => "showCompleted"), "method"))) {
-            // line 26
+            // line 34
             echo "\t\t\t\t\t\t\t\t<li class=\"project-detail-item\"><strong class=\"project-detail-label\">Completed:</strong> ";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectCompleted"), "html", null, true);
             echo "</li>
 \t\t\t\t\t\t\t\t";
         }
-        // line 28
+        // line 36
         echo "\t\t\t\t\t\t\t\t";
         if (((!twig_test_empty($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectBuilder"))) && $this->getAttribute($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectDisplaySettings"), "contains", array(0 => "showBuilder"), "method"))) {
-            // line 29
+            // line 37
             echo "\t\t\t\t\t\t\t\t<li class=\"project-detail-item\"><strong class=\"project-detail-label\">Builder:</strong> ";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectBuilder"), "html", null, true);
             echo "</li>
 \t\t\t\t\t\t\t\t";
         }
-        // line 31
+        // line 39
         echo "\t\t\t\t\t\t\t\t";
         if (((!twig_test_empty($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectArea"))) && $this->getAttribute($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectDisplaySettings"), "contains", array(0 => "showArea"), "method"))) {
-            // line 32
+            // line 40
             echo "\t\t\t\t\t\t\t\t<li class=\"project-detail-item\"><strong class=\"project-detail-label\">Area:</strong> ";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectArea"), "html", null, true);
             echo "</li>
 \t\t\t\t\t\t\t\t";
         }
-        // line 34
+        // line 42
         echo "\t\t\t\t\t\t\t\t";
         if (((!twig_test_empty($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectPhotographer"))) && $this->getAttribute($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectDisplaySettings"), "contains", array(0 => "showPhotographer"), "method"))) {
-            // line 35
+            // line 43
             echo "\t\t\t\t\t\t\t\t<li class=\"project-detail-item\"><strong class=\"project-detail-label\">Photographer:</strong> ";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectPhotographer"), "html", null, true);
             echo "</li>
 \t\t\t\t\t\t\t\t";
         }
-        // line 37
+        // line 45
         echo "\t\t\t\t\t\t\t\t";
         $context["pdf"] = $this->getAttribute($this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectPdf"), "first", array(), "method");
-        // line 38
+        // line 46
         echo "\t\t\t\t\t\t\t\t";
         if ((isset($context["pdf"]) ? $context["pdf"] : $this->getContext($context, "pdf"))) {
-            // line 39
+            // line 47
             echo "\t\t\t\t\t\t\t\t<li class=\"project-detail-item\"><a href=\"";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["pdf"]) ? $context["pdf"] : $this->getContext($context, "pdf")), "url"), "html", null, true);
             echo "\" class=\"btn btn-link btn-project-pdf\">Download PDF</a></li>
 \t\t\t\t\t\t\t\t";
         }
-        // line 41
+        // line 49
         echo "\t\t\t\t\t\t\t</ul>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div class=\"xlarge-5 large-7 medium-8 small-12 end columns project-description\">
 \t\t\t\t\t\t\t";
-        // line 44
+        // line 52
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "projectDescription"), "html", null, true);
         echo "
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t\t<!-- <a href=\"\" class=\"close-panel\" id=\"btn-close-panel\"><i class=\"fa fa-angle-double-down fa-3x\"></i></a> -->
 \t\t\t\t\t<a href=\"\" class=\"close-panel\" id=\"btn-close-panel\"><img class=\"arrow-down\" src=\"";
-        // line 48
+        // line 56
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
         echo "images/arrow-down.svg\"></a>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"project-navbar\">
 \t\t\t\t\t<a href=\"";
-        // line 51
+        // line 59
         echo twig_escape_filter($this->env, (isset($context["siteUrl"]) ? $context["siteUrl"] : $this->getContext($context, "siteUrl")), "html", null, true);
         echo "projects\" class=\"btn btn-proj-gallery\"><i class=\"fa fa-th\"></i></a>
 \t\t\t\t\t<a href=\"\" class=\"btn btn-proj-overview\" id=\"btn-proj-overview\">Project Overview</a>
@@ -175,6 +168,6 @@ class __TwigTemplate_3a2c03cb47ec58b848443fcdbbe3ae353c974db610bb80167f771f58c45
 
     public function getDebugInfo()
     {
-        return array (  154 => 51,  148 => 48,  141 => 44,  136 => 41,  130 => 39,  127 => 38,  124 => 37,  118 => 35,  115 => 34,  109 => 32,  106 => 31,  100 => 29,  97 => 28,  91 => 26,  89 => 25,  76 => 21,  72 => 19,  66 => 18,  54 => 15,  51 => 14,  48 => 13,  45 => 12,  41 => 11,  33 => 5,  30 => 4,  25 => 2,);
+        return array (  147 => 59,  141 => 56,  134 => 52,  129 => 49,  123 => 47,  120 => 46,  117 => 45,  111 => 43,  108 => 42,  102 => 40,  99 => 39,  93 => 37,  90 => 36,  84 => 34,  82 => 33,  69 => 29,  66 => 28,  63 => 16,  48 => 13,  45 => 12,  41 => 11,  33 => 5,  30 => 4,  25 => 2,);
     }
 }

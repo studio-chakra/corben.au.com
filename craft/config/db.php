@@ -16,15 +16,19 @@ return array(
 
 	// Dev database info
 	'.dev' => array(
-        'server' => 'localhost',
-		'user' => 'root',
-		'password' => 'root',
-		'database' => 'corben',
+  	// 'server' => 'localhost',
+		// 'user' => 'root',
+		// 'password' => 'root',
+		// 'database' => 'corben',
+		'server' => '198.1.79.94',
+		'user' => 'ryanbeli_dbadmin',
+		'password' => '@436StaffordSt',
+		'database' => 'ryanbeli_corben',
     ),
 
     // Live database info
 	'staging.studiochakra.com' => array(
-        'server' => 'localhost',
+    'server' => 'localhost',
 		'user' => 'ryanbeli_dbadmin',
 		'password' => '@436StaffordSt',
 		'database' => 'ryanbeli_corben',

@@ -5,7 +5,15 @@
 <!-- /* Home Slider -->
 <div class="row">
   <div class="xlarge-12 columns">
-  	<section class="carousel">
+  	<section class="carousel">			
+			<div id="home-carousel" class="owl-carousel corben-carousel"> 
+			{% for asset in entry.simpleSlides %}
+					<div class="carousel-item home-carousel-item">
+						<img src="{{ asset.url }}" alt="{{ asset.filename }}" width="{{ asset.width }}"  height="{{ asset.height }}" />
+					</div>
+			{% endfor %}
+			</div>	
+			{# Original Matrix Slider Setup
 			<div id="home-carousel" class="owl-carousel corben-carousel"> 
 			{% for block in entry.projectSlides.type('slide') %}
 					{% set slide = block.image.first() %}
@@ -14,8 +22,8 @@
 						<img src="{{ slide.url }}" alt="{{ block.altText ?: slide.title }}" width="{{ slide.width }}"  height="{{ slide.height }}" />
 					</div>						
 					{% endif %}
-				{% endfor %}
-			</div>						
+			{% endfor %}
+			</div>#}					
 		</section>
   </div>
 </div><!-- Home Slider */ -->

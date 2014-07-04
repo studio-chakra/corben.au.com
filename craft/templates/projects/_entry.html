@@ -8,6 +8,14 @@
 		<div class="large-12 columns">	
 			<section class="project-carousel">
 				<div id="project-carousel" class="owl-carousel corben-carousel"> 
+					{% for asset in entry.simpleSlides %}
+						<div class="carousel-item project-carousel-item">
+							<img src="{{ asset.url }}" alt="{{ asset.filename }}" width="{{ asset.width }}"  height="{{ asset.height }}" />
+						</div>
+					{% endfor %}
+				</div>
+				{# Original Matrix Slider
+				<div id="project-carousel" class="owl-carousel corben-carousel"> 
 					{% for block in entry.projectSlides.type('slide') %}
 						{% set slide = block.image.first() %}
 						{% if slide %}
@@ -16,7 +24,7 @@
 						</div>						
 						{% endif %}
 					{% endfor %}
-				</div>
+				</div>#}
 				<div class="project-panel">
 					<h2 class="project-title">{{ entry.projectTitle }} {% if entry.projectSuburb is not empty and entry.projectDisplaySettings.contains('showSuburb') %}<span class="divider">|</span> <small class="project-suburb">{{ entry.projectSuburb }}</small>{% endif %}</h2>
 					<div class="row">
