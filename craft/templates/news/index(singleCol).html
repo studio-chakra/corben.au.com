@@ -1,0 +1,29 @@
+{% extends "_layout" %}
+{% set title = "News" %}
+
+{% block content %}
+
+<div class="page-news">
+	<div class="row">
+		<div class="large-12 columns">
+			{% for entry in craft.entries.section('news').find() %}
+				{% set asset = entry.postImage.first() %}
+				<article class="post post-type-image">
+					{% if asset %}
+					<div class="post-media">
+						<img src="{{ asset.url }}" class="post-image" alt="{{ asset.altText }}" width="{{ asset.width }}" height="{{ asset.height }}" />
+					</div>
+					{% endif %}	
+					<header class="post-header">
+						<h2 class="post-title"><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+						<p class="post-meta">{{ entry.postDate|date('M d, Y') }}</p>
+					</header>
+					{{ entry.postIntro }}
+					<a href="{{ entry.url }}" class="btn btn-link">Continue Reading</a>
+				</article>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+{% endblock %}

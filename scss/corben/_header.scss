@@ -3,6 +3,11 @@
 // --------------------------------------------------
 
 
+.top-bar,
+.tab-bar {
+	margin-top: 10px;
+}
+
 // Main Nav
 .top-bar {
 	position: relative;
@@ -83,7 +88,7 @@
 	padding: 6px 6px 4px 6px;
 
 	position: absolute;
-	top: 14px;
+	top: 0;
 	right: 0;
 
 	&:hover {

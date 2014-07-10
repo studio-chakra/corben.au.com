@@ -16,7 +16,7 @@ $container.isotope({
 $(document).ready(function() {
  
   $("#home-carousel").owlCarousel({
- 
+      autoPlay : 10000,
       navigation : true, // Show next and prev buttons
       slideSpeed : 300,
       paginationSpeed : 400,
@@ -27,7 +27,7 @@ $(document).ready(function() {
   });
   
   $("#project-carousel").owlCarousel({
- 
+      autoPlay : 10000,
       navigation : true, // Show next and prev buttons
       slideSpeed : 300,
       paginationSpeed : 400,
