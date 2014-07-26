@@ -8907,7 +8907,7 @@ h1.logo-mobile a {
   width: 200px;
   height: 4.6875rem;
   background-image: url("../images/logo-sm.png");
-  background-size: 200px 112px;
+  background-size: 200px 96px;
   background-position: 0 -36px;
 }
 @media only screen and (min-width: 48em) {
@@ -8916,7 +8916,7 @@ h1.logo-mobile a {
   h1.logo-mobile a {
     width: 200px;
     height: 80px;
-    background-size: 200px 112px;
+    background-size: 200px 96px;
     background-position: 0 -32;
   }
 }
@@ -8926,7 +8926,7 @@ h1.logo-mobile a {
   h1.logo-mobile a {
     width: 200px;
     height: 112px;
-    background-size: 200px 112px;
+    background-size: 200px 96px;
     background-position: 0 0;
   }
 }

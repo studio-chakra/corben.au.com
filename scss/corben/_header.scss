@@ -114,20 +114,20 @@ h1.logo-mobile {
 		width: 200px;
 		height: $tabbar-height;
 		background-image: url("../images/logo-sm.png");
-		background-size: 200px 112px;
+		background-size: 200px 96px;
 		background-position: 0 -36px;
 		
 		@media #{$large-up} {
 			width: 200px;
 			height: 80px;
-			background-size: 200px 112px;
+			background-size: 200px 96px;
 			background-position: 0 -32;
 		}
 
 		@media #{$xlarge-up} {
 			width: 200px;
 			height: 112px;
-			background-size: 200px 112px;
+			background-size: 200px 96px;
 			background-position: 0 0;
 		}
 	}
