@@ -9,20 +9,32 @@
 			<ul class="post-grid">
 			{% for entry in craft.entries.section('news').find() %}
 				{% set asset = entry.postImage.first() %}
+				{% set btnTitle = "Continue Reading" %}
+				{% set btnUrl = entry.url %}
+
+				{% for block in entry.postReadMore.type('readMoreButton') %}
+					{% if block.buttonTitle is not empty %}
+						{% set btnTitle = block.buttonTitle %}
+					{% endif %}
+					{% if block.externalUrl is not empty and block.linkToExternalUrl %}
+						{% set btnUrl = block.externalUrl %}
+					{% endif %}								
+				{% endfor %}
+
 				<li class="post-item">
 					<article class="post post-type-image">
 						{% if asset %}
 						<div class="post-media">
-							<img src="{{ asset.url }}" class="post-image" alt="{{ asset.altText }}" width="{{ asset.width }}" height="{{ asset.height }}" />
+							<a href="{{ btnUrl }}"><img src="{{ asset.url }}" class="post-image" alt="{{ asset.altText }}" width="{{ asset.width }}" height="{{ asset.height }}" /></a>
 						</div>
 						{% endif %}	
 						<div class="post-body">
 							<header class="post-header">
-								<h2 class="post-title"><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+								<h2 class="post-title"><a href="{{ btnUrl }}">{{ entry.title }}</a></h2>
 								<p class="post-meta">{{ entry.postDate|date('M d, Y') }}</p>
 							</header>
 							{{ entry.postIntro }}
-							<a href="{{ entry.url }}" class="btn btn-link">Continue Reading</a>
+							<a href="{{ btnUrl }}" class="btn btn-link">{{ btnTitle }}</a>			
 						</div>
 					</article>
 				</li>
