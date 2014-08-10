@@ -47,20 +47,20 @@ class __TwigTemplate_005d9a511f93e6dc3d4f1c5c5d3e3dc6ba1dec1a45bfad1b80b74784c75
         echo "
 <article class=\"page-general\">
 \t<div class=\"row\">
-\t\t<div class=\"xlarge-4 large-6 columns\">
+\t\t";
+        // line 20
+        if ((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset"))) {
+            // line 21
+            echo "\t\t<div class=\"xlarge-4 large-6 columns\">
 \t\t\t<section class=\"page-content\">
 \t\t\t\t";
-        // line 22
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "body"), "html", null, true);
-        echo "
+            // line 23
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "body"), "html", null, true);
+            echo "
 \t\t\t</section>
 \t\t</div>
-\t\t<div class=\"xlarge-8 large-6 columns\">
-\t\t\t";
-        // line 26
-        if ((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset"))) {
-            // line 27
-            echo "\t\t\t<section class=\"page-img show-for-large-up\">
+\t\t<div class=\"xlarge-8 large-6 columns\">\t\t\t
+\t\t\t<section class=\"page-img show-for-large-up\">
 \t\t\t\t<img src=\"";
             // line 28
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset")), "url"), "html", null, true);
@@ -72,11 +72,22 @@ class __TwigTemplate_005d9a511f93e6dc3d4f1c5c5d3e3dc6ba1dec1a45bfad1b80b74784c75
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["asset"]) ? $context["asset"] : $this->getContext($context, "asset")), "height"), "html", null, true);
             echo "\" />
 \t\t\t</section>
-\t\t\t";
-        }
-        // line 30
-        echo "\t
 \t\t</div>
+\t\t";
+        } else {
+            // line 32
+            echo "\t\t<div class=\"xlarge-12 large-12 columns\">
+\t\t\t<section class=\"page-content\">
+\t\t\t\t";
+            // line 34
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "body"), "html", null, true);
+            echo "
+\t\t\t</section>
+\t\t</div>
+\t\t";
+        }
+        // line 37
+        echo "\t
 \t</div>
 </article>
 
@@ -95,6 +106,6 @@ class __TwigTemplate_005d9a511f93e6dc3d4f1c5c5d3e3dc6ba1dec1a45bfad1b80b74784c75
 
     public function getDebugInfo()
     {
-        return array (  78 => 30,  66 => 28,  63 => 27,  61 => 26,  54 => 22,  47 => 17,  44 => 16,  39 => 14,  36 => 11,  33 => 9,  31 => 8,  29 => 7,  27 => 6,  25 => 3,);
+        return array (  90 => 37,  83 => 34,  79 => 32,  66 => 28,  58 => 23,  54 => 21,  52 => 20,  47 => 17,  44 => 16,  39 => 14,  36 => 11,  33 => 9,  31 => 8,  29 => 7,  27 => 6,  25 => 3,);
     }
 }

@@ -13,7 +13,8 @@
 					  <li class="team-item">
 					  	<div class="employee employee-{{ entry.employeeType }}">
 						  	{% if asset %}<img class="emp-photo" src="{{ asset.url }}" alt="{{ entry.employeeFirstName }} {{ entry.employeeLastName }}" width="{{ asset.width }}" height="{{ asset.height }}" />{% endif %}				  	
-								<h2 class="emp-name">{{ entry.employeeFirstName }} {{ entry.employeeLastName }} <small class="emp-title">{{ entry.employeeTitle }}</small></h2>
+								<h2 class="emp-name">{{ entry.employeeFirstName }} {{ entry.employeeLastName }}</h2>
+								<h4 class="emp-title">{{ entry.employeeTitle }}</h4>
 								<p class="emp-cred">{{ entry.employeeCredentials }}</p>
 								{% if entry.employeeDisplaySettings | length %}
 									<div class="emp-bio">{{ entry.employeeBio }}</div>

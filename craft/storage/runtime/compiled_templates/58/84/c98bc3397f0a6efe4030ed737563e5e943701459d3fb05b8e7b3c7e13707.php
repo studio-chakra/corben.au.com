@@ -71,23 +71,25 @@ class __TwigTemplate_5884c98bc3397f0a6efe4030ed737563e5e943701459d3fb05b8e7b3c7e
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "employeeFirstName"), "html", null, true);
             echo " ";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "employeeLastName"), "html", null, true);
-            echo " <small class=\"emp-title\">";
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "employeeTitle"), "html", null, true);
-            echo "</small></h2>
-\t\t\t\t\t\t\t\t<p class=\"emp-cred\">";
+            echo "</h2>
+\t\t\t\t\t\t\t\t<h4 class=\"emp-title\">";
             // line 17
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "employeeTitle"), "html", null, true);
+            echo "</h4>
+\t\t\t\t\t\t\t\t<p class=\"emp-cred\">";
+            // line 18
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "employeeCredentials"), "html", null, true);
             echo "</p>
 \t\t\t\t\t\t\t\t";
-            // line 18
+            // line 19
             if (twig_length_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "employeeDisplaySettings"))) {
-                // line 19
+                // line 20
                 echo "\t\t\t\t\t\t\t\t\t<div class=\"emp-bio\">";
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["entry"]) ? $context["entry"] : $this->getContext($context, "entry")), "employeeBio"), "html", null, true);
                 echo "</div>
 \t\t\t\t\t\t\t\t";
             }
-            // line 21
+            // line 22
             echo "\t\t\t\t\t  \t</div>
 \t\t\t\t\t  </li>
 \t\t\t\t  ";
@@ -95,7 +97,7 @@ class __TwigTemplate_5884c98bc3397f0a6efe4030ed737563e5e943701459d3fb05b8e7b3c7e
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['entry'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 24
+        // line 25
         echo "\t\t\t\t</ul>
 \t\t\t</section>
 \t\t</div>
@@ -117,6 +119,6 @@ class __TwigTemplate_5884c98bc3397f0a6efe4030ed737563e5e943701459d3fb05b8e7b3c7e
 
     public function getDebugInfo()
     {
-        return array (  99 => 24,  91 => 21,  85 => 19,  83 => 18,  79 => 17,  71 => 16,  55 => 15,  51 => 14,  48 => 13,  45 => 12,  41 => 11,  33 => 5,  30 => 4,  25 => 2,);
+        return array (  101 => 25,  93 => 22,  87 => 20,  85 => 19,  81 => 18,  77 => 17,  71 => 16,  55 => 15,  51 => 14,  48 => 13,  45 => 12,  41 => 11,  33 => 5,  30 => 4,  25 => 2,);
     }
 }

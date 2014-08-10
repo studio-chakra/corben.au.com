@@ -610,9 +610,10 @@ ul.project-pagination {
 }
 
 .emp-name,
+.emp-title,
 .emp-cred,
 .emp-bio {
-	padding: rem-calc(0 12);
+	padding: rem-calc(0 12); 
 }
 
 .emp-name {
@@ -626,9 +627,11 @@ ul.project-pagination {
 }
 
 .emp-title {
+	text-transform: uppercase;
 	color: $black-color;
 	font-weight: 400;
 	font-size: rem-calc(16);
+	margin-bottom: 0;
 
 	@media #{$xlarge-up} {
 		font-size: rem-calc(13);

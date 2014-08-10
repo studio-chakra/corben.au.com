@@ -9984,63 +9984,66 @@ ul.project-pagination,
 
 /* line 612, ../scss/corben/_molecules.scss */
 .emp-name,
+.emp-title,
 .emp-cred,
 .emp-bio {
   padding: 0 0.75rem;
 }
 
-/* line 618, ../scss/corben/_molecules.scss */
+/* line 619, ../scss/corben/_molecules.scss */
 .emp-name {
   text-transform: uppercase;
   margin: 0.75rem 0 0 0;
   line-height: 1.2;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 618, ../scss/corben/_molecules.scss */
+  /* line 619, ../scss/corben/_molecules.scss */
   .emp-name {
     margin: 1.875rem 0 0.125rem 0;
   }
 }
 
-/* line 628, ../scss/corben/_molecules.scss */
+/* line 629, ../scss/corben/_molecules.scss */
 .emp-title {
+  text-transform: uppercase;
   color: black;
   font-weight: 400;
   font-size: 1rem;
+  margin-bottom: 0;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 628, ../scss/corben/_molecules.scss */
+  /* line 629, ../scss/corben/_molecules.scss */
   .emp-title {
     font-size: 0.8125rem;
   }
 }
 
-/* line 638, ../scss/corben/_molecules.scss */
+/* line 641, ../scss/corben/_molecules.scss */
 .emp-cred {
   font-size: 0.875rem;
   line-height: 1.4;
   margin: 0;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 638, ../scss/corben/_molecules.scss */
+  /* line 641, ../scss/corben/_molecules.scss */
   .emp-cred {
     font-size: 0.6875rem;
     line-height: 1.2;
   }
 }
 
-/* line 649, ../scss/corben/_molecules.scss */
+/* line 652, ../scss/corben/_molecules.scss */
 .emp-bio {
   margin: 0.625rem 0 0 0;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 649, ../scss/corben/_molecules.scss */
+  /* line 652, ../scss/corben/_molecules.scss */
   .emp-bio {
     margin: 1.25rem 0 0 0;
   }
 }
 
-/* line 662, ../scss/corben/_molecules.scss */
+/* line 665, ../scss/corben/_molecules.scss */
 .post-grid {
   display: block;
   padding: 0;
@@ -10078,7 +10081,7 @@ ul.project-pagination,
   clear: both;
 }
 @media only screen and (min-width: 480px) {
-  /* line 662, ../scss/corben/_molecules.scss */
+  /* line 665, ../scss/corben/_molecules.scss */
   .post-grid {
     display: block;
     padding: 0;
@@ -10117,7 +10120,7 @@ ul.project-pagination,
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 662, ../scss/corben/_molecules.scss */
+  /* line 665, ../scss/corben/_molecules.scss */
   .post-grid {
     display: block;
     padding: 0;
@@ -10156,7 +10159,7 @@ ul.project-pagination,
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 662, ../scss/corben/_molecules.scss */
+  /* line 665, ../scss/corben/_molecules.scss */
   .post-grid {
     display: block;
     padding: 0;
@@ -10195,7 +10198,7 @@ ul.project-pagination,
   }
 }
 @media only screen and (min-width: 1400px) {
-  /* line 662, ../scss/corben/_molecules.scss */
+  /* line 665, ../scss/corben/_molecules.scss */
   .post-grid {
     display: block;
     padding: 0;
@@ -10234,53 +10237,53 @@ ul.project-pagination,
   }
 }
 
-/* line 695, ../scss/corben/_molecules.scss */
+/* line 698, ../scss/corben/_molecules.scss */
 .post-item {
   margin-bottom: 1.5rem;
 }
 
-/* line 699, ../scss/corben/_molecules.scss */
+/* line 702, ../scss/corben/_molecules.scss */
 .post {
   margin-bottom: 3rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 704, ../scss/corben/_molecules.scss */
+/* line 707, ../scss/corben/_molecules.scss */
 .post:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
 }
-/* line 710, ../scss/corben/_molecules.scss */
+/* line 713, ../scss/corben/_molecules.scss */
 .post > *:last-child {
   margin-bottom: 0;
 }
 
-/* line 716, ../scss/corben/_molecules.scss */
+/* line 719, ../scss/corben/_molecules.scss */
 .post-body {
   padding: 0 0.75rem;
 }
 
-/* line 720, ../scss/corben/_molecules.scss */
+/* line 723, ../scss/corben/_molecules.scss */
 .post-media,
 .post-header {
   margin: 0 0 1.5rem 0;
 }
 
-/* line 725, ../scss/corben/_molecules.scss */
+/* line 728, ../scss/corben/_molecules.scss */
 .post-title {
   margin-bottom: 0.125rem;
 }
-/* line 727, ../scss/corben/_molecules.scss */
+/* line 730, ../scss/corben/_molecules.scss */
 .post-title a {
   color: #424242;
 }
-/* line 729, ../scss/corben/_molecules.scss */
+/* line 732, ../scss/corben/_molecules.scss */
 .post-title a:hover {
   color: black;
 }
 
-/* line 735, ../scss/corben/_molecules.scss */
+/* line 738, ../scss/corben/_molecules.scss */
 .post-meta {
   margin-bottom: 0;
   color: #666666;
