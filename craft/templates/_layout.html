@@ -85,7 +85,13 @@
 							          <li><a href="{{ siteUrl }}practice/about" {{ activeClass('about',2,'is-active') }}>About</a></li>
 							        </ul>
 							      </li>
-										<li><a href="{{ siteUrl }}people" {{ activeClass('people',1,'is-active') }}>People</a></li>
+										<li class="has-dropdown">
+											<a href="{{ siteUrl }}directors" {{ activeClass('people|directors|staff',1,'is-active') }}>People</a>
+											<ul class="dropdown {{ active('people|directors|staff',1,'is-active') }}">				          
+							          <li><a href="{{ siteUrl }}staff" {{ activeClass('staff',1,'is-active') }}>Staff</a></li>
+							          <li><a href="{{ siteUrl }}directors" {{ activeClass('directors',1,'is-active') }}>Directors</a></li>
+							        </ul>
+										</li>
 							      <li><a href="{{ siteUrl }}place" {{ activeClass('place',1,'is-active') }}>Place</a></li>
 							    </ul>
 							  </section>
@@ -115,6 +121,13 @@
 							  </ul>	
 	          	</li>
 	          	<li><a href="{{ siteUrl }}people" {{ activeClass('people',1,'is-active') }}>People</a></li>
+	          	<li>
+								<a href="{{ siteUrl }}directors" {{ activeClass('people|directors|staff',1,'is-active') }}>People</a>
+								<ul class="dropdown {{ active('people|directors|staff',1,'is-active') }}">				          
+				          <li><a href="{{ siteUrl }}staff" {{ activeClass('staff',1,'is-active') }}>Staff</a></li>
+				          <li><a href="{{ siteUrl }}directors" {{ activeClass('directors',1,'is-active') }}>Directors</a></li>
+				        </ul>
+							</li>
 	          	<li><a href="{{ siteUrl }}place" {{ activeClass('place',1,'is-active') }}>Place</a></li>
 	          	<li><a href="{{ siteUrl }}news" {{ activeClass('news',1,'is-active') }}>News</a></li>
 	        	</ul>
