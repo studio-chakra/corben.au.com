@@ -24,13 +24,23 @@ return array(
         ),
     ),
 
-    // Live site config
+    // Staging site config
     'corben-staging.studiochakra.com' => array(
         'cooldownDuration' => 0,
 
         'environmentVariables' => array(
             'siteUrl'        => 'http://corben-staging.studiochakra.com/',
             'fileSystemPath' => '/home/ryanbeli/corben-staging/images/',
+        ),
+    ),
+
+    // LIVE site config
+    'corben.com.au' => array(
+        'cooldownDuration' => 0,
+
+        'environmentVariables' => array(
+            'siteUrl'        => 'http://corben.com.au/',
+            'fileSystemPath' => '/home/petercru/corben.com.au/images/',
         ),
     ),
 

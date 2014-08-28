@@ -24,14 +24,22 @@ return array(
 		'user' => 'ryanbeli_dbadmin',
 		'password' => '@436StaffordSt',
 		'database' => 'ryanbeli_corben',
-    ),
+  ),
 
-    // Live database info
+  // Staging database info
 	'staging.studiochakra.com' => array(
     'server' => 'localhost',
 		'user' => 'ryanbeli_dbadmin',
 		'password' => '@436StaffordSt',
 		'database' => 'ryanbeli_corben',
-    ),  
+  ),  
+
+  // LIVE database info
+	'corben.com.au' => array(
+    'server' => 'localhost',
+		'user' => 'petercru_admin',
+		'password' => 'ROb2oinZu6SZ',
+		'database' => 'petercru_corben',
+  ),  
 
 );
