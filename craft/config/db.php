@@ -37,9 +37,9 @@ return array(
   // LIVE database info
 	'corben.com.au' => array(
     'server' => 'localhost',
-		'user' => 'petercru_admin',
-		'password' => 'ROb2oinZu6SZ',
-		'database' => 'petercru_corben',
+		'user' => 'corben_arch',
+		'password' => 'PJcPSgnME_T6',
+		'database' => 'corben_corbenarch',
   ),  
 
 );

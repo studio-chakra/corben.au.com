@@ -40,7 +40,7 @@ return array(
 
         'environmentVariables' => array(
             'siteUrl'        => 'http://corben.com.au/',
-            'fileSystemPath' => '/home/petercru/corben.com.au/images/',
+            'fileSystemPath' => '/home/corben/corben.com.au/images/',
         ),
     ),
 
