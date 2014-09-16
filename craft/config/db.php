@@ -38,13 +38,13 @@ return array(
 	'corben.com.au' => array(
     'server' => 'localhost',
 		'user' => 'corben_arch',
-		'password' => 'PJcPSgnME_T6',
+		'password' => 'nF0}_vWu8LDw',
 		'database' => 'corben_corbenarch',
   ),
   '182.160.157.199/~corben/' => array(
     'server' => 'localhost',
 		'user' => 'corben_arch',
-		'password' => 'PJcPSgnME_T6',
+		'password' => 'nF0}_vWu8LDw',
 		'database' => 'corben_corbenarch',
   ),  
 
