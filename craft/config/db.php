@@ -40,6 +40,12 @@ return array(
 		'user' => 'corben_arch',
 		'password' => 'PJcPSgnME_T6',
 		'database' => 'corben_corbenarch',
+  ),
+  '182.160.157.199/~corben/' => array(
+    'server' => 'localhost',
+		'user' => 'corben_arch',
+		'password' => 'PJcPSgnME_T6',
+		'database' => 'corben_corbenarch',
   ),  
 
 );

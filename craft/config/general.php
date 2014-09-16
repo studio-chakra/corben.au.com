@@ -43,5 +43,13 @@ return array(
             'fileSystemPath' => '/home/corben/corben.com.au/images/',
         ),
     ),
+    '182.160.157.199/~corben/' => array(
+        'cooldownDuration' => 0,
+
+        'environmentVariables' => array(
+            'siteUrl'        => 'http://182.160.157.199/~corben/',
+            'fileSystemPath' => '/home/corben/corben.com.au/images/',
+        ),
+    ),
 
 );
