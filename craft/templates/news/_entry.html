@@ -18,7 +18,7 @@
 					<h2 class="post-title">{{ entry.title }}</h2>
 					<p class="post-meta">{{ entry.postDate|date('M d, Y') }}</p>
 				</header>
-				{% if entry.postDisplaySettings.contains('showIntro') | length %}
+				{% if not entry.postDisplaySettings.contains('hideIntro') | length %}
 					{{ entry.postIntro }}
 				{% endif %}	
 				{{ entry.postBody }}
