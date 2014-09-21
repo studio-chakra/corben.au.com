@@ -11,6 +11,11 @@
 				{% set asset = entry.postImage.first() %}
 				{% set btnTitle = "Continue Reading" %}
 				{% set btnUrl = entry.url %}
+				{% set showReadMore = true %}
+
+				{% if entry.postDisplaySettings.contains('hideReadMore') | length %}
+					{% set showReadMore = false %}
+				{% endif %}	
 
 				{% for block in entry.postReadMore.type('readMoreButton') %}
 					{% if block.buttonTitle is not empty %}
@@ -25,16 +30,20 @@
 					<article class="post post-type-image">
 						{% if asset %}
 						<div class="post-media">
-							<a href="{{ btnUrl }}"><img src="{{ asset.url }}" class="post-image" alt="{{ asset.altText }}" width="{{ asset.width }}" height="{{ asset.height }}" /></a>
+							{% if showReadMore %}<a href="{{ btnUrl }}">{% endif %}<img src="{{ asset.url }}" class="post-image" alt="{{ asset.altText }}" width="{{ asset.width }}" height="{{ asset.height }}" />{% if showReadMore %}</a>{% endif %}
 						</div>
 						{% endif %}	
 						<div class="post-body">
 							<header class="post-header">
-								<h2 class="post-title"><a href="{{ btnUrl }}">{{ entry.title }}</a></h2>
+								<h2 class="post-title">
+									{% if showReadMore %}<a href="{{ btnUrl }}">{% endif %}	{{ entry.title }}{% if showReadMore %}</a>{% endif %}	
+								</h2>
 								<p class="post-meta">{{ entry.postDate|date('M d, Y') }}</p>
 							</header>
 							{{ entry.postIntro }}
-							<a href="{{ btnUrl }}" class="btn btn-link">{{ btnTitle }}</a>			
+							{% if showReadMore %}
+							<a href="{{ btnUrl }}" class="btn btn-link">{{ btnTitle }}</a>	
+							{% endif %}			
 						</div>
 					</article>
 				</li>
